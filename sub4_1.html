@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="반응형웹 가상 리뉴얼 프로젝트">
+    <meta name="description" content="산업 현장에서 요구되는 웹언어 구현-가상리뉴얼 프로젝트">
+    <title>객실예약</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <script src="js/motion.js"></script>
+</head>
+<body>
+
+    <!--1.header id="header"[명시도:100]************************************************************************************* -->
+    <!--position:absolute; left:0; top:0; width:100%; height:80px; -->
+    <header id="header">
+        <!--width:1400px; height:80px; margin:0 auto; -->
+        <div class="header_wrap">
+            <!--1.1.제1제목-->
+            <h1><a href="index.html"><img src="images/logo.png" alt="금호리조트"></a></h1>
+
+            <!-- ★반응형웹 추가코드(1280px 이상 해상도에서는 비표시) -->
+            <p class="nav_view_btn">
+                <button><img src="images/nav_open_btn.png" alt="전역메뉴 표시"></button>
+            </p>
+            <!--1.2.탐색요소 집합(navigation: 전역메뉴(항목,리스트)-->
+            <nav>
+                <p class="nav_close_btn">
+                    <button><img src="images/nav_close_btn.png" alt="전역메뉴 비표시"></button>
+                </p>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub1_1.html">리조트소개</a>
+                        <ul> 
+                            <li><a href="sub1_1.html">개요및연혁</a></li>
+                            <li><a href="sub1_2.html">지역별리조트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2_1.html">글램핑/카라반</a>
+                        <ul>
+                            <li><a href="sub2_1.html">숙박시설안내</a></li>
+                            <li><a href="sub2_2.html">객실이용안내</a></li>
+                            <li><a href="sub2_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3_1.html">제휴리조트</a>
+                        <ul>
+                            <li><a href="sub3_1.html">국내제휴리조트안내</a></li>
+                            <li><a href="sub3_2.html">경기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4_1.html">통합예약</a>
+                        <ul>
+                            <li><a href="sub4_1.html">객실예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub5_1.html">고객센터</a>
+                        <ul>
+                            <li><a href="sub5_1.html">공지사항</a></li>
+                            <li><a href="sub5_2.html">자주묻는질문</a></li>
+                            <li><a href="sub5_3.html">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--1.header end ******************************************************************************************************* -->
+
+    <!--2.#sub_container[명시도:100]***************************************************************************************** -->
+    <div id="sub_container">
+        <!--전체서브 공통1(서브비주얼, 확장구조)-->
+        <div class="sub_visual sub4_bg">
+            <div class="sub_visual_wrap">
+                <!--1.전체서브 공통 빅폰트-->
+                <p><b>통합예약</b></p>
+                <p>금호리조트는 쉽고 간편한 예약기능을 제공합니다.</p>
+            </div>
+        </div>
+        <!--1.2전체서브 공통 Local Navigation Bar(lnb)-->
+        <div class="lnb">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="sub_images/lnb_home_btn.png" alt="홈"></a>
+                </li>                  
+                <li>
+                    <a href="sub4_1.html">통합예약</a>
+                    <ul> 
+                        <li><a href="sub4_1.html">객실예약</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--전체서브 공통2(서브타이틀)-->
+        <div class="sub_title">
+            <h2>객실예약</h2>
+            <p><b>Room Reservation</b></p>
+            <p>이용을 희망하시는 리조트 지점을 선택하시고 예약가능한 객실을 확인 후 원하시는 날짜를 선택하여 주십시오.</p>
+        </div>
+
+        <!--개별 서브-->
+        <div class="sub_content_wrap">
+            <!-- 1. 예약정보 -->
+            <div class="reservation_div">
+                <div class="tab_menu_wrap2">
+                    <ul>
+                        <li class="on"><button>통영마리나리조트</button></li>
+                        <li><button>화순스파리조트</button></li>
+                        <li><button>설악리조트</button></li>
+                        <li><button>제주리조트</button></li>
+                    </ul>
+                </div>
+                <!-- 통영마리나리조트 객실종류 -->
+                <div class="room_list">
+                    <h4>객실종류</h4>
+                    <div class="room_list_box">
+                        <ul class="room_list_box_wrap">
+                            <li>패밀리디럭스</li>
+                            <li>패밀리프리미어</li>
+                            <li>스위트디럭스&#40;키즈-남아&#41;</li>
+                            <li>스위트디럭스&#40;키즈-여아&#41;</li>
+                            <li>스위트디럭스&#40;키즈-공용&#41;</li>
+                            <li>스위트디럭스&#40;키즈-영아&#41;</li>
+                            <li>스위트디럭스</li>
+                            <li>스위트프리미어</li>
+                            <li>로얄스위트디럭스</li>
+                            <li>로얄스위트프리미어 </li>
+                        </ul>
+                    </div> 
+                </div>
+                <!-- 체크인, 체크아웃 날짜 선택 달력 -->
+                <div class="calendar">
+                    <!-- 5월 -->
+                    <div class="calendar_wrap">
+                        <form action="#"></form>
+                        <div class="cal_controls">
+                            <p><button><img src="sub_images/sub4/cal_prev_btn.png" alt="이전 달 달력 보기"></button></p>
+                            <p>2023.05</p>
+                            <p><button><img src="sub_images/sub4/cal_next_btn.png" alt="다음 달 달력 보기"></button></p>
+                        </div>
+                        <table class="reserve_month">
+                            <!-- 요일 -->
+                            <thead>
+                                <tr> <th>일</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> <th>토</th> </tr>
+                            </thead>
+                            <!-- 일 -->
+                            <tbody>
+                                <tr> <td></td> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> </tr>
+                                <tr> <td>7</td> <td>8</td> <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> </tr>
+                                <tr> <td>14</td> <td>15</td> <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> </tr>
+                                <tr> <td>21</td> <td>22</td> <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> </tr>
+                                <tr> <td>28</td> <td>29</td> <td>30</td> <td>31</td> <td></td> <td></td> <td></td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 6월 -->
+                    <div class="calendar_wrap">
+                        <div class="cal_controls">
+                            <p><button><img src="sub_images/sub4/cal_prev_btn.png" alt="이전 달 달력 보기"></button></p>
+                            <p>2023.06</p>
+                            <p><button><img src="sub_images/sub4/cal_next_btn.png" alt="다음 달 달력 보기"></button></p>
+                        </div>
+                        <table class="reserve_month">
+                            <!-- 요일 -->
+                            <thead>
+                                <tr> <th>일</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> <th>토</th> </tr>
+                            </thead>
+                            <!-- 일 -->
+                            <tbody>
+                                <tr> <td></td> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> </tr>
+                                <tr> <td>7</td> <td>8</td> <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> </tr>
+                                <tr> <td>14</td> <td>15</td> <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> </tr>
+                                <tr> <td>21</td> <td>22</td> <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> </tr>
+                                <tr> <td>28</td> <td>29</td> <td>30</td> <td>31</td> <td></td> <td></td> <td></td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 예약정보 표 -->
+                <div>
+                    <h3>예약정보</h3>
+                    <form action="#">
+                        <table class="reservation_info">
+                            <tr> <th>리조트</th> <td colspan="7">통영마리나리조트</td> </tr>
+                            <tr> <th>이용일자</th> <th class="align_left">체크인</th> <td>2023.05.01</td> 
+                                <th>체크아웃</th> <td colspan="2">2023.05.05</td> <td>4박</td> </tr>
+                            <tr> 
+                                <th>객실종류</th> 
+                                <td colspan="2">
+                                    <div class="select_box1">
+                                        <button class="label1">패밀리디럭스</button>
+                                        <ul>
+                                            <li>패밀리디럭스</li>
+                                            <li>패밀리프리미어</li>
+                                            <li>스위트디럭스&#40;키즈-남아&#41;</li>
+                                        </ul>
+                                    </div>
+                                    <!-- <select>
+                                        <option>패밀리디럭스</option>
+                                        <option>패밀리프리미어</option>
+                                        <option>스위트디럭스(키즈-남아)</option>
+                                    </select> -->
+                                </td> 
+                                <th>객실수</th> 
+                                <td>
+                                    <div class="select_box1">
+                                        <button class="label1">1실</button>
+                                        <ul>
+                                            <li>1실</li>
+                                            <li>2실</li>
+                                            <li>3실</li>
+                                        </ul>
+                                    </div>
+                                    <!-- <select>
+                                        <option>1실</option>
+                                        <option>2실</option>
+                                        <option>3실</option>
+                                    </select> -->
+                                </td> 
+                                <th>투숙인원</th> 
+                                <td>
+                                    <div class="select_box1">
+                                        <button class="label1">1명</button>
+                                        <ul>
+                                            <li>1명</li>
+                                            <li>2명</li>
+                                            <li>3명</li>
+                                        </ul>
+                                    </div>
+                                    <!-- <select>
+                                        <option>1명</option>
+                                        <option>2명</option>
+                                        <option>3명</option>
+                                    </select> -->
+                                </td> 
+                            </tr>
+                            <tr> 
+                                <th>예약자명</th> 
+                                <td colspan="2">
+                                    <input type="text" placeholder="성함을 입력해 주세요">
+                                </td>
+                                <th>연락처</th>
+                                <td colspan="3">
+                                    <input type="tel" placeholder="000-0000-0000">
+                                </td>
+                            </tr>
+                            <tr> 
+                                <th>이용요금</th> <th class="align_left">객실</th> <td>426,000원</td>
+                                <th>부가상품</th> <td>0원</td>
+                                <th>총합계</th> <td>426,000원</td>
+                            </tr>
+                        </table>
+                        <table class="reservation_info2">
+                            <tr> <th>리조트지점</th> <td colspan="3">통영마리나리조트</td> </tr>
+                            <tr> <th rowspan="2">이용일자</th> <th>체크인</th> <td>2023.05.01</td> <td rowspan="2">4박</td> </tr>
+                            <tr> <th>체크아웃</th> <td>2023.05.05</td> </tr>
+                            <tr> <th>객실종류</th> 
+                                <td colspan="3">
+                                    <div class="select_box1">
+                                        <button class="label1">패밀리디럭스</button>
+                                        <ul>
+                                            <li>패밀리디럭스</li>
+                                            <li>패밀리프리미어</li>
+                                            <li>스위트디럭스&#40;키즈-남아&#41;</li>
+                                        </ul>
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr> <th>객실수</th> 
+                                <td colspan="3">
+                                    <div class="select_box1">
+                                        <button class="label1">1실</button>
+                                        <ul>
+                                            <li>1실</li>
+                                            <li>2실</li>
+                                            <li>3실</li>
+                                        </ul>
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr> <th>투숙인원</th> 
+                                <td colspan="3">
+                                    <div class="select_box1">
+                                        <button class="label1">1명</button>
+                                        <ul>
+                                            <li>1명</li>
+                                            <li>2명</li>
+                                            <li>3명</li>
+                                        </ul>
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr> <th>예약자명</th> <td colspan="3"><input type="text" placeholder="성함을 입력해 주세요"></td> </tr>
+                            <tr> <th>연락처</th> <td colspan="3"><input type="tel" placeholder="000-0000-0000"></td> </tr>
+                            <tr> <th rowspan="2">이용요금</th> <th>객실</th> <td colspan="2"> 426,000원</td> </tr>
+                            <tr> <th>부가상품</th> <td colspan="2">0원</td></tr>
+                            <tr> <th>총합계</th> <td colspan="3">426,000원</td> </tr>
+                        </table>
+                    </form>
+                    
+                    <!-- 예약 결제하기, 초기화 버튼 -->
+                    <div class="reservation_button">
+                        <p><button>결제하기</button></p>
+                        <p><button>초기화</button></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- 2. 사전예약 할인상품 -->
+            <div>
+                <h3>사전예약 할인상품</h3>
+                <div class="sale_item_box">
+                    <ul>
+                        <!-- 조식뷔페 -->
+                        <li>
+                            <h4>조식뷔페</h4>
+                            <div class="sale_item_content">
+                                <ul>
+                                    <li>조식-대인&#40;중학생~성인&#41; : <span class="strike">27,000원</span> → 23,000원 &#40;15%할인&#41;</li>
+                                    <li>조식-소인&#40;초등학생&#41; : 14,000원</li>
+                                    <li>조식-유아&#40;36개월~7세&#41; : 9,000원</li>
+                                </ul>
+                                <ul class="sale_item_controls">
+                                    <li>
+                                        <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                        <p>0매</p>
+                                        <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                    </li>
+                                    <li>
+                                        <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                        <p>0매</p>
+                                        <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                    </li>
+                                    <li>
+                                        <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                        <p>0매</p>
+                                        <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+
+                        </li>
+                        <!-- 오션그릴 -->
+                        <li>
+                            <h4>오션그릴</h4>
+                            <div class="sale_item_content">
+                                <ul>
+                                    <li>오션그릴 A세트&#40;2~3인분&#41; : <span class="strike">99,000원</span> → 89,000원 &#40;10%할인&#41;</li>
+                                    <li>오션그릴 B세트&#40;4~5인분&#41; : <span class="strike">139,000원</span> → 125,000원 &#40;10%할인&#41;</li>
+                                    <li>오션그릴 C세트&#40;5~6인분&#41; : <span class="strike">169,000원</span> → 152,000원 &#40;10%할인&#41;</li>
+                                </ul>
+                                <ul class="sale_item_controls">
+                                    <li>
+                                        <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                        <p>0매</p>
+                                        <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                    </li>
+                                    <li>
+                                        <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                        <p>0매</p>
+                                        <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                    </li>
+                                    <li>
+                                        <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                        <p>0매</p>
+                                        <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <!-- 요트투어 -->
+                        <li>
+                            <h4>요트투어</h4>
+                            <div class="yacht">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <p><b>익일 10:00 출항 &#40;한산도 입항 및 제승당 관람 포함&#41;</b></p>
+                                            <ul>
+                                                <li>요트투어&#40;익일 10:00출항&#41;-대인 : <span class="strike">30,000원</span> → 27,000원 &#40;10%할인&#41;</li>
+                                                <li>요트투어&#40;익일 10:00출항&#41;-소인 : <span class="strike">27,000원</span> → 24,000원 &#40;10%할인&#41;</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p><b>당일 13:00 출항 &#40;한산도 입항 및 제승당 관람 포함&#41;</b></p>
+                                            <ul>
+                                                <li>요트투어&#40;당일 13:00출항&#41;-대인 : <span class="strike">30,000원</span> → 27,000원 &#40;10%할인&#41;</li>
+                                                <li>요트투어&#40;당일 13:00출항&#41;-소인 : <span class="strike">27,000원</span> → 24,000원 &#40;10%할인&#41;</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p><b>당일 16:00 출항 &#40;한산도 부근 정박 및 제승당 설명 포함&#41;</b></p>
+                                            <ul>
+                                                <li>요트투어&#40;당일 16:00출항&#41;-대인 : <span class="strike">30,000원</span> → 27,000원 &#40;10%할인&#41;</li>
+                                                <li>요트투어&#40;당일 16:00출항&#41;-소인 : <span class="strike">27,000원</span> → 24,000원 &#40;10%할인&#41;</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="sale_item_controls">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                                <p>0매</p>
+                                                <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                            </li>
+                                            <li>
+                                                <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                                <p>0매</p>
+                                                <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                                <p>0매</p>
+                                                <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                            </li>
+                                            <li>
+                                                <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                                <p>0매</p>
+                                                <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                                <p>0매</p>
+                                                <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                            </li>
+                                            <li>
+                                                <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                                <p>0매</p>
+                                                <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            
+                        </li>
+                        <!-- 과일선물세트 -->
+                        <li>
+                            <h4>과일선물세트</h4>
+                            <div class="sale_item_content">
+                                <ul>
+                                    <li>과일선물세트: 50,000원</li>
+                                </ul>
+                                <ul class="sale_item_controls">
+                                    <li>
+                                        <p><button><img src="sub_images/sub4/minus_btn.png" alt="수량 1개 감소"></button></p>
+                                        <p>0매</p>
+                                        <p><button><img src="sub_images/sub4/plus_btn.png" alt="수량 1개 추가"></button></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            <!-- 3. 개인정보 처리방침 -->
+            <div>
+                <h3>개인정보 처리방침</h3>
+                <div class="personal_policy">
+                    <div class="personal_policy_inner">
+                        <p><b>개인정보 수집 및 이용안내</b></p>
+                        <br>
+                        <p>금호리조트&#40;주&#41;는 정보통신망 이용촉진 및 정보보호법에 관한 법률에 따라 개인정보 수집 시 고지하고 동의를 받습니다.<br><br>
+
+                            1. 개인정보 수집 항목<br>
+                            - 필수항목: 예약자명&#40;회원&#41;명, 실사용자명, 휴대폰번호, 연락전화번호, 투숙인원<br><br>
+                            
+                            2. 개인정보 수집 목적<br>
+                            - 회사는 상담, 서비스신청 등을 위해 개인정보를 수집하고 있습니다.<br><br>
+                            
+                            3. 개인정보 이용기간<br>
+                            - 귀하의 개인정보는 개인정보의 수집목적 또는 제공받은 목적이 달성되면 지체없이 파기됩니다. <br>
+                            단, 상법 등 관련법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 보유하여야 할 필요가 있을 경우에는 
+                            일정기간 보유합니다.<br>
+                            - 재화 및 서비스 등의 공급에 관한 기록 : 5년<br>
+                            - 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년</p>
+                    </div>
+                    
+                </div>
+                <div class="agree_policy">
+                    <p>개인정보 수집 및 이용목적에 동의합니다.</p>
+                    <input type="checkbox" id="agree_check">
+                    <label for="agree_check"></label>
+                </div>
+            </div>
+            <!-- 4. 기타 안내사항 -->
+            <div class="etc_notice">
+                <h3>기타 안내사항</h3>
+                <ul>
+                    <li>
+                        <p><b>예약문의 안내사항</b></p>
+                        <ul>
+                            <li>예약과 관련된 문의사항은 금호리조트 예약실&#40;02-737-5400&#41;로 전화주십시오.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>조식뷔페 안내사항</b></p>
+                        <ul>
+                            <li>* 1매당 1식 이용하실 수 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>요트투어 안내사항</b></p>
+                        <ul>
+                            <li>* 16:00 출항 상품은 한산도 입항하지 않고 해상 정박 상태로 선장님의 제승당 설명 후 복귀합니다.</li>
+                            <li>* 갑작스러운 기상변화로 인해 출항 불가시 예약이 취소될 수 있습니다.</li>
+                            <li>* 1회 최소 출항 인원 &#40;6명&#41; 미충족시 출항이 취소될 수 있습니다.</li>
+                            <li>* 10인승 프라이빗 요트 상품 이용을 원하시거나 입실당일 10:00출항 상품을 예약하고자 하시는 경우에는 유선문의 바랍니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <!--2.#sub_container **************************************************************************************************** -->
+
+    <!--3.footer id="footer"[명시도:100]************************************************************************************* -->
+    <!-- width:100%; background: #000; -->
+    <footer id="footer">
+        <!-- to_top_btn -->
+        <p><button><img src="images/top_button.png" alt="위로가기버튼"></button></p>
+
+        <!-- footer_top -->
+        <div class="footer_top">
+            <!-- cs_menu -->
+            <div>
+                <ul class="cs_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">개인정보</a></li>
+                    <li><a href="#">윤리규정</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">제보실</a></li>
+                </ul>
+                <!-- sns_menu -->
+                <ul class="sns_menu">
+                    <li><a href="https://pf.kakao.com/_WKxhfu" target="_blank"><img src="images/kakaotalk_link_icon.png" alt="금호리조트 카카오톡채널"></a></li>
+                    <li><a href="https://www.facebook.com/kumhoresort/?locale=ko_KR" target="_blank"><img src="images/facebook_link_icon.png" alt="금호리조트 페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/kumho_resort/" target="_blank"><img src="images/instagram_link_icon.png" alt="인스타그램"></a></li>
+                    <li><a href="https://youtube.com/@kumho_resort" target="_blank"><img src="images/youtube_link_icon.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+
+            <div>
+                <address>
+                    서울특별시 중구 청계천로 100 7층 시그니처타워 서관 / 대표이사:김성일 / TEL 02-737-5400 / FAX 02-725-2811<br>
+                    사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41; / 통신판매업신고 : 2014-용인처인-0034
+                </address>
+                <div class="address_ver2">
+                    <ul>
+                        <li>서울특별시 중구 청계천로 100 7층 <br>시그니처타워 서관</li>
+                        <li>대표이사:김성일</li>
+                        <li>TEL 02-737-5400 / FAX 02-725-2811</li>
+                        <li>사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41;</li>
+                        <li>통신판매업신고 : 2014-용인처인-0034</li>
+                    </ul>
+                </div>
+
+                <p>COPYRIGHT2023 BY KUMHORESORT. <br>ALL RIGHTS RESERVED</p>
+
+                <ul class="attribution">
+                    <li>Icon made by mohammed mahdi from www.flaticion.com</li>
+                    <li>Icon made by Md Tanvirul Haque from www.flaticion.com</li>
+                    <li>Icon made by Freepik from www.flaticion.com</li>
+                    <li>Icon made by Those Icons from www.flaticion.com</li>
+                    <li>Icon made by Dimitry Miroliubov from www.flaticion.com</li>
+                    <li>Icon made by Icon Box from www.flaticion.com</li>
+                </ul>
+            </div>
+
+            <div class="family_site">
+                <p>Family Site</p>
+                <ul>
+                    <li><a href="https://www.kkpc.com/kor/" target="_blank">금호석유화학</a></li>
+                    <li><a href="https://www.kpb.co.kr/kor" target="_blank">금호피앤비화학</a></li>
+                    <li><a href="https://www.polychem.co.kr/kor" target="_blank">금호폴리켐</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.kmci.co.kr/kor" target="_blank">금호미쓰이화학</a></li>
+                    <li><a href="https://www.kumhotrading.com/main/index.html" target="_blank">금호개발상사</a></li>
+                    <li><a href="https://www.ktnl.co.kr/main/index.html" target="_blank">금호티앤앨</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer> 
+    <!--3.footer end ******************************************************************************************************** -->
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="반응형웹 가상 리뉴얼 프로젝트">
+    <meta name="description" content="산업 현장에서 요구되는 웹언어 구현-가상리뉴얼 프로젝트">
+    <title>객실이용안내</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <script src="js/motion.js"></script>
+</head>
+<body>
+
+    <!--1.header id="header"[명시도:100]************************************************************************************* -->
+    <!--position:absolute; left:0; top:0; width:100%; height:80px; -->
+    <header id="header">
+        <!--width:1400px; height:80px; margin:0 auto; -->
+        <div class="header_wrap">
+            <!--1.1.제1제목-->
+            <h1><a href="index.html"><img src="images/logo.png" alt="금호리조트"></a></h1>
+
+            <!-- ★반응형웹 추가코드(1280px 이상 해상도에서는 비표시) -->
+            <p class="nav_view_btn">
+                <button><img src="images/nav_open_btn.png" alt="전역메뉴 표시"></button>
+            </p>
+            <!--1.2.탐색요소 집합(navigation: 전역메뉴(항목,리스트)-->
+            <nav>
+                <p class="nav_close_btn">
+                    <button><img src="images/nav_close_btn.png" alt="전역메뉴 비표시"></button>
+                </p>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub1_1.html">리조트소개</a>
+                        <ul> 
+                            <li><a href="sub1_1.html">개요및연혁</a></li>
+                            <li><a href="sub1_2.html">지역별리조트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2_1.html">글램핑/카라반</a>
+                        <ul>
+                            <li><a href="sub2_1.html">숙박시설안내</a></li>
+                            <li><a href="sub2_2.html">객실이용안내</a></li>
+                            <li><a href="sub2_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3_1.html">제휴리조트</a>
+                        <ul>
+                            <li><a href="sub3_1.html">국내제휴리조트안내</a></li>
+                            <li><a href="sub3_2.html">경기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4_1.html">통합예약</a>
+                        <ul>
+                            <li><a href="sub4_1.html">객실예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub5_1.html">고객센터</a>
+                        <ul>
+                            <li><a href="sub5_1.html">공지사항</a></li>
+                            <li><a href="sub5_2.html">자주묻는질문</a></li>
+                            <li><a href="sub5_3.html">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--1.header end ******************************************************************************************************* -->
+
+    <!--2.#sub_container[명시도:100]***************************************************************************************** -->
+    <div id="sub_container">
+        <!--전체서브 공통1(서브비주얼, 확장구조)-->
+        <div class="sub_visual sub2_bg">
+            <div class="sub_visual_wrap">
+                <!--1.전체서브 공통 빅폰트-->
+                <p><b>글램핑/카라반</b></p>
+                <p>자연을 품은 공간, 휴식과 설렘이 있는 곳</p>
+            </div>
+        </div>
+        <!--1.2전체서브 공통 Local Navigation Bar(lnb)-->
+        <div class="lnb lnb3">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="sub_images/lnb_home_btn.png" alt="홈"></a>
+                </li>                  
+                <li>
+                    <a href="sub2_1.html">글램핑/카라반</a>
+                    <ul> 
+                        <li><a href="sub2_2.html">객실이용안내</a></li>
+                        <li><a href="sub2_1.html">숙박시설안내</a></li>
+                        <li><a href="sub2_3.html">오시는길</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+
+        <!--전체서브 공통2(서브타이틀)-->
+        <div class="sub_title">
+            <h2>객실이용안내</h2>
+            <p><b>User Guide</b></p>
+            <p>아산스파포레의 글램핑과 카라반 이용안내, 객실 입퇴실 절차, 요금 및 투숙시 준수사항을 확인할 수 있습니다.</p>
+        </div>
+
+        <!--개별 서브-->
+        <div class="sub_content_wrap">
+            <div class="user_guide1">
+                <h3>글램핑&카라반 이용안내</h3>
+                <div class="user_guide1_wrap">
+                    <ol>
+                        <li>
+                            <p><span><b>GUIDE 01</b></span></p>
+                            <ol>
+                                <li>예약번호수령</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><span><b>GUIDE 02</b></span></p>
+                            <ol>
+                                <li>예약확인</li>
+                                <li>회원카드제시</li>
+                                <li>숙박카드 작성</li>
+                                <li>객실키 수령</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><span><b>GUIDE 03</b></span></p>
+                            <ol>
+                                <li>비품확인</li>
+                                <li>객실이용</li>
+                                <li>안내서 숙지</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><span><b>GUIDE 04</b></span></p>
+                            <ol>
+                                <li>공중도덕 준수</li>
+                                <li>숙박규정 준수</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><span><b>GUIDE 05</b></span></p>
+                            <ol>
+                                <li>객실청소, 정리</li>
+                                <li>퇴실점검</li>
+                                <li>퇴실점검 요청</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><span><b>GUIDE 06</b></span></p>
+                            <ol>
+                                <li>각종요금 정산</li>
+                                <li>객실키 반납</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="user_guide2">
+                <h3>입퇴실 절차</h3>
+                <div class="user_guide2_wrap">
+                    <ul>
+                        <li>
+                            <h4>체크인</h4>
+                            <p><b>CHECK-IN</b></p>
+                            <p>입실 시간은 15시부터 22시까지입니다.<br>
+                                22시 이후 체크인하시거나
+                                얼리체크인을 원하실 경우,<br>
+                                웰컴센터&#40;041-539-2069&#41;에
+                                문의주시기 바랍니다.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>체크아웃</h4>
+                            <p><b>CHECK-OUT</b></p>
+                            <p>퇴실 시간은 11시까지 입니다.<br>
+                                다음 고객의 이용을 위하여
+                                퇴실시간을 준수해 주시기 바랍니다.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>퇴실시</h4>
+                            <p><b>TO-DO</b></p>
+                            <p>퇴실시 객실청소 후
+                                웰컴센터에서 퇴실점검을 받고
+                                객실키 반납 및 요금 정산하시면 됩니다.
+                            </p>
+                        </li>
+                    </ul>
+                    <p class="caption">※ 얼리체크인 비용 : 30,000원</p>
+                </div>
+            </div>
+            <div class="user_guide3">
+                <h3>요금안내</h3>
+                <div class="user_guide3_wrap">
+                    <div class="fee1">
+                        <h4>시간초과요금</h4>
+                        <table class=".thead_up">
+                            <caption>※ 퇴실시간을 초과할 경우 소정의 초과료를 징수합니다.</caption>
+                            <thead>
+                                <tr> <th>구분</th> <th>요금적용</th> </tr>
+                            </thead>
+                            <tbody>
+                                <tr> <td>11시 이후</td> <td>시간당 1만원</td> </tr>
+                                <tr> <td>16시 이후</td> <td>1박 요금적용</td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fee2">
+                        <h4>객실정원 초과요금</h4>
+                        <table class=".thead_up">
+                            <thead>
+                                <tr> <th>구분</th> <th>정원</th> <th>정원초과요금</th> </tr>
+                            </thead>
+                            <tbody>
+                                <tr> <td>휴그린코치맨<br>&#40;카라반&#41;</td> <td>1<br> &#40;최대인원:4&#41;</td> <td rowspan="3">1인당 20,000원<br>
+                                    &#40;침구 1채, 아산스파비스 1인 입장권 포함&#41;<br>
+                                    ※ 객실 정원수대로 아산스파비스 입장권을 제공해드립니다.</td> </tr>
+                                <tr> <td>휴그린글램포레<br>&#40;글램핑&#41;</td> <td>2<br> &#40;최대인원:4&#41;</td> </tr>
+                                <tr> <td>휴그린글램스파<br>&#40;아라비아&#41;</td> <td>6<br> &#40;최대인원:8&#41;</td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fee3">
+                        <h4>객실재정비료</h4>
+                        <table class=".thead_up">
+                            <thead>
+                                <tr> <th>구분</th> <th>내용</th> </tr>
+                            </thead>
+                            <tbody>
+                                <tr> <td>휴그린코치맨, 휴그린글램포레 : 20,000원<br>
+                                    휴그린글램스파 : 40,000원<br>
+                                    * 타올 추가 무료</td> <td>주방 제외 전체 재정비<br>
+                                        ※ 당일 오전 10시 이전 신청 접수</td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="user_guide4">
+                <h3>투숙시 준수사항</h3>
+                <div class="user_guide4_wrap">
+                    <table class="th_left">
+                        <caption>
+                            <ul>
+                                <li>예약문의 : 02-737-5400 ARS 9번 &#40;09:00 ~ 17:00&#41; 토/일/공휴일 휴무</li>
+                                <li>아산스파포레 웰컴센터: 041-539-2069 &#40;07:00 ~ 22:00&#41;</li>
+                            </ul>
+                        </caption>
+                        <tr> <th>객실정원</th> </tr>
+                        <tr> 
+                            <td>
+                                <ol>
+                                    <li>기준인원 초과 시 최대인원까지 인원추가가 가능하며 소정의 인원 추가료가 부가됩니다.</li>
+                                    <li>최대인원 초과 시 타 고객의 이용 불편과 시설 및 비품의 훼손을 방지하기 위하여 입실이 제한 될 수 있습니다.</li>
+                                    <li>주민등록상 36개월 미만은 인원수에 포함되지 않으며 증빙서류를 지참하셔야 합니다.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr> <th>투숙시 에티켓</th> </tr>
+                        <tr> 
+                            <td>
+                                <ol>
+                                    <li>안전한 캠핑을 위해 화재 위험이 있는 개인화기 &#40;숯 그릴, 가스버너&#41;는 사용할 수 없습니다.
+                                    </li>
+                                    <li>불멍세트 &#40;화로+장작&#41;을 판매하고 있습니다. 외부 장작 및 장비를 반입하여 사용할 수 없습니다.
+                                    </li>
+                                    <li>시설 내 금연이며, 스파포레는 금연 캠핑장을 지향하고 있습니다. 흡연 시 반드시 지정된 흡연 장소를 이용해 주시기 바랍니다.
+                                        </li>
+                                    <li>미성년자의 경우 보호자 동행 없이 투숙 불가합니다.
+                                    </li>
+                                    <li>반려견 및 반려동물 출입이 불가합니다.
+                                    </li>
+                                    <li>비치된 집기 분실 및 시설물 훼손 시 비용이 청구될 수 있습니다. 특히, 카라반은 파손 우려가 있으니 사용안내문을 사전에 반드시 확인해 주시기 바랍니다.</li>
+                                    <li>개인 분실물 발생 시 책임은 이용자에게 있습니다.
+                                    </li>
+                                    <li>야간 매너타임은 22시부터 입니다. 매너타임 이후 리빙쉘 바비큐장 사용을 자제해 주시기 바랍니다.
+                                        [소음, 음주, 고성방가 주의]</li>
+                                    <li>취침 시 그릴과 화로대 잔불을 반드시 확인해 주시기 바랍니다.
+                                    </li>
+                                    <li>퇴실 시 모든 쓰레기는 분리수거장에 모아 주시기 바랍니다.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr> <th>반려동물 반입금지</th> </tr>
+                        <tr><td><p>반려동물은 객실내 동반을 금하며 발견되면 즉시 강제 퇴실 조치합니다.</p></td></tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--2.#sub_container **************************************************************************************************** -->
+
+    <!--3.footer id="footer"[명시도:100]************************************************************************************* -->
+    <!-- width:100%; background: #000; -->
+    <footer id="footer">
+        <!-- to_top_btn -->
+        <p><button><img src="images/top_button.png" alt="위로가기버튼"></button></p>
+
+        <!-- footer_top -->
+        <div class="footer_top">
+            <!-- cs_menu -->
+            <div>
+                <ul class="cs_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">개인정보</a></li>
+                    <li><a href="#">윤리규정</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">제보실</a></li>
+                </ul>
+                <!-- sns_menu -->
+                <ul class="sns_menu">
+                    <li><a href="https://pf.kakao.com/_WKxhfu" target="_blank"><img src="images/kakaotalk_link_icon.png" alt="금호리조트 카카오톡채널"></a></li>
+                    <li><a href="https://www.facebook.com/kumhoresort/?locale=ko_KR" target="_blank"><img src="images/facebook_link_icon.png" alt="금호리조트 페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/kumho_resort/" target="_blank"><img src="images/instagram_link_icon.png" alt="인스타그램"></a></li>
+                    <li><a href="https://youtube.com/@kumho_resort" target="_blank"><img src="images/youtube_link_icon.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+
+            <div>
+                <address>
+                    서울특별시 중구 청계천로 100 7층 시그니처타워 서관 / 대표이사:김성일 / TEL 02-737-5400 / FAX 02-725-2811<br>
+                    사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41; / 통신판매업신고 : 2014-용인처인-0034
+                </address>
+                <div class="address_ver2">
+                    <ul>
+                        <li>서울특별시 중구 청계천로 100 7층 <br>시그니처타워 서관</li>
+                        <li>대표이사:김성일</li>
+                        <li>TEL 02-737-5400 / FAX 02-725-2811</li>
+                        <li>사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41;</li>
+                        <li>통신판매업신고 : 2014-용인처인-0034</li>
+                    </ul>
+                </div>
+
+                <p>COPYRIGHT2023 BY KUMHORESORT. <br>ALL RIGHTS RESERVED</p>
+
+                <ul class="attribution">
+                    <li>Icon made by mohammed mahdi from www.flaticion.com</li>
+                    <li>Icon made by Md Tanvirul Haque from www.flaticion.com</li>
+                    <li>Icon made by Freepik from www.flaticion.com</li>
+                    <li>Icon made by Those Icons from www.flaticion.com</li>
+                    <li>Icon made by Dimitry Miroliubov from www.flaticion.com</li>
+                    <li>Icon made by Icon Box from www.flaticion.com</li>
+                </ul>
+            </div>
+
+            <div class="family_site">
+                <p>Family Site</p>
+                <ul>
+                    <li><a href="https://www.kkpc.com/kor/" target="_blank">금호석유화학</a></li>
+                    <li><a href="https://www.kpb.co.kr/kor" target="_blank">금호피앤비화학</a></li>
+                    <li><a href="https://www.polychem.co.kr/kor" target="_blank">금호폴리켐</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.kmci.co.kr/kor" target="_blank">금호미쓰이화학</a></li>
+                    <li><a href="https://www.kumhotrading.com/main/index.html" target="_blank">금호개발상사</a></li>
+                    <li><a href="https://www.ktnl.co.kr/main/index.html" target="_blank">금호티앤앨</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer> 
+    <!--3.footer end ******************************************************************************************************** -->
+</body>
+</html>

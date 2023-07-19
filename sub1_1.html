@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="반응형웹 가상 리뉴얼 프로젝트">
+    <meta name="description" content="산업 현장에서 요구되는 웹언어 구현-가상리뉴얼 프로젝트">
+    <title>개요및연혁</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <script src="js/motion.js"></script>
+</head>
+<body>
+
+    <!--1.header id="header"[명시도:100]************************************************************************************* -->
+    <!--position:absolute; left:0; top:0; width:100%; height:80px; -->
+    <header id="header">
+        <!--width:1400px; height:80px; margin:0 auto; -->
+        <div class="header_wrap">
+            <!--1.1.제1제목-->
+            <h1><a href="index.html"><img src="images/logo.png" alt="금호리조트"></a></h1>
+
+            <!-- ★반응형웹 추가코드(1280px 이상 해상도에서는 비표시) -->
+            <p class="nav_view_btn">
+                <button><img src="images/nav_open_btn.png" alt="전역메뉴 표시"></button>
+            </p>
+            <!--1.2.탐색요소 집합(navigation: 전역메뉴(항목,리스트)-->
+            <nav>
+                <p class="nav_close_btn">
+                    <button><img src="images/nav_close_btn.png" alt="전역메뉴 비표시"></button>
+                </p>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub1_1.html">리조트소개</a>
+                        <ul> 
+                            <li><a href="sub1_1.html">개요및연혁</a></li>
+                            <li><a href="sub1_2.html">지역별리조트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2_1.html">글램핑/카라반</a>
+                        <ul>
+                            <li><a href="sub2_1.html">숙박시설안내</a></li>
+                            <li><a href="sub2_2.html">객실이용안내</a></li>
+                            <li><a href="sub2_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3_1.html">제휴리조트</a>
+                        <ul>
+                            <li><a href="sub3_1.html">국내제휴리조트안내</a></li>
+                            <li><a href="sub3_2.html">경기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4_1.html">통합예약</a>
+                        <ul>
+                            <li><a href="sub4_1.html">객실예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub5_1.html">고객센터</a>
+                        <ul>
+                            <li><a href="sub5_1.html">공지사항</a></li>
+                            <li><a href="sub5_2.html">자주묻는질문</a></li>
+                            <li><a href="sub5_3.html">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--1.header end ******************************************************************************************************* -->
+
+    <!--2.#sub_container[명시도:100]***************************************************************************************** -->
+    <div id="sub_container">
+        <!--전체서브 공통1(서브비주얼, 확장구조)-->
+        <div class="sub_visual sub1_bg">
+            <div class="sub_visual_wrap">
+                <!--1.전체서브 공통 빅폰트-->
+                <p><b>리조트 소개</b></p>
+                <p>금호리조트는 지난 30년간 국내외 관광 레저 문화를 선도해왔습니다.</p>
+            </div>
+        </div>
+        <!--1.2전체서브 공통 Local Navigation Bar(lnb)-->
+        <div class="lnb lnb2">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="sub_images/lnb_home_btn.png" alt="홈"></a>
+                </li>                  
+                <li>
+                    <a href="sub1_1.html">리조트소개</a>
+                    <ul> 
+                        <li><a href="sub1_1.html">개요및연혁</a></li>
+                        <li><a href="sub1_2.html">지역별리조트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--전체서브 공통2(서브타이틀)-->
+        <div class="sub_title">
+            <h2>개요및연혁</h2>
+            <p><b>Overview & History</b></p>
+            <p>금호리조트의 개요와 연혁을 확인할 수 있습니다.</p>
+        </div>
+
+        <!--개별 서브-->
+        <div class="sub_content_wrap">
+            <div class="overview">
+                <!-- 표제: sub_subtitle -->
+                <div class="sub_subtitle">
+                    <h3>개요</h3>
+                    <div class="overview_visual"></div>
+                </div>
+                <div class="overview_content">
+                    <p>1989년 7월 14일, 금호개발&#40;주&#41;로 출발하여 금호리조트는 국내에 4개 리조트, 해외에 호텔과 골프리조트를 운영해오고 있으며, 2021년 금호석유화학그룹으로 계열 편입된 후, 종합적인 시설 투자와 서비스 개선 작업으로 새롭게 변모하여 사업 경쟁력을 강화하고 있습니다. 수십 년간 축적된 운영 경험과 투자 및 서비스 강화를 통해 고객들에게 최고의 휴양 경험을 제공할 것을 약속드립니다.</p>
+                    <table class="thead_left">
+                        <tbody>
+                            <tr> <th>상호</th> <td>금호리조트&#40;주&#41;</td> <th>종업원</th> <td>약 400명</td> </tr>
+                            <tr> <th>대표이사</th> <td>김성일</td> <th>업종</th> <td>휴양콘도 운영업</td> </tr>
+                            <tr> <th>설립일</th> <td>1989.07.14</td> <th>소재지</th> <td>서울특별시 중구 청계천로 100 7층 시그니처타워 서관</td> </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="history">
+                <!-- 표제: sub_subtitle -->
+                <div class="sub_subtitle">
+                    <h3>연혁</h3>
+                </div>
+                <div class="history_wrap">
+                    <div class="tab_menu_wrap2">
+                        <ul>
+                            <li class="on"><button>2014 ~ 현재</button></li>
+                            <li><button>2008 ~ 2013</button></li>
+                            <li><button>2003 ~ 2007</button></li>
+                            <li><button>1989 ~ 2001</button></li>
+                        </ul>
+                    </div>
+                    <div class="history_table">
+                        <table>
+                            <tbody>
+                                <tr> <th>2022</th> <td>11</td> <td>한국서비스품질지수&#40;KS-SQI&#41; 리조트 부문 1위</td> </tr>
+                                <tr> <th>2021</th> <td>04</td> <td>제11대 김성일 대표이사 취임
+                                </td> </tr>
+                                <tr> <th rowspan="2">2018</th> <td>10</td> <td>2018년 한국서비스품질지수&#40;KS-SQI&#41; 4년연속 1위
+                                    2018년 국가생산성대상 팀&#40;부서&#41; 부문 대상 수상</td> </tr>
+                                <tr> <td>01</td> <td>제10대 김현일 대표이사 취임</td> </tr>
+                                <tr> <th rowspan="2">2017</th> <td>11</td> <td>2017 KS-SQI &#40;한국서비스품질지수&#41; 리조트 부문 3년 연속 1위 선정</td> </tr>
+                                <tr> <td>10</td> <td>2017 전국품질분임조 경진대회 동상 &#40;제주&#41;</td> </tr>
+                                <tr> <th rowspan="2">2016</th> <td>11</td> <td>2016 KS-SQI &#40;한국서비스품질지수&#41; 리조트 부문 2년 연속 1위 선정</td> </tr>
+                                <tr> <td>09</td> <td>국가생산성 대상 대통령 표창 수상</td> </tr>
+                                <tr> <th>2015</th> <td>06</td> <td>2015 KS-SQI &#40;한국서비스품질지수&#41; 리조트 부문 1위 선정</td> </tr>
+                                
+                                <tr> <th rowspan="2">2014</th> <td>08</td> <td>국가대표브랜드대상 리조트부문 대상수상</td> </tr>
+                                <tr> <td>07</td> <td>노사문화 우수기업 선정&#40;통영&#41;
+                                    한국서비스대상 명예의전당 헌정</td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--2.#sub_container **************************************************************************************************** -->
+
+    <!--3.footer id="footer"[명시도:100]************************************************************************************* -->
+    <!-- width:100%; background: #000; -->
+    <footer id="footer">
+        <!-- to_top_btn -->
+        <p><button><img src="images/top_button.png" alt="위로가기버튼"></button></p>
+
+        <!-- footer_top -->
+        <div class="footer_top">
+            <!-- cs_menu -->
+            <div>
+                <ul class="cs_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">개인정보</a></li>
+                    <li><a href="#">윤리규정</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">제보실</a></li>
+                </ul>
+                <!-- sns_menu -->
+                <ul class="sns_menu">
+                    <li><a href="https://pf.kakao.com/_WKxhfu" target="_blank"><img src="images/kakaotalk_link_icon.png" alt="금호리조트 카카오톡채널"></a></li>
+                    <li><a href="https://www.facebook.com/kumhoresort/?locale=ko_KR" target="_blank"><img src="images/facebook_link_icon.png" alt="금호리조트 페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/kumho_resort/" target="_blank"><img src="images/instagram_link_icon.png" alt="인스타그램"></a></li>
+                    <li><a href="https://youtube.com/@kumho_resort" target="_blank"><img src="images/youtube_link_icon.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+
+            <div>
+                <address>
+                    서울특별시 중구 청계천로 100 7층 시그니처타워 서관 / 대표이사:김성일 / TEL 02-737-5400 / FAX 02-725-2811<br>
+                    사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41; / 통신판매업신고 : 2014-용인처인-0034
+                </address>
+                <div class="address_ver2">
+                    <ul>
+                        <li>서울특별시 중구 청계천로 100 7층 <br>시그니처타워 서관</li>
+                        <li>대표이사:김성일</li>
+                        <li>TEL 02-737-5400 / FAX 02-725-2811</li>
+                        <li>사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41;</li>
+                        <li>통신판매업신고 : 2014-용인처인-0034</li>
+                    </ul>
+                </div>
+
+                <p>COPYRIGHT2023 BY KUMHORESORT. <br>ALL RIGHTS RESERVED</p>
+
+                <ul class="attribution">
+                    <li>Icon made by mohammed mahdi from www.flaticion.com</li>
+                    <li>Icon made by Md Tanvirul Haque from www.flaticion.com</li>
+                    <li>Icon made by Freepik from www.flaticion.com</li>
+                    <li>Icon made by Those Icons from www.flaticion.com</li>
+                    <li>Icon made by Dimitry Miroliubov from www.flaticion.com</li>
+                    <li>Icon made by Icon Box from www.flaticion.com</li>
+                </ul>
+            </div>
+
+            <div class="family_site">
+                <p>Family Site</p>
+                <ul>
+                    <li><a href="https://www.kkpc.com/kor/" target="_blank">금호석유화학</a></li>
+                    <li><a href="https://www.kpb.co.kr/kor" target="_blank">금호피앤비화학</a></li>
+                    <li><a href="https://www.polychem.co.kr/kor" target="_blank">금호폴리켐</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.kmci.co.kr/kor" target="_blank">금호미쓰이화학</a></li>
+                    <li><a href="https://www.kumhotrading.com/main/index.html" target="_blank">금호개발상사</a></li>
+                    <li><a href="https://www.ktnl.co.kr/main/index.html" target="_blank">금호티앤앨</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer> 
+    <!--3.footer end ******************************************************************************************************** -->
+</body>
+</html>

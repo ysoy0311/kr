@@ -1,0 +1,490 @@
+<!--DTD(Document Type Dfinition)정의: 
+    문서 타입(DTD)정의는 문서의 구조 및 해당 문서에서 사용할 수 있는 적법한 요소와 속성을 나타냅니다.
+    응용 프로그램은 DTD정의에 따라 문서의 구문 및 구조에 대한 유효성을 검사할 수 있습니다. -->
+<!DOCTYPE html>
+
+<!--html문서의 시작,전역속성 lang:ko(휴먼랭귀지:스크린 리더기에서 시각장애인에게 정보를 읽어줄때 사용하는 낭독언어를 의미합니다.) -->
+<html lang="ko">
+<!--제작중인 웹사이트의 제반사항(웹문서와 관련된 모든사항 등, meta정보, 타이틀, 파비콘, 외부 연동 언어)등을 기록합니다.-->
+<head>
+    <!-- 1.문자 해독 유티코드 설정 -->
+    <meta charset="UTF-8">
+    <!-- 2.반응형 웹 추가 코드(m.naver.com 참고) -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- 3.웹사이트 키워드 추가 -->
+    <meta name="keywords" content="반응형웹 가상 리뉴얼 프로젝트">
+    <!-- 4.웹사이트 설명 추가 -->
+    <meta name="description" content="산업 현장에서 요구되는 웹언어 구현-가상리뉴얼 프로젝트">
+    <!-- 5.웹사이트 타이틀 추가 -->
+    <title>금호리조트</title>
+
+    <!--파비콘 추가-->
+    <!-- 
+        ※파비콘(favorites + icon)
+          파비콘(favicon)은 즐겨찾기와 아이콘의 합성어로 해당 사이트를 방문했을때 
+          브라우저 상단탭에 나타나는 작은 로고를 의미 합니다.
+          출력크기는 대부분 16X16픽셀로 보여지며 확장자는 png,또는 ico로 제작 합니다.
+          제작(50px * 50px)
+        ※ico무료 확장자 변환 사이트
+          https://convertico.com/#google_vignette
+
+        ※파비콘 제작 사이즈 참고
+          https://blog.naver.com/shine_phopo/222501504852
+    -->
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!--
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="images/favicon32.png">
+    <link rel="shortcut icon" type="image/png" sizes="152x152" href="images/favicon152.png">
+    -->
+
+    <!-- 7.외부 CSS파일 연동 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- 8.외부 제이쿼리 압축파일 연동 -->
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+
+    <!-- 9.제이쿼리 압축파일에서 사용할 명령어 및 문법 조합 스크립트 파일 연동 -->
+    <script src="js/motion.js"></script>
+    <script src="js/motion2.js"></script>
+    <script src="js/noticeMotion.js"></script>
+    <script src="js/eventMotion.js"></script>
+</head>
+
+<!--제작중인 웹사이트의 기초데이터(텍스트,이미지,멀티미디어) 및 데이터에 의미를 정의내리는 본문 서식 태그가 작성됩니다.-->
+<body>
+
+    <!--1.header id="header"[명시도:100]************************************************************************************* -->
+    <!--position:absolute; left:0; top:0; width:100%; height:80px; -->
+    <header id="header">
+        <!--width:1400px; height:80px; margin:0 auto; -->
+        <div class="header_wrap">
+            <!--1.1.제1제목-->
+            <h1><a href="index.html"><img src="images/logo.png" alt="금호리조트"></a></h1>
+
+            <!-- ★반응형웹 추가코드(1280px 이상 해상도에서는 비표시) -->
+            <p class="nav_view_btn">
+                <button><img src="images/nav_open_btn.png" alt="전역메뉴 표시"></button>
+            </p>
+            <!--1.2.탐색요소 집합(navigation: 전역메뉴(항목,리스트)-->
+            <nav>
+                <p class="nav_close_btn">
+                    <button><img src="images/nav_close_btn.png" alt="전역메뉴 비표시"></button>
+                </p>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub1_1.html">리조트소개</a>
+                        <ul> 
+                            <li><a href="sub1_1.html">개요및연혁</a></li>
+                            <li><a href="sub1_2.html">지역별리조트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2_1.html">글램핑/카라반</a>
+                        <ul>
+                            <li><a href="sub2_1.html">숙박시설안내</a></li>
+                            <li><a href="sub2_2.html">객실이용안내</a></li>
+                            <li><a href="sub2_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3_1.html">제휴리조트</a>
+                        <ul>
+                            <li><a href="sub3_1.html">국내제휴리조트안내</a></li>
+                            <li><a href="sub3_2.html">경기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4_1.html">통합예약</a>
+                        <ul>
+                            <li><a href="sub4_1.html">객실예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub5_1.html">고객센터</a>
+                        <ul>
+                            <li><a href="sub5_1.html">공지사항</a></li>
+                            <li><a href="sub5_2.html">자주묻는질문</a></li>
+                            <li><a href="sub5_3.html">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--1.header end ******************************************************************************************************* -->
+
+    <!--2.div id="container"[명시도:100]************************************************************************************* -->
+    <div id="container">
+        <!--2.1.주제별 대그룹1[명시도10](2중 구조)-->
+        <section class="intro">
+            <h2>금호리조트 소개1</h2>
+            <!-- 동영상 파일 -->
+            <!-- <div class="intro_bg_video">
+                <video src="images/intro_video.mp4" autoplay loop muted></video>
+            </div> -->
+            <!-- 금호리조트 소개 리스트 항목(100% x3 = 300%) -->
+            <ul class="visual_slide">
+                <li class="v1">
+                    <div class="big_font">
+                        <p class="intro_title"><strong>금호리조트</strong></p>
+                        <p class="intro_slogan">사람과 자연, 그리고 휴식이 있는 곳</p>
+                    </div>
+                </li>
+                <li class="v2">
+                    <div class="big_font">
+                        <p class="intro_title"><strong>금호리조트</strong></p>
+                        <p class="intro_slogan">사람과 자연, 그리고 휴식이 있는 곳</p>
+                    </div>
+                </li>
+                <li class="v3">
+                    <div class="big_font">
+                        <p class="intro_title"><strong>금호리조트</strong></p>
+                        <p class="intro_slogan">사람과 자연, 그리고 휴식이 있는 곳</p>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 비주얼 슬라이드 컨트롤러1 -->
+            <div class="visual_controls1">
+                <button><img src="images/visual_prev_btn.png" alt="이전 소개 이동"></button>
+                <button><img src="images/visual_next_btn.png" alt="다음 소개 이동"></button>
+            </div>
+            <!-- 비주얼 슬라이드 컨트롤러2 -->
+            <div class="visual_controls2">
+                <div class="player">
+                    <button><img src="images/visual_pause.png" alt="자동재생 정지"></button>
+                    <button><img src="images/visual_play.png" alt="자동재생 재생"></button>
+                </div>
+                <div class="slide_btn">
+                    <button><span>첫번째 리조트 사진 이동</span></button>
+                    <button><span>두번째 리조트 사진 이동</span></button>
+                    <button><span>세번째 리조트 사진 이동</span></button>
+                </div>
+            </div>
+
+        </section>
+
+        <!--2.2.주제별 대그룹2[명시도10]-->
+        <!-- .reservation{ position: absolute; left:50%; margin: -150px 0 0 -700px }-->
+        <section class="reservation ">
+            <h2>금호리조트 빠르게 찾아가는 고객 서비스</h2>
+
+            <form>
+                <ul class="rsrv_menu">
+                    <!-- 리조트 선택 -->
+                    <li> 
+                        <div class="rsrv_box">
+                            <p>Resort</p>
+                            <button>리조트 선택</button>
+                            <ul>
+                                <li>통영마리나리조트</li>
+                                <li>화순스파리조트</li>
+                                <li>설악리조트</li>
+                                <li>제주리조트</li>
+                            </ul>
+                        </div>
+                        <!-- <div>
+                            <select>
+                                <option>리조트1</option>
+                                <option>리조트2</option>
+                                <option>리조트3</option>
+                            </select>
+                        </div> -->
+                    </li>
+                    
+                    <!-- 체크인 날짜 선택 -->
+                    <li>
+                        <div class="rsrv_box">
+                            <p>Check-In</p>
+                            <button>체크인 날짜 선택</button>
+                            <table>
+                                <!-- 월, 요일 -->
+                                <thead>
+                                    <tr> <th colspan="7">2023년 5월</th> </tr>
+                                    <tr> <th>일</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> <th>토</th> </tr>
+                                </thead>
+                                <!-- 일 -->
+                                <tbody>
+                                    <tr> <td></td> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> </tr>
+                                    <tr> <td>7</td> <td>8</td> <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> </tr>
+                                    <tr> <td>14</td> <td>15</td> <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> </tr>
+                                    <tr> <td>21</td> <td>22</td> <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> </tr>
+                                    <tr> <td>28</td> <td>29</td> <td>30</td> <td>31</td> <td></td> <td></td> <td></td> </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 달력 -->
+                        <!-- <div>
+                            <table> -->
+                                <!-- 월, 요일 -->
+                                <!-- <thead>
+                                    <tr class="year_month"> <th>2023년5월</th> </tr>
+                                    <tr class="week_name"> <th>일</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> <th>토</th> </tr>
+                                </thead> -->
+                                <!-- 일 -->
+                                <!-- <tbody>
+                                    <tr> <td></td> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> </tr>
+                                    <tr> <td>7</td> <td>8</td> <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> </tr>
+                                    <tr> <td>14</td> <td>15</td> <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> </tr>
+                                    <tr> <td>21</td> <td>22</td> <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> </tr>
+                                    <tr> <td>28</td> <td>29</td> <td>30</td> <td>31</td> <td></td> <td></td> <td></td> </tr>
+                                </tbody> -->
+                            <!-- </table>
+                        </div> -->
+
+                        
+                    </li>
+                    <!-- 객실 선택 -->
+                    <li>
+                        <div class="rsrv_box">
+                            <p>Room</p>
+                            <button>객실 선택</button>
+                            <ul>
+                                <li>패밀리디럭스</li>
+                                <li>패밀리프리미어</li>
+                                <li>스위트디럭스&#40;키즈-남아&#41;</li>
+                                <li>스위트디럭스&#40;키즈-여아&#41;</li>
+                            </ul>
+                        </div>
+                        <!-- <div>
+                            <select>
+                                <option>객실1</option>
+                                <option>객실2</option>
+                                <option>객실3</option>
+                            </select>
+                        </div> -->
+                    </li>
+                    <!-- 예약하기 -->
+                    <li><input class="submit_btn" type="submit" value="예약하기"></li>
+
+                </ul>    
+            </form>
+
+        </section>
+
+        <!--2.3.주제별 대그룹3[명시도10]-->
+        <!--.intro2{ width:1000px; height:370px; float:right;} -->
+        <!--.intro2>*{ text-align:right;  margin-right: 280px ;} -->
+        <section class="intro2">
+            <h2>금호리조트 소개2</h2>
+            <div>
+                <p><b>New and Diverse Experiences</b></p>
+                <p>새로운 금호리조트가 아름다운 관광 레저문화를 만들어갑니다.<br>
+                시설 리뉴얼과 신규 서비스 도입을 통해 차별화된 서비스를 기반으로<br>
+                한층 더 다채롭고 높은 수준의 고객 경험을 제공하겠습니다.</p>
+            </div>
+        </section>
+
+        <!--.intro3{ width:1000px; height:370px; } -->
+        <!--.intro3>*{ margin-left: 280px ;} -->
+        <section class="intro3">
+            <h2>금호리조트 소개3</h2>
+            <div>
+                <p><b>Food and Beverage</b></p>
+                <p>강화된 F&B 서비스로 제주리조트, 통영마리나리조트, 아산스파포레에서
+                다양한 종류의 와인을 합리적인 가격으로 제공합니다.<br>
+                또한 설악리조트, 통영마리나리조트에서 다양한 식음료 브랜드와 협업한 신규 메뉴들을,<br>
+                화순리조트에서 조식뷔페를 선보입니다.</p>
+            </div>
+        </section>
+        
+
+        <!--2.4.주제별 대그룹4[명시도10]-->
+        <section class="event">
+            
+            <!--text-align:center; -->
+            <div class="section_title">
+                <div class="event_icon"></div>
+                <h2>프로모션 이벤트</h2>
+                <p>Promotion Event</p>
+
+                <!-- p{ position: absolute; left:50%; margin: -150px 0 0 680px }-->
+                <p><button><img src="images/more_btn.png" alt="더보기버튼"></button></p>
+                <div class="event_player">
+                    <button><img src="images/event_pause_btn.png" alt="배너 자동넘김 일시정지"></button>
+                    <button><img src="images/event_play_btn.png" alt="배너 자동넘김 재생"></button>
+                </div>
+                
+            </div>
+            
+            <!--width:1400px; margin:0 auto;-->
+            <ul class="event_banner">
+                <li><a href="#"><img src="images/event_banner_img1.jpg" alt="2023 Spring Event 어서와 봄"></a></li>
+                <li><a href="#"><img src="images/event_banner_img2.jpg" alt="3월 아산스파포레 특가 이벤트"></a></li>
+                <li>
+                    <a href="#">
+                        <img src="images/event_banner_img3.jpg" alt="설악리조트 회원 이벤트 조식을 부탁해, 2023.2.22 ~ 2023.7.20 (149일간) 설악리조트">
+                    </a> 
+                </li>
+                <li><a href="#"><img src="images/event_banner_img4.jpg" alt="화순리조트 힐링스파 패키지"></a></li>
+                <li><a href="#"><img src="images/event_banner_img5.jpg" alt="제주 오션풀 패키지"></a></li>
+                <li><a href="#"><img src="images/event_banner_img6.jpg" alt="제주 오션풀 패키지"></a></li>
+            </ul>
+            
+            <div class="event_controls">
+                <p><button><img src="images/event_prev_btn.png" alt="프로모션 이벤트 이전버튼"></button></p>
+                <p><button><img src="images/event_next_btn.png" alt="프로모션 이벤트 다음버튼"></button></p>
+            </div>
+            <!-- <div class="event_controls2">
+                <div class="event_slide_btn">
+                    <button><span>첫번째 이벤트 사진 이동</span></button>
+                    <button><span>두번째 이벤트 사진 이동</span></button>
+                    <button><span>세번째 이벤트 사진 이동</span></button>
+                    <button><span>네번째 이벤트 사진 이동</span></button>
+                    <button><span>다섯번째 이벤트 사진 이동</span></button>
+                </div>
+            </div> -->
+            
+        </section>
+
+        <!--2.5.주제별 대그룹4[명시도10]-->
+        <section class="notice">
+
+            <!--text-align:center; -->
+            <div class="section_title">
+                <div class="notice_icon"></div>
+                <h2>공지사항</h2>
+                <p>Notice</p>
+                <p><a href="sub5_1.html"><img src="images/more_btn.png" alt="더보기버튼"></a></p>
+            </div>
+            
+            <!--w:1400px; margin:0 auto; -->
+            <div class="notice_wrap">
+                <div class="notice_inner">
+
+                    <!--w544, h540px, box-shadow-->
+
+                    
+                    <div class="notice_info">
+                        <div class="notice_controls">
+                            <p><button><img src="images/notice_prev_btn.png" alt="공지사항 이전버튼"></button></p>
+                            <p>0<span>1</span>/04</p>
+                            <p><button><img src="images/notice_next_btn.png" alt="공지사항 다음버튼"></button></p>
+                        </div>
+
+                        <div class="notice_content">
+                            <ol class="notice_list">
+                                <li>
+                                    <a href="sub5_1.html">
+                                        <p><strong>[공지] 어린이날 맞이 마술 공연 이벤트</strong></p>
+                                        <p>금호리조트 어린이날 맞이 마술 공연 이벤트에 관한 안내사항입니다.</p>
+                                        <p>2023-04-28</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="sub5_1.html">
+                                        <p><strong>[공지] 2023년 여름성수기 안내</strong></p>
+                                        <p>금호리조트 여름성수기 접수에 관한 안내사항입니다.</p>
+                                        <p>2023-04-27</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="sub5_1.html">
+                                        <p><strong>[공지] 여행 서포터즈 모집 안내</strong></p>
+                                        <p>금호리조트 여행 서포터즈 모집에 관한 안내사항입니다.</p>
+                                        <p>2023-03-30</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="sub5_1.html">
+                                        <p><strong>[공지] Review Event 후기를 부탁해</strong></p>
+                                        <p>금호리조트 리뷰 이벤트에 관한 안내사항입니다.</p>
+                                        <p>2023-04-04</p>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+        
+
+    </div>
+    <!--2.container end ***************************************************************************************************** -->
+
+    <!--3.footer id="footer"[명시도:100]************************************************************************************* -->
+    <!-- width:100%; background: #000; -->
+    <footer id="footer">
+        <!-- to_top_btn -->
+        <p><button><img src="images/top_button.png" alt="위로가기버튼"></button></p>
+
+        <!-- footer_top -->
+        <div class="footer_top">
+            <!-- cs_menu -->
+            <div>
+                <ul class="cs_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">개인정보</a></li>
+                    <li><a href="#">윤리규정</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">제보실</a></li>
+                </ul>
+                <!-- sns_menu -->
+                <ul class="sns_menu">
+                    <li><a href="https://pf.kakao.com/_WKxhfu" target="_blank"><img src="images/kakaotalk_link_icon.png" alt="금호리조트 카카오톡채널"></a></li>
+                    <li><a href="https://www.facebook.com/kumhoresort/?locale=ko_KR" target="_blank"><img src="images/facebook_link_icon.png" alt="금호리조트 페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/kumho_resort/" target="_blank"><img src="images/instagram_link_icon.png" alt="인스타그램"></a></li>
+                    <li><a href="https://youtube.com/@kumho_resort" target="_blank"><img src="images/youtube_link_icon.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+
+            <div>
+                <address>
+                    서울특별시 중구 청계천로 100 7층 시그니처타워 서관 / 대표이사:김성일 / TEL 02-737-5400 / FAX 02-725-2811<br>
+                    사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41; / 통신판매업신고 : 2014-용인처인-0034
+                </address>
+                <div class="address_ver2">
+                    <ul>
+                        <li>서울특별시 중구 청계천로 100 7층 <br>시그니처타워 서관</li>
+                        <li>대표이사:김성일</li>
+                        <li>TEL 02-737-5400 / FAX 02-725-2811</li>
+                        <li>사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41;</li>
+                        <li>통신판매업신고 : 2014-용인처인-0034</li>
+                    </ul>
+                </div>
+
+                <p>COPYRIGHT2023 BY KUMHORESORT. <br>ALL RIGHTS RESERVED</p>
+
+                <ul class="attribution">
+                    <li>Icon made by mohammed mahdi from www.flaticion.com</li>
+                    <li>Icon made by Md Tanvirul Haque from www.flaticion.com</li>
+                    <li>Icon made by Freepik from www.flaticion.com</li>
+                    <li>Icon made by Those Icons from www.flaticion.com</li>
+                    <li>Icon made by Dimitry Miroliubov from www.flaticion.com</li>
+                    <li>Icon made by Icon Box from www.flaticion.com</li>
+                </ul>
+            </div>
+
+            <div class="family_site">
+                <p>Family Site</p>
+                <ul>
+                    <li><a href="https://www.kkpc.com/kor/" target="_blank">금호석유화학</a></li>
+                    <li><a href="https://www.kpb.co.kr/kor" target="_blank">금호피앤비화학</a></li>
+                    <li><a href="https://www.polychem.co.kr/kor" target="_blank">금호폴리켐</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.kmci.co.kr/kor" target="_blank">금호미쓰이화학</a></li>
+                    <li><a href="https://www.kumhotrading.com/main/index.html" target="_blank">금호개발상사</a></li>
+                    <li><a href="https://www.ktnl.co.kr/main/index.html" target="_blank">금호티앤앨</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer> 
+    <!--3.footer end ******************************************************************************************************** -->
+</body>
+</html>

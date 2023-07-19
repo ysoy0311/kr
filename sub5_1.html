@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="반응형웹 가상 리뉴얼 프로젝트">
+    <meta name="description" content="산업 현장에서 요구되는 웹언어 구현-가상리뉴얼 프로젝트">
+    <title>공지사항</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <script src="js/motion.js"></script>
+</head>
+<body>
+
+    <!--1.header id="header"[명시도:100]************************************************************************************* -->
+    <!--position:absolute; left:0; top:0; width:100%; height:80px; -->
+    <header id="header">
+        <!--width:1400px; height:80px; margin:0 auto; -->
+        <div class="header_wrap">
+            <!--1.1.제1제목-->
+            <h1><a href="index.html"><img src="images/logo.png" alt="금호리조트"></a></h1>
+
+            <!-- ★반응형웹 추가코드(1280px 이상 해상도에서는 비표시) -->
+            <p class="nav_view_btn">
+                <button><img src="images/nav_open_btn.png" alt="전역메뉴 표시"></button>
+            </p>
+            <!--1.2.탐색요소 집합(navigation: 전역메뉴(항목,리스트)-->
+            <nav>
+                <p class="nav_close_btn">
+                    <button><img src="images/nav_close_btn.png" alt="전역메뉴 비표시"></button>
+                </p>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub1_1.html">리조트소개</a>
+                        <ul> 
+                            <li><a href="sub1_1.html">개요및연혁</a></li>
+                            <li><a href="sub1_2.html">지역별리조트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2_1.html">글램핑/카라반</a>
+                        <ul>
+                            <li><a href="sub2_1.html">숙박시설안내</a></li>
+                            <li><a href="sub2_2.html">객실이용안내</a></li>
+                            <li><a href="sub2_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3_1.html">제휴리조트</a>
+                        <ul>
+                            <li><a href="sub3_1.html">국내제휴리조트안내</a></li>
+                            <li><a href="sub3_2.html">경기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4_1.html">통합예약</a>
+                        <ul>
+                            <li><a href="sub4_1.html">객실예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub5_1.html">고객센터</a>
+                        <ul>
+                            <li><a href="sub5_1.html">공지사항</a></li>
+                            <li><a href="sub5_2.html">자주묻는질문</a></li>
+                            <li><a href="sub5_3.html">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--1.header end ******************************************************************************************************* -->
+
+    <!--2.#sub_container[명시도:100]***************************************************************************************** -->
+    <div id="sub_container">
+        <!--전체서브 공통1(서브비주얼, 확장구조)-->
+        <div class="sub_visual sub5_bg">
+            <div class="sub_visual_wrap">
+                <!--1.전체서브 공통 빅폰트-->
+                <p><b>고객센터</b></p>
+                <p>금호리조트는 고객 여러분께 다양한 소식과 정보를 알려드립니다.</p>
+            </div>
+        </div>
+        <!--1.2전체서브 공통 Local Navigation Bar(lnb)-->
+        <div class="lnb lnb3">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="sub_images/lnb_home_btn.png" alt="홈"></a>
+                </li>                  
+                <li>
+                    <a href="sub5_1.html">고객센터</a>
+                    <ul> 
+                        <li><a href="sub5_1.html">공지사항</a></li>
+                        <li><a href="sub5_2.html">자주묻는질문</a></li>
+                        <li><a href="sub5_3.html">자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--전체서브 공통2(서브타이틀)-->
+        <div class="sub_title">
+            <h2>공지사항</h2>
+            <p><b>Notice</b></p>
+            <p>금호리조트의 공지사항과 새로운 소식을 확인할 수 있습니다.</p>
+        </div>
+
+        <!--개별 서브-->
+        <div class="sub_content_wrap">
+            <div class="search">
+                <div class="search_wrap">
+                    <div>
+                        <form action="#">
+                            <div class="select_box2">
+                                <button class="label2">전체</button>
+                                <ul>
+                                    <li>전체</li>
+                                    <li>통영마리나리조트</li>
+                                    <li>화순스파리조트</li>
+                                    <li>설악리조트</li>
+                                    <li>제주리조트</li>
+                                    <li>콘도문의</li>
+                                    <li>기타</li>
+                                </ul>
+                                <!-- <select name="search_select" id="search_select">
+                                    <option selected value="notice_tab1">전체</option>
+                                    <option value="notice_tab2">통영마리나리조트</option>
+                                    <option value="notice_tab3">화순스파리조트</option>
+                                    <option value="notice_tab4">설악리조트</option>
+                                    <option value="notice_tab5">제주리조트</option>
+                                    <option value="notice_tab6">기타</option>
+                                </select> -->
+                            </div>
+                            <div>
+                                <input id="search_input" type="search" placeholder="검색어를 입력하세요" >
+                            </div>
+                            <div>
+                                <button type="subtmit" class="btn_search"><img src="sub_images/sub5/search_button.png" alt="검색하기"></button>
+                            </div> 
+                        </form>  
+                    </div>
+                </div>
+                <div class="tab_menu_wrap">
+                    <ul>
+                        <li class="on"><button>전체</button></li>
+                        <li><button>통영마리나리조트</button></li>
+                        <li><button>화순스파리조트</button></li>
+                        <li><button>설악리조트</button></li>
+                        <li><button>제주리조트</button></li>
+                        <li><button>기타</button></li>
+                    </ul>
+                </div>
+                
+                <div class="board_table">
+                    <!-- 전체 탭 공지사항 게시글 -->
+                    <table class="thead_up">
+                        <thead>
+                            <tr> <th>번호</th> <th>구분</th> <th>제목</th> <th>등록일</th> <th>조회수</th> </tr>
+                        </thead>
+                        <tbody>
+                            <tr> <td>고정</td> <td>아산스파포레</td> <td><a href="#">아산 스파포레 이용안내문</a></td> <td>2022-07-20</td><td>6836</td></tr>
+                            <tr><td>고정</td> <td>아산스파포레</td><td><a href="#">[GRAND OPEN] 아산스파포레 감성캠핑</a></td><td>2022-07-01</td><td>9670</td>
+                            </tr>
+                            <tr><td>고정</td> <td>아산스파포레</td><td><a href="#">예약 실명제 시행 안내</a></td><td>2022-05-26</td><td>2331</td>
+                            </tr>
+                            <tr><td>685</td><td>화순스파리조트</td><td><a href="#">화순 적벽 & 남도 힐링 기차여행</a></td><td>2023-04-10</td><td>49</td></tr>
+                            <tr><td>684</td><td>화순스파리조트</td><td><a href="#">화순적벽 버스투어 안내</a></td><td>2023-03-31</td><td>151</td></tr>
+                            <tr><td>683</td><td>화순스파리조트</td><td><a href="#">화순스파리조트 아쿠아나 시설물 개선 공사 안내</a></td><td>2023-02-27</td><td>636</td></tr>
+                            <tr><td>682</td><td>화순스파리조트</td><td><a href="#">화순스파리조트 객실 리뉴얼 공사 안내</a></td><td>2023-01-20</td><td>1662</td></tr>
+                            <tr><td>681</td><td>통영마리나리조트</td><td><a href="#">통영 사우나 휴장 안내</a></td><td>2023-01-18</td><td>1885</td></tr>
+                            <tr><td>680</td><td>기타</td><td><a href="#">2023년 설 명절 선물세트 안내</a></td><td>2023-01-11</td><td>534</td></tr>
+                            <tr><td>679</td><td>화순스파리조트</td><td><a href="#">화순스파리조트 조식뷔페 운영 안내</a></td><td>2022-12-21</td><td>802</td></tr>
+                            <tr><td>678</td><td>화순스파리조트</td><td><a href="#">백아산눈썰매장 제휴시설안내</a></td><td>2022-12-19</td><td>321</td></tr>
+                        </tbody>
+                    </table>
+                    <!-- 게시글 목록 넘김 -->
+                    <div class="board_page">
+                        <div class="board_page_controls">
+                            <div class="board_page_controls1">
+                                <p><button><img src="sub_images/sub5/fast_prev_btn.png" alt="이전 10개 목록 단위 넘어가기"></button></p>
+                                <p><button><img src="sub_images/sub5/prev_btn.png" alt="이전 1개 목록 단위 넘어가기"></button></p>
+                            </div>
+                            <div class="board_page_controls2">
+                                <p><button><img src="sub_images/sub5/next_btn.png" alt="다음 1개 목록 단위 넘어가기"></button></p>
+                            <p><button><img src="sub_images/sub5/fast_next_btn.png" alt="다음 10개 목록 단위 넘어가기"></button></p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><button>1</button></li>
+                            <li><button>2</button></li>
+                            <li><button>3</button></li>
+                            <li><button>4</button></li>
+                            <li><button>5</button></li>
+                            <li><button>6</button></li>
+                            <li><button>7</button></li>
+                            <li><button>8</button></li>
+                            <li><button>9</button></li>
+                            <li><button>10</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <!--2.#sub_container **************************************************************************************************** -->
+
+    <!--3.footer id="footer"[명시도:100]************************************************************************************* -->
+    <!-- width:100%; background: #000; -->
+    <footer id="footer">
+        <!-- to_top_btn -->
+        <p><button><img src="images/top_button.png" alt="위로가기버튼"></button></p>
+
+        <!-- footer_top -->
+        <div class="footer_top">
+            <!-- cs_menu -->
+            <div>
+                <ul class="cs_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">개인정보</a></li>
+                    <li><a href="#">윤리규정</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">제보실</a></li>
+                </ul>
+                <!-- sns_menu -->
+                <ul class="sns_menu">
+                    <li><a href="https://pf.kakao.com/_WKxhfu" target="_blank"><img src="images/kakaotalk_link_icon.png" alt="금호리조트 카카오톡채널"></a></li>
+                    <li><a href="https://www.facebook.com/kumhoresort/?locale=ko_KR" target="_blank"><img src="images/facebook_link_icon.png" alt="금호리조트 페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/kumho_resort/" target="_blank"><img src="images/instagram_link_icon.png" alt="인스타그램"></a></li>
+                    <li><a href="https://youtube.com/@kumho_resort" target="_blank"><img src="images/youtube_link_icon.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+
+            <div>
+                <address>
+                    서울특별시 중구 청계천로 100 7층 시그니처타워 서관 / 대표이사:김성일 / TEL 02-737-5400 / FAX 02-725-2811<br>
+                    사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41; / 통신판매업신고 : 2014-용인처인-0034
+                </address>
+                <div class="address_ver2">
+                    <ul>
+                        <li>서울특별시 중구 청계천로 100 7층 <br>시그니처타워 서관</li>
+                        <li>대표이사:김성일</li>
+                        <li>TEL 02-737-5400 / FAX 02-725-2811</li>
+                        <li>사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41;</li>
+                        <li>통신판매업신고 : 2014-용인처인-0034</li>
+                    </ul>
+                </div>
+
+                <p>COPYRIGHT2023 BY KUMHORESORT. <br>ALL RIGHTS RESERVED</p>
+
+                <ul class="attribution">
+                    <li>Icon made by mohammed mahdi from www.flaticion.com</li>
+                    <li>Icon made by Md Tanvirul Haque from www.flaticion.com</li>
+                    <li>Icon made by Freepik from www.flaticion.com</li>
+                    <li>Icon made by Those Icons from www.flaticion.com</li>
+                    <li>Icon made by Dimitry Miroliubov from www.flaticion.com</li>
+                    <li>Icon made by Icon Box from www.flaticion.com</li>
+                </ul>
+            </div>
+
+            <div class="family_site">
+                <p>Family Site</p>
+                <ul>
+                    <li><a href="https://www.kkpc.com/kor/" target="_blank">금호석유화학</a></li>
+                    <li><a href="https://www.kpb.co.kr/kor" target="_blank">금호피앤비화학</a></li>
+                    <li><a href="https://www.polychem.co.kr/kor" target="_blank">금호폴리켐</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.kmci.co.kr/kor" target="_blank">금호미쓰이화학</a></li>
+                    <li><a href="https://www.kumhotrading.com/main/index.html" target="_blank">금호개발상사</a></li>
+                    <li><a href="https://www.ktnl.co.kr/main/index.html" target="_blank">금호티앤앨</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>  
+    <!--3.footer end ******************************************************************************************************** -->
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="반응형웹 가상 리뉴얼 프로젝트">
+    <meta name="description" content="산업 현장에서 요구되는 웹언어 구현-가상리뉴얼 프로젝트">
+    <title>숙박시설안내</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <script src="js/motion2.js"></script>
+</head>
+<body>
+
+    <!--1.header id="header"[명시도:100]************************************************************************************* -->
+    <!--position:absolute; left:0; top:0; width:100%; height:80px; -->
+    <header id="header">
+        <!--width:1400px; height:80px; margin:0 auto; -->
+        <div class="header_wrap">
+            <!--1.1.제1제목-->
+            <h1><a href="index.html"><img src="images/logo.png" alt="금호리조트"></a></h1>
+
+            <!-- ★반응형웹 추가코드(1280px 이상 해상도에서는 비표시) -->
+            <p class="nav_view_btn">
+                <button><img src="images/nav_open_btn.png" alt="전역메뉴 표시"></button>
+            </p>
+            <!--1.2.탐색요소 집합(navigation: 전역메뉴(항목,리스트)-->
+            <nav>
+                <p class="nav_close_btn">
+                    <button><img src="images/nav_close_btn.png" alt="전역메뉴 비표시"></button>
+                </p>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub1_1.html">리조트소개</a>
+                        <ul> 
+                            <li><a href="sub1_1.html">개요및연혁</a></li>
+                            <li><a href="sub1_2.html">지역별리조트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2_1.html">글램핑/카라반</a>
+                        <ul>
+                            <li><a href="sub2_1.html">숙박시설안내</a></li>
+                            <li><a href="sub2_2.html">객실이용안내</a></li>
+                            <li><a href="sub2_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3_1.html">제휴리조트</a>
+                        <ul>
+                            <li><a href="sub3_1.html">국내제휴리조트안내</a></li>
+                            <li><a href="sub3_2.html">경기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4_1.html">통합예약</a>
+                        <ul>
+                            <li><a href="sub4_1.html">객실예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub5_1.html">고객센터</a>
+                        <ul>
+                            <li><a href="sub5_1.html">공지사항</a></li>
+                            <li><a href="sub5_2.html">자주묻는질문</a></li>
+                            <li><a href="sub5_3.html">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--1.header end ******************************************************************************************************* -->
+
+    <!--2.#sub_container[명시도:100]***************************************************************************************** -->
+    <div id="sub_container">
+        <!--전체서브 공통1(서브비주얼, 확장구조)-->
+        <div class="sub_visual sub2_bg">
+            <div class="sub_visual_wrap">
+                <!--1.전체서브 공통 빅폰트-->
+                <p><b>글램핑/카라반</b></p>
+                <p>자연을 품은 공간, 휴식과 설렘이 있는 곳</p>
+            </div>
+        </div>
+        <!--1.2전체서브 공통 Local Navigation Bar(lnb)-->
+        <div class="lnb lnb3">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="sub_images/lnb_home_btn.png" alt="홈"></a>
+                </li>                  
+                <li>
+                    <a href="sub2_1.html">글램핑/카라반</a>
+                    <ul> 
+                        <li><a href="sub2_1.html">숙박시설안내</a></li>
+                        <li><a href="sub2_2.html">객실이용안내</a></li>
+                        <li><a href="sub2_3.html">오시는길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--전체서브 공통2-1(서브타이틀)-->
+        <div class="sub_title">
+            <h2>아산스파포레</h2>
+            <p><b>SPAFORE</b></p>
+            <p>글램핑과 카라반을 경험할 수 있는 아산스파포레의 숙박시설을 확인할 수 있습니다.</p>
+        </div>
+
+        <!--개별 서브1-->
+        <div class="sub_content_wrap">
+            <div class="spafore">
+                <div class="spafore_img"></div>
+                <p>충남 아산시에 위치한 아산 스파포레는 글램핑 28통, 프리미엄 카라반 10채, 럭셔리 글램핑 3통으로 운영되고 있으며, 별빛 공원, 잔디광장, 워터파크인 아산 스파비스와도 연결되어 있어 사계절 내내 자연 속에서 휴양과 즐거움을 누리실 수 있는 공간입니다.</p>
+            </div>
+        </div>
+
+        <!--전체서브 공통2-2(서브타이틀)-->
+        <div class="sub_title">
+            <h2>숙박시설안내</h2>
+            <p><b>Accomodation</b></p>
+        </div>
+        <!--개별 서브2-->
+        <div class="sub_content_wrap">
+            <div class="accomodation">
+                <div class="accomodation_img"><img src="sub_images/sub2/accomodation_img.jpg" alt="아산스파포레 숙박시설안내 사진"></div>
+                <div class="accomodation_img2"><img src="sub_images/sub2/accomodation_img2.jpg" alt="아산스파포레 숙박시설안내 사진"></div>
+                <div class="accomodation_info">
+                    <div class="tab_menu_wrap">
+                        <ul>
+                            <li class="on"><button>휴그린글램스파</button></li>
+                            <li><button>휴그린글램포레</button></li>
+                            <li><button>휴그린코치맨</button></li>
+                        </ul>
+                    </div>
+                    <div class="accomodation_slide">
+                        <div class="accomodation_slide_img">
+                            <div class="glampspa">
+                                <ul>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img.jpg" alt="휴그린 글램스파 첫번째 사진"></li>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img.jpg" alt="휴그린 글램스파 두번째 사진"></li>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img.jpg" alt="휴그린 글램스파 세번째 사진"></li>
+                                </ul>
+                            </div>
+                            <div class="glampfore">
+                                <ul>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img2.jpg" alt="휴그린 글램포레 첫번째 사진"></li>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img2.jpg" alt="휴그린 글램포레 두번째 사진"></li>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img2.jpg" alt="휴그린 글램포레 세번째 사진"></li>
+                                </ul>
+                            </div>
+                            <div class="coachman">
+                                <ul>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img3.jpg" alt="휴그린 코치맨 첫번째 사진"></li>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img3.jpg" alt="휴그린 코치맨 두번째 사진"></li>
+                                    <li><img src="sub_images/sub2/accomodation_slide_img3.jpg" alt="휴그린 코치맨 세번째 사진"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accomodation_slide_controls">
+                            <div class="accomodation_slide_btn1">
+                                <button><img src="sub_images/sub2/prev_btn_accomodation.png" alt="숙박시설 이전 사진 보기"></button>
+                                <button><img src="sub_images/sub2/next_btn_accomodation.png" alt="숙박시설 다음 사진 보기"></button>
+                            </div>
+                            <div class="accomodation_slide_btn2">
+                                <button><span>첫번째 숙박시설 사진 이동</span></button>
+                                <button><span>두번째 숙박시설 사진 이동</span></button>
+                                <button><span>세번째 숙박시설 사진 이동</span></button>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <table class="thead_left">
+                                <tbody>
+                                    <tr> <th>객실수</th> <td>3동</td> </tr>
+                                    <tr> <th>평수</th> <td>18평 &#40;가로 7.7m × 세로 7.1m&#41;</td> </tr>
+                                    <tr> <th>정원</th> <td>6인 &#40;최대 8인&#41;</td> </tr>
+                                    <tr> <th>구성</th> <td>프라이빗 온수풀, 더블베드&#40;2개&#41;, 화장실, 샤워실, 주방, 리빙쉘</td> </tr>
+                                    <tr> <th>비품</th> <td>전자레인지, 냉장고, 주방도구, 냉온풍기</td> </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--2.#sub_container **************************************************************************************************** -->
+
+    <!--3.footer id="footer"[명시도:100]************************************************************************************* -->
+    <!-- width:100%; background: #000; -->
+    <footer id="footer">
+        <!-- to_top_btn -->
+        <p><button><img src="images/top_button.png" alt="위로가기버튼"></button></p>
+
+        <!-- footer_top -->
+        <div class="footer_top">
+            <!-- cs_menu -->
+            <div>
+                <ul class="cs_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">개인정보</a></li>
+                    <li><a href="#">윤리규정</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">제보실</a></li>
+                </ul>
+                <!-- sns_menu -->
+                <ul class="sns_menu">
+                    <li><a href="https://pf.kakao.com/_WKxhfu" target="_blank"><img src="images/kakaotalk_link_icon.png" alt="금호리조트 카카오톡채널"></a></li>
+                    <li><a href="https://www.facebook.com/kumhoresort/?locale=ko_KR" target="_blank"><img src="images/facebook_link_icon.png" alt="금호리조트 페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/kumho_resort/" target="_blank"><img src="images/instagram_link_icon.png" alt="인스타그램"></a></li>
+                    <li><a href="https://youtube.com/@kumho_resort" target="_blank"><img src="images/youtube_link_icon.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+
+            <div>
+                <address>
+                    서울특별시 중구 청계천로 100 7층 시그니처타워 서관 / 대표이사:김성일 / TEL 02-737-5400 / FAX 02-725-2811<br>
+                    사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41; / 통신판매업신고 : 2014-용인처인-0034
+                </address>
+                <div class="address_ver2">
+                    <ul>
+                        <li>서울특별시 중구 청계천로 100 7층 <br>시그니처타워 서관</li>
+                        <li>대표이사:김성일</li>
+                        <li>TEL 02-737-5400 / FAX 02-725-2811</li>
+                        <li>사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41;</li>
+                        <li>통신판매업신고 : 2014-용인처인-0034</li>
+                    </ul>
+                </div>
+
+                <p>COPYRIGHT2023 BY KUMHORESORT. <br>ALL RIGHTS RESERVED</p>
+
+                <ul class="attribution">
+                    <li>Icon made by mohammed mahdi from www.flaticion.com</li>
+                    <li>Icon made by Md Tanvirul Haque from www.flaticion.com</li>
+                    <li>Icon made by Freepik from www.flaticion.com</li>
+                    <li>Icon made by Those Icons from www.flaticion.com</li>
+                    <li>Icon made by Dimitry Miroliubov from www.flaticion.com</li>
+                    <li>Icon made by Icon Box from www.flaticion.com</li>
+                </ul>
+            </div>
+
+            <div class="family_site">
+                <p>Family Site</p>
+                <ul>
+                    <li><a href="https://www.kkpc.com/kor/" target="_blank">금호석유화학</a></li>
+                    <li><a href="https://www.kpb.co.kr/kor" target="_blank">금호피앤비화학</a></li>
+                    <li><a href="https://www.polychem.co.kr/kor" target="_blank">금호폴리켐</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.kmci.co.kr/kor" target="_blank">금호미쓰이화학</a></li>
+                    <li><a href="https://www.kumhotrading.com/main/index.html" target="_blank">금호개발상사</a></li>
+                    <li><a href="https://www.ktnl.co.kr/main/index.html" target="_blank">금호티앤앨</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer> 
+    <!--3.footer end ******************************************************************************************************** -->
+</body>
+</html>

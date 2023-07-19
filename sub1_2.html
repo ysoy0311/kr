@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="반응형웹 가상 리뉴얼 프로젝트">
+    <meta name="description" content="산업 현장에서 요구되는 웹언어 구현-가상리뉴얼 프로젝트">
+    <title>지역별리조트</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <script src="js/motion.js"></script>
+</head>
+<body>
+
+    <!--1.header id="header"[명시도:100]************************************************************************************* -->
+    <!--position:absolute; left:0; top:0; width:100%; height:80px; -->
+    <header id="header">
+        <!--width:1400px; height:80px; margin:0 auto; -->
+        <div class="header_wrap">
+            <!--1.1.제1제목-->
+            <h1><a href="index.html"><img src="images/logo.png" alt="금호리조트"></a></h1>
+
+            <!-- ★반응형웹 추가코드(1280px 이상 해상도에서는 비표시) -->
+            <p class="nav_view_btn">
+                <button><img src="images/nav_open_btn.png" alt="전역메뉴 표시"></button>
+            </p>
+            <!--1.2.탐색요소 집합(navigation: 전역메뉴(항목,리스트)-->
+            <nav>
+                <p class="nav_close_btn">
+                    <button><img src="images/nav_close_btn.png" alt="전역메뉴 비표시"></button>
+                </p>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub1_1.html">리조트소개</a>
+                        <ul> 
+                            <li><a href="sub1_1.html">개요및연혁</a></li>
+                            <li><a href="sub1_2.html">지역별리조트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub2_1.html">글램핑/카라반</a>
+                        <ul>
+                            <li><a href="sub2_1.html">숙박시설안내</a></li>
+                            <li><a href="sub2_2.html">객실이용안내</a></li>
+                            <li><a href="sub2_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3_1.html">제휴리조트</a>
+                        <ul>
+                            <li><a href="sub3_1.html">국내제휴리조트안내</a></li>
+                            <li><a href="sub3_2.html">경기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub4_1.html">통합예약</a>
+                        <ul>
+                            <li><a href="sub4_1.html">객실예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub5_1.html">고객센터</a>
+                        <ul>
+                            <li><a href="sub5_1.html">공지사항</a></li>
+                            <li><a href="sub5_2.html">자주묻는질문</a></li>
+                            <li><a href="sub5_3.html">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--1.header end ******************************************************************************************************* -->
+
+    <!--2.#sub_container[명시도:100]***************************************************************************************** -->
+    <div id="sub_container">
+        <!--전체서브 공통1(서브비주얼, 확장구조)-->
+        <div class="sub_visual sub1_bg">
+            <div class="sub_visual_wrap">
+                <!--1.전체서브 공통 빅폰트-->
+                <p><b>리조트 소개</b></p>
+                <p>금호리조트는 지난 30년간 국내외 관광 레저 문화를 선도해왔습니다.</p>
+            </div>
+        </div>
+        <!--1.2전체서브 공통 Local Navigation Bar(lnb)-->
+        <div class="lnb lnb2">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="sub_images/lnb_home_btn.png" alt="홈"></a>
+                </li>                  
+                <li>
+                    <a href="sub1_1.html">리조트소개</a>
+                    <ul> 
+                        <li><a href="sub1_2.html">지역별리조트</a></li>
+                        <li><a href="sub1_1.html">개요및연혁</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+
+        <!--전체서브 공통2(서브타이틀)-->
+        <div class="sub_title">
+            <h2>지역별리조트</h2>
+            <p><b>Resorts</b></p>
+            <p>금호리조트의 지점을 확인할 수 있습니다.</p>
+        </div>
+
+        <!--개별 서브-->
+        <div class="sub_content_wrap">
+            <!-- 지역별 리조트 위치 -->
+            <div class="resort_location">
+                <div class="resort_location_wrap">
+                    <ul class="location_info">
+                        <li>
+                            <ul>
+                                <li><b>경상남도</b></li>
+                                <li><img src="sub_images/sub1/tongyeong_map_img.png" alt="금호통영마리나리조트 위치"></li>
+                                <li class="location_btn"><button>금호통영마리나리조트</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><b>전라남도</b></li>
+                                <li><img src="sub_images/sub1/hwasun_map_img.png" alt="금호화순스파리조트 위치"></li>
+                                <li class="location_btn"><button>금호화순스파리조트</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><b>강원도</b></li>
+                                <li><img src="sub_images/sub1/seorak_map_img.png" alt="금호설악리조트 위치"></li>
+                                <li class="location_btn"><button>금호설악리조트</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><b>제주도</b></li>
+                                <li><img src="sub_images/sub1/jeju_map_img.png" alt="금호제주리조트 위치"></li>
+                                <li class="location_btn"><button>금호제주리조트</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 지역별 리조트 개요 -->
+            <div class="resort_summary">
+                <!-- 금호통영마리나리조트 -->
+                <div class="tongyeong" id="tongyeong">
+                    <div class="resort_summary_img"></div>
+                    <div class="resort_summary_text">
+                        <div class="resort_smry_heading">
+                            <h3>금호통영마리나리조트</h3>
+                            <p><a href="#"><img src="images/more_btn.png" alt="더보기 버튼"></a></p>
+                        </div>
+                        
+                        <p>동양의 나폴리로 불리는 통영에 자리한 국내 최초의 육·해상 종합리조트 - 통영마리나리조트<br>
+                            남해 바다와 아름다운 통영항이 한 폭의 그림처럼 펼쳐집니다.<br>
+                            요트를 포함한 다양한 해양 스포츠와 해양 관광 등 레저와 관광을 동시에 경험하실 수 있습니다.</p>
+                        <ul>
+                            <li>위치: 경상남도 통영시 큰발개1길 33 통영마리나리조트</li>
+                            <li>전화번호: 055&#41;643-8000,646-7001</li>
+                            <li>팩스: 055&#41;643-8634</li>
+                            <li>마리나&#40;요트승선문의&#41; 전화번호: 055&#41;643-8000, 055&#41;646-7001</li>
+                            <li>팩스: 055&#41;643-8634</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 금호화순스파리조트 -->
+                <div class="hwasun" id="hwasun">
+                    <div class="resort_summary_img"></div>
+                    <div class="resort_summary_text">
+                        <div class="resort_smry_heading">
+                            <h3>금호화순스파리조트</h3> 
+                            <p><a href="#"><img src="images/more_btn.png" alt="더보기 버튼"></a></p>
+                        </div>
+                        <p>호남의 대표적인 온천 휴양지로 심신의 피로를 풀어주는 다양한 휴식시설, 그리고 물놀이의 즐거움을 선사하는 아쿠아나까지 함께 자리하고 있어 온가족이 함께 진정한 웰빙 문화를 누리실 수 있습니다.</p>
+                        <ul>
+                            <li>위치: 전라남도 화순군 백아면 옥리길 14-21 화순스파리조트</li>
+                            <li>전화번호: 061&#41;372-8000</li>
+                            <li>팩스: 061&#41;373-1649</li>
+                            <li>아쿠아나 전화번호: 061&#41;370-5090</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 금호설악리조트 -->
+                <div class="seorak" id="seorak">
+                    <div class="resort_summary_img"></div>
+                    <div class="resort_summary_text">
+                        <div class="resort_smry_heading">
+                            <h3>금호설악리조트</h3>
+                            <p><a href="#"><img src="images/more_btn.png" alt="더보기 버튼"></a></p>
+                        </div>
+                        
+                        <p>매번 새롭게 느껴지는 설악의 사계는 감동을 넘어 신비로 다가옵니다.<br>
+                            설악산을 병풍삼고 동해바다를 한걸음에 누릴 수 있는 이곳에서 꿈에 그리던 귀하만의 휴식을 즐겨보세요.</p>
+                        <ul>
+                            <li>위치: 강원도 속초시 사당골길 43</li>
+                            <li>전화번호 : 033&#41;636-8000</li>
+                            <li>단체예약 : 033&#41;636-6007</li>
+                            <li>팩스 : 033&#41;636-1001 ~2</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 금호제주리조트  -->
+                <div class="jeju" id="jeju">
+                    <div class="resort_summary_img"></div>
+                    <div class="resort_summary_text">
+                        <div class="resort_smry_heading">
+                            <h3>금호제주리조트</h3>
+                            <p><a href="#"><img src="images/more_btn.png" alt="더보기 버튼"></a></p>
+                        </div>
+                        
+                        <p>가장 아름다운 올레 5코스 큰엉 해안경승지에 위치한 제주리조트는 해안절벽과 푸른 바다가 어우러져 영화 속 한 장면처럼 멋진 풍경을 연출합니다.</p>
+                        <ul>
+                            <li>위치: 제주특별자치도 서귀포시 남원읍 태위로 522-12 제주리조트</li>
+                            <li>전화번호 : 064&#41;766-8000</li>
+                            <li>팩스 : 064&#41;764-7076</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--2.#sub_container **************************************************************************************************** -->
+
+    <!--3.footer id="footer"[명시도:100]************************************************************************************* -->
+    <!-- width:100%; background: #000; -->
+    <footer id="footer">
+        <!-- to_top_btn -->
+        <p><button><img src="images/top_button.png" alt="위로가기버튼"></button></p>
+
+        <!-- footer_top -->
+        <div class="footer_top">
+            <!-- cs_menu -->
+            <div>
+                <ul class="cs_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">개인정보</a></li>
+                    <li><a href="#">윤리규정</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">제보실</a></li>
+                </ul>
+                <!-- sns_menu -->
+                <ul class="sns_menu">
+                    <li><a href="https://pf.kakao.com/_WKxhfu" target="_blank"><img src="images/kakaotalk_link_icon.png" alt="금호리조트 카카오톡채널"></a></li>
+                    <li><a href="https://www.facebook.com/kumhoresort/?locale=ko_KR" target="_blank"><img src="images/facebook_link_icon.png" alt="금호리조트 페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/kumho_resort/" target="_blank"><img src="images/instagram_link_icon.png" alt="인스타그램"></a></li>
+                    <li><a href="https://youtube.com/@kumho_resort" target="_blank"><img src="images/youtube_link_icon.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+
+            <div>
+                <address>
+                    서울특별시 중구 청계천로 100 7층 시그니처타워 서관 / 대표이사:김성일 / TEL 02-737-5400 / FAX 02-725-2811<br>
+                    사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41; / 통신판매업신고 : 2014-용인처인-0034
+                </address>
+                <div class="address_ver2">
+                    <ul>
+                        <li>서울특별시 중구 청계천로 100 7층 <br>시그니처타워 서관</li>
+                        <li>대표이사:김성일</li>
+                        <li>TEL 02-737-5400 / FAX 02-725-2811</li>
+                        <li>사업자등록번호 : 142-81-03111 금호리조트&#40;주&#41;</li>
+                        <li>통신판매업신고 : 2014-용인처인-0034</li>
+                    </ul>
+                </div>
+
+                <p>COPYRIGHT2023 BY KUMHORESORT. <br>ALL RIGHTS RESERVED</p>
+
+                <ul class="attribution">
+                    <li>Icon made by mohammed mahdi from www.flaticion.com</li>
+                    <li>Icon made by Md Tanvirul Haque from www.flaticion.com</li>
+                    <li>Icon made by Freepik from www.flaticion.com</li>
+                    <li>Icon made by Those Icons from www.flaticion.com</li>
+                    <li>Icon made by Dimitry Miroliubov from www.flaticion.com</li>
+                    <li>Icon made by Icon Box from www.flaticion.com</li>
+                </ul>
+            </div>
+
+            <div class="family_site">
+                <p>Family Site</p>
+                <ul>
+                    <li><a href="https://www.kkpc.com/kor/" target="_blank">금호석유화학</a></li>
+                    <li><a href="https://www.kpb.co.kr/kor" target="_blank">금호피앤비화학</a></li>
+                    <li><a href="https://www.polychem.co.kr/kor" target="_blank">금호폴리켐</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.kmci.co.kr/kor" target="_blank">금호미쓰이화학</a></li>
+                    <li><a href="https://www.kumhotrading.com/main/index.html" target="_blank">금호개발상사</a></li>
+                    <li><a href="https://www.ktnl.co.kr/main/index.html" target="_blank">금호티앤앨</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>  
+    <!--3.footer end ******************************************************************************************************** -->
+</body>
+</html>
