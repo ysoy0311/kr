@@ -1,0 +1,2517 @@
+@charset "utf-8";
+
+        /* 1. 전체 서브 공통스타일 */
+        /* sub visual */
+        .sub_visual{ height: 380px;}
+        .sub1_bg{ background:url(../sub_images/sub1/sub1_visual.png) no-repeat center top/cover;}
+        .sub2_bg{ background:url(../sub_images/sub2/sub2_visual.png) no-repeat center top/cover;}
+        .sub3_bg{ background:url(../sub_images/sub3/sub3_visual.png) no-repeat center top/cover;}
+        .sub4_bg{ background:url(../sub_images/sub4/sub4_visual.png) no-repeat center top/cover;}
+        .sub5_bg{ background:url(../sub_images/sub5/sub5_visual.png) no-repeat center top/cover;}
+
+        /* lnb 마우스 오버 시 */
+        .lnb li ul:hover{display: block;}
+
+        /* 버튼 스타일 */
+        button{font-weight: bold; font-size: 18px; color: #454545;}
+        .location_info, .location_info2{display: flex; justify-content: space-between;}
+        .location_info li li, .location_info2 li li{text-align: center; margin-bottom: 30px; font-family: 'NanumSquare', sans-serif;}
+        .location_info li li:first-child, .location_info2 li li:first-child{font-size: 20px; font-weight: 800;}
+        .location_btn button, .location_btn2 a{display: block; margin: 0 auto; width: 240px; height: 60px; line-height: 60px; border: 2px solid #d82d33;  font-size: 18px; font-weight: bold; color: #181818;}
+        .location_btn button:hover, .location_btn2 a:hover{background: #fff; opacity: 0.5; }
+
+        /* 폰트 스타일 */
+        h3{text-align: center; font-size: 30px; font-weight: bold; margin: 60px 0;}
+        h4{text-align: center; font-size: 20px; font-weight: 800; margin-bottom: 30px;}
+
+        /* input x버튼 지우기 */
+        input::-webkit-search-decoration,
+        input::-webkit-search-cancel-button,
+        input::-webkit-search-results-button,
+        input::-webkit-search-results-decoration{display:none;} 
+
+        .select_box1 li:hover{color: #d82d33;}
+
+        /* box2 select 마우스오버 시 */ 
+        .select_box2:hover ul{ display: block;}
+        .select_box2 li:hover{color: #d82d33;}  
+        
+        /* sub2_2 user_guide */
+        .user_guide1_wrap span{color: #d82d33;}
+
+        .tab_menu_wrap li:hover button, .tab_menu_wrap2 li:hover button, .tab_menu_wrap3 li:hover button, .tab_menu_nowrap li:hover button{background: #d82d33; color: #fff; border: 1px solid #d82d33;}
+
+
+
+/* ★★★★★ 데스크탑: 스크린 화면은 최소 1400px 이상 ★★★★★ */
+@media screen and (min-width: 1400px) {
+    /* thead 위 스타일 */
+    .thead_up th{border-bottom: 2px solid #bababa; text-align: center; border-right: 1px solid #bababa;}
+    .thead_up td{border-right: 1px solid #bababa; border-bottom: 1px solid #bababa;}
+    .thead_up th:last-child, .thead_up td:last-child{border-right: 0;}
+
+    /* th 왼쪽 정렬 스타일 */
+    .th_left th{text-align: left;}
+    .th_left tr{border-bottom: 1px solid #bababa; }
+    .th_left td{border-left: 0; padding-left: 30px;}
+    .th_left p{ margin-left: 30px;}
+
+    /* thead 왼쪽 스타일 */
+    .thead_left td:not(:last-of-type){border-right: 1px solid #bababa;}
+    .thead_left tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+
+    /* tab_menu_wrap */
+    .tab_menu_wrap{ margin-bottom: 60px;}
+    .tab_menu_wrap ul{ display: flex; flex-wrap: wrap;}
+    .tab_menu_wrap li{ width:33.33%; height:60px; line-height:60px; text-align: center; }
+    .tab_menu_wrap button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif;}
+    .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+    
+
+    /* tab_menu_nowrap */
+    .tab_menu_nowrap, .tab_menu_wrap2, .tab_menu_wrap3{ margin-bottom: 60px;}
+    .tab_menu_nowrap ul, .tab_menu_wrap2 ul, .tab_menu_wrap3 ul{display: flex;}
+    .tab_menu_nowrap li, .tab_menu_wrap2 li, .tab_menu_wrap3 li{flex: 1; height: 60px;  text-align: center; }
+    .tab_menu_nowrap button, .tab_menu_wrap2 button, .tab_menu_wrap3 button{ color: #454545; width: 100%; line-height: 60px; margin: 0 auto; border: 1px solid #BABABA; box-sizing: border-box; font-family: 'NanumSquare', sans-serif;}
+    .on button, .on button, .on button{  border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+    /* 지도 스타일*/
+    .map{width: 100%; height: 440px; border: 0;}
+    .map_wrap>table{margin-top: -5px;}
+    .map_wrap td{border-right: 1px solid #bababa; text-indent: 30px; width: 419px;}
+    .map_wrap th{border-left: 1px solid #bababa; width: 200px;}
+
+
+    /* 검색 버튼 */
+    .btn_search{width: 60px; height: 60px; background: #d82d33;}
+    .btn_search:hover{background: #000;}
+
+    /* sub visual */
+    .sub_visual_wrap{ width:1400px; margin:0 auto;}
+    .sub_visual_wrap p{color:#fff;  text-align: center;}
+    .sub_visual_wrap p:first-child{padding: 180px 0 10px 0; font-size: 40px;}
+    .sub_visual_wrap p:last-child{font-size:18px;}
+
+    /* .lnb ul{display: flex;} */
+    .lnb{height: 70px; font-size: 18px;  border-bottom: 1px solid #d1d1d1; box-sizing: border-box; margin-bottom: 80px;}
+    .lnb>ul{margin: 0 auto;}
+    .lnb>ul{display: flex; width: 1400px; margin: 0 auto;}
+    .lnb>ul>li:last-child>*{width: 265px;}
+    .lnb ul>li{ display: flex;  box-sizing: border-box;}
+    .lnb ul>li a{ padding: 0 20px;}
+
+    .lnb ul ul{border: 1px solid #d1d1d1;}
+
+    /* .lnb ul>li:last-child{border-right: 1px solid #d1d1d1;} */
+    .lnb>ul>li>a{ line-height: 70px;}
+    .lnb img{margin-top: 20px;}
+    .lnb li li a{line-height: 70px; width: 265px; }
+
+    .lnb>ul>li:last-child{height: 70px; position: relative; width: 530px;}
+    .lnb>ul ul{position: absolute; margin-left: 265px; overflow: hidden; height: 70px;}
+
+
+    .lnb2>ul>li:last-child ul:hover{ height: 141px;}
+    .lnb3>ul>li:last-child ul:hover{ height: 211px; }
+    
+
+    .lnb>ul>li>a{ border-left: 1px solid #d1d1d1; height: 70px;}
+    .lnb ul ul li:first-child{ border-bottom: 1px solid #d1d1d1; background: url(../sub_images/lnb_open_btn.png) no-repeat top 35px right 15px; height: 69px; }
+    .lnb ul ul:hover{background: #fff; }
+
+    /* 전체서브 공통2(너비) */
+    .sub_content_wrap{width: 1400px; margin: 0 auto; font-family: 'NanumSquare', sans-serif;}
+    .sub_content_wrap>div{margin-bottom: 180px;}
+
+    /* 전체서브 공통3(서브타이틀) */
+    .sub_title{width: 1400px; margin: 0 auto; text-align: center;}
+    .sub_title p{font-size: 18px; }
+    .sub_title p:first-of-type{margin-bottom: 35px; font-weight: 600;}
+    .sub_title p:last-of-type{margin-bottom: 65px; font-weight: bold; font-family: 'NanumSquare', sans-serif; font-size: 18px;}
+
+    /* 표 */
+    table{width: 1400px; border-collapse: collapse; margin: 30px auto; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;  box-sizing: border-box;}
+    tr{height: 60px;}
+    th{font-size: 18px; font-weight: 800; color: #454545; }
+    td{border-left: 0; }
+    th, td{border-right: 0;}
+    caption{text-align: right; caption-side: bottom; margin-top: 15px; color: #454545;}
+
+    /* 검색 스타일*/
+    .search_wrap form{display: flex; justify-content: space-between;}
+    .search_wrap{background: #F6F6F6; height: 100px; margin-bottom: 60px;}
+    .search_wrap>div{width: 1170px; margin: 0 auto; padding-top: 20px; }
+    /* 검색 select 스타일 */
+    /* #search_select{width: 380px; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; padding-left: 30px; appearance: none; background: #fff url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; box-sizing: border-box; cursor: pointer;} */
+    .select_box2 *{ box-sizing: border-box;}
+    .select_box2{ position: relative; width: 380px; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 30px; appearance: none; background: #fff url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; box-sizing: border-box; cursor: pointer;}
+    .label2{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+    .select_box2 ul{border: 1px solid #bababa; width: 380px; margin: -2px 0 0 -1px; display: none;}
+    .select_box2 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* 2. 개별 서브 스타일 */
+    /* sub1: 리조트소개 */
+    /* sub1_1: 개요및연혁 */
+    /* overview */
+    .overview_visual{width: 100%; height: 370px; background: url(../sub_images/sub1/overview_visual_img.jpg) no-repeat center top/cover; position: absolute; left: 0;}
+    .overview_content{margin-top: 455px;}
+
+    /* overview_table */
+
+    .overview_content th{width: 250px;}
+    .overview_content td{width: 450px;}
+
+    /* history_table */
+
+    .history tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+    .history th{width: 240px;}
+    .history td:nth-of-type(1){width: 350px; text-align: center;}
+    .history tr:nth-child(3), .history tr:nth-child(5), .history tr:nth-child(7), .history tr:nth-child(10){border: 0;}
+    .history th{vertical-align: top; padding-top: 23px;}
+
+    /* sub1_2: 지역별리조트 */
+    /* 1_2_1.지역별 리조트 위치 */
+    /* 1_2_2. 지역별 리조트 개요 */
+    /* 리조트 이미지 */
+    .tongyeong>div:first-child{width: 688px; height: 401px; background: url(../sub_images/sub1/tongyeong_resort_img.jpg) no-repeat; box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);}
+    .hwasun>div:first-child{width: 688px; height: 401px; background: url(../sub_images/sub1/hwasun_resort_img.jpg) no-repeat center top/100%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); position: absolute; left: 50%;}
+    .seorak>div:first-child{width: 688px; height: 401px; background: url(../sub_images/sub1/seorak_resort_img.jpg) no-repeat; box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);}
+    .jeju>div:first-child{width: 688px; height: 401px; background: url(../sub_images/sub1/jeju_resort_img.jpg) no-repeat center top/100%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); position: absolute; left: 50%;}
+
+
+    /* 텍스트 스타일 */
+    .resort_smry_heading>h3{text-align: left; margin-bottom: 15px; margin-top: 0;}
+    .resort_summary_text{width: 670px; height: 410px; margin-left: 10px;}
+    .resort_summary_text>p{margin-top: 60px; color: #454545; font-size: 18px; line-height: 28px; }
+
+    /* 배치 */
+    .resort_summary>div{display: flex; margin-bottom: 60px;}
+    .tongyeong>div:nth-of-type(2), .seorak>div:nth-of-type(2){padding-left: 20px;}
+    .hwasun>div:nth-of-type(1), .jeju>div:nth-of-type(1){padding-right: 10px;}
+    .resort_smry_heading{display: flex; justify-content: space-between;  border-bottom: 1px solid #BABABA; padding-right: 40px; height: 60px; line-height: 60px;}
+    .resort_summary ul{color: #6E6E6E; margin-top: 60px;}
+    .resort_summary a:hover{opacity: 0.5;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub2: 글램핑/카라반 */
+    /* sub2_1: 숙박시설안내 */
+    /* 2_1_1. 아산스파포레 */
+    .spafore_img{width: 100%; height: 370px; background: url(../sub_images/sub2/spafore_visual_img.jpg) no-repeat; margin-bottom: 30px; }
+    /* 2_1_2. 숙박시설안내 */
+    .accomodation>div{margin-bottom: 60px;}
+    .accomodation_img2{display: none;}
+
+    /* 이미지 슬라이드 */
+    .accomodation_slide_img{width: 1155px; margin: 0 auto; margin-bottom: 20px;  overflow: hidden;}
+    .accomodation_slide_img img{width: 1155px;}
+    .accomodation_slide ul{display: flex; width: 300%;}
+    .accomodation_slide li{ flex:1; }
+    .glampfore, .coachman{display: none;}
+
+    /* 숙박시설 슬라이드 제어 버튼1 */
+    .accomodation_slide_btn1 button{display: block;}
+    .accomodation_slide_btn1{width: 1400px; display: flex; left: 50%; margin: -320px 0 0 -700px; position: absolute; justify-content: space-between;}
+    .accomodation_slide_btn1 button:hover{opacity: 0.5;}
+
+    /* 숙박시설 슬라이드 제어 버튼2 */
+    .accomodation_slide_btn2{width: 75px; margin: 0 auto; display: flex; justify-content: space-evenly; }
+    .accomodation_slide_btn2 span{display: none; }
+    .accomodation_slide_btn2 button{height: 10px; border-radius: 5px;}
+    .accomodation_slide_btn2 button:not(:first-child){ width: 10px; border: 1px solid #d82d33;  }
+    .accomodation_slide_btn2 button:first-child{width: 30px; background: #d82d33;}
+
+    /* 숙박시설안내 표 */
+    .accomodation table{width: 1155px;}
+    .accomodation table th{width: 350px;}
+
+    /* sub2_2: 객실이용안내 */
+    /* 2_2_1.user_guide1 */
+    .user_guide1_wrap>ol{display: flex; justify-content: space-between;}
+    .user_guide1_wrap>ol>li{width: 215px; height: 280px; border: 1px solid #bababa; border-top: 2px solid #bababa; box-sizing: border-box; list-style: none;}
+    .user_guide1_wrap p{text-align: center; font-weight: 800; font-size: 18px; line-height: 58px; border-bottom: 1px solid #bababa;}
+    .user_guide1_wrap li{margin-top: 20px;}
+    .user_guide1_wrap ol ol{width: 120px; margin: 0 auto;}
+    .user_guide1_wrap ol ol>li{list-style-position: inside;}
+
+    /* 2_2_2.user_guide2 */
+    .user_guide2_wrap ul{display: flex; justify-content: space-between; text-align: center;}
+    .user_guide2_wrap li{width: 355px; height: 430px; border: 1px solid #bababa; box-sizing: border-box; }
+    .user_guide2_wrap h4{padding-top: 40px; margin-bottom: 15px;}
+    .user_guide2_wrap b{ font-weight: 800;}
+    .user_guide2_wrap p:first-of-type{margin-bottom: 170px;}
+    .user_guide2_wrap li p:nth-of-type(2){width: 80%; margin: 0 auto;}
+    .user_guide2_wrap p:last-of-type{line-height: 21px;}
+    .caption{margin: 20px 0 0 140px;}
+    /* 입퇴실 절차 아이콘 */
+    .user_guide2_wrap li:first-child{background: url(../sub_images/sub2/check_in_icon.png) no-repeat center top 120px;}
+    .user_guide2_wrap li:nth-child(2){background: url(../sub_images/sub2/check_out_icon.png) no-repeat center top 120px;}
+    .user_guide2_wrap li:last-child{background: url(../sub_images/sub2/to_do_icon.png) no-repeat center top 120px;}
+
+    /* 2_2_3.user_guide3 */
+    /* user_guide3 표 전체 공통스타일 */
+    .user_guide3_wrap{text-align: center;}
+    .user_guide3_wrap tr{border-bottom: 1px solid #bababa;}
+    .user_guide3_wrap th{border-bottom: 2px solid #bababa;}
+    .user_guide3_wrap th, .user_guide3_wrap td{border-left: 1px solid #bababa;}
+    .user_guide3_wrap th:first-child, .user_guide3_wrap td:first-child{border-left: 0;}
+    .user_guide3_wrap h4{text-align: left; margin-bottom: 0; padding-left: 20px;}
+
+    .fee2 th:nth-child(1){width: 400px;}
+    .fee2 th:nth-child(2){width: 400px;}
+    .fee3 tbody{height: 120px;}
+    .fee1 th, .fee3 th{width: 700px;}
+
+    /* 2_2_4.user_guide4 */
+    .user_guide4_wrap td ol{margin: 30px 0 30px 30px;}
+    .user_guide4_wrap th{padding-left: 20px;}
+
+    /* sub2_3: 오시는길 */
+    .traffic_info th{padding-left: 20px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub3: 제휴리조트 */
+    /* sub3_1: 국내제휴리조트안내 */
+    .reservation_inquiry table{text-align: center;}
+    .reservation_inquiry th{text-align: center; border-bottom: 2px solid #bababa;}
+    .reservation_inquiry li{list-style: none;}
+    .reservation_inquiry td{height: 100px;}
+    .reservation_inquiry th:first-child, .reservation_inquiry td:first-child{border-right: 1px solid #bababa;}
+
+    /* sub3_2: 경기 */
+    /* 개요 */
+    .adonis_info1_wrap{display: flex; justify-content: space-between;}
+    .adonis_info1_main_img ul{display: flex;}
+    .adonis_info1_main_img{width: 684px; overflow: hidden;}
+    .adonis_info1_content{width: 670px;}
+    .adonis_info1_text{height: 200px;  margin-bottom: 73px;}
+    .adonis_info1_text ul{border-top: 1px solid #bababa; border-bottom: 1px solid #bababa; }
+
+    .adonis_info1_text li{margin: 20px;}
+    .adonis_info1_text li:last-child{margin-left: 640px;}
+    .adonis_info1_text li:last-child a{display: block; background: url(../sub_images/sub3/external_link.png) no-repeat; width: 25px; height: 25px;}
+    .adonis_info1_text span{display: none;}
+    .adonis_info1_img_list ul{display: flex; justify-content: space-between;}
+    .adonis_info1_img_list li img{width: 216px;}
+
+    /* 회원이용안내 */
+    .adonis_info2{text-align: center;}
+
+    /* 부대시설안내 */
+    .adonis_info3_wrap>ul{display: flex; justify-content: space-between; text-align: center;}
+    .adonis_info3_wrap>ul>li{border: 1px solid #bababa; border-top: 2px solid #bababa; width: 334px; height: 364px;}
+    .adonis_info3_wrap>ul>li h4{margin-top: 30px; margin-bottom: 15px;}
+    .adonis_info3_wrap>ul>li>p{font-weight: bold;}
+    .adonis_info3_wrap>ul>li:not(:last-of-type)>p:last-of-type{margin-top: 200px;}
+    .adonis_info3_wrap>ul ul{ font-weight: bold; margin-top: 200px;}
+
+    .adonis_info3_wrap>ul>li:nth-of-type(1){background: url(../sub_images/sub3/fnb_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(2){background: url(../sub_images/sub3/entertainment_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(3){background: url(../sub_images/sub3/business_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(4){background: url(../sub_images/sub3/etc_icon.png) no-repeat center center;}
+
+    /* 교통정보안내 */
+    .adonis_info4 h4{text-align: left;}
+    .adonis_info4>div:nth-of-type(2) th{padding-left: 90px;}
+    .adonis_info4>div:nth-of-type(1){margin-bottom: 60px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub4: 통합예약 */
+    /* sub4_1: 객실예약 */
+    .reservation_div>*{margin-bottom: 60px;}
+    /* 4_1_1. 예약정보 */
+    /* 객실종류 */
+    .room_list h4{text-align: left;}
+    .room_list_box{border: 1px solid #bababa; height: 90px;}
+    .room_list_box_wrap{display: flex; flex-wrap: wrap; width: 1370px; margin: 15px 0 0 30px;}
+    .room_list_box_wrap li{width: 250px; margin-bottom: 20px;}
+
+    /* 체크인, 체크아웃 날짜 선택 달력 */
+    /* 달력 넘김 버튼 */
+    .calendar{display: flex; justify-content: space-between; }
+    .calendar_wrap{border-top: 1px solid #6E6E6E; border-bottom: 1px solid #bababa;}
+    .cal_controls{display: flex; justify-content: space-between; width: 220px; margin: 20px auto; font-size: 20px; }
+    .cal_controls button:hover{opacity: 0.5;}
+    /* 달력 */
+    .reserve_month{border: 0; width: 630px; text-align: center;}
+    /* 예약정보 */
+    .reservation_info2{display: none;}
+    .reservation_info{border: 0;}
+    .reservation_info th, .reservation_info td{border: 1px solid #bababa; box-sizing: border-box;}
+    .reservation_info th{width: 85px;}
+    .reservation_info select{ height: 60px; border: 0; font-family: 'NanumSquare', sans-serif; font-size: 16px;  appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; cursor: pointer;}
+    .reservation_info input{height: 60px;font-family: 'NanumSquare', sans-serif; font-size: 16px; border: 0; background: transparent;}
+    .reservation_info input::placeholder{color: #bababa;}
+
+    .reservation_info td{text-indent: 30px;}
+    #sub_container .align_left{width: 85px;}
+
+    .reservation_info tr:nth-of-type(4) td:first-of-type input{width: 320px;}
+    .reservation_info tr:nth-of-type(4) td:last-of-type input{width: 780px;}
+
+    /* select option */
+    /* .reservation_info option{font-size: 18px; height: 180px;} */
+    .select_box1 *{ box-sizing: border-box;}
+    .select_box1{ position: relative; width: 380px; height: 60px;  font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 30px; appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; box-sizing: border-box; cursor: pointer;}
+    .label1{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+    .select_box1 ul{border: 1px solid #bababa; width: 382px; margin-left: -1px; display: none;}
+    .select_box1 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+
+    /* box1 select 마우스오버 시 */
+    .reservation_info tr:nth-child(3) td:nth-of-type(1) div:hover ul{ display: block;}
+    .reservation_info tr:nth-child(3) td:nth-of-type(2) div:hover ul{ display: block;}
+    .reservation_info tr:nth-child(3) td:nth-of-type(3) div:hover ul{ display: block;}
+
+    /* 예약 결제하기, 초기화 버튼 */
+    .reservation_button{width: 500px; display: flex; justify-content: space-between; margin: 0 auto;}
+    .reservation_button button{width: 230px; height: 60px; color: #fff;}
+    .reservation_button p:first-child button{background: #d82d33;}
+    .reservation_button p:last-child button{background: #aeaeae;}
+    .reservation_button p button:hover{background: #000;}
+
+    /* 4_1_2. 사전예약 할인상품 */
+    .sale_item_box{border: 1px solid #bababa; box-sizing: border-box; font-size: 18px;}
+    .sale_item_box h4{text-align: left; margin: 30px 0 10px 30px;}
+    .sale_item_box>ul>li:first-child{background: url(../sub_images/sub4/item_img1.jpg) no-repeat top 80px left 30px; height: 300px;}
+    .sale_item_box>ul>li:nth-child(2){background: url(../sub_images/sub4/item_img2.jpg) no-repeat top 80px left 30px; height: 310px;}
+    .sale_item_box>ul>li:nth-child(3){background: url(../sub_images/sub4/item_img3.jpg) no-repeat top 80px left 30px; height: 400px;}
+    .sale_item_box>ul>li:last-child{background: url(../sub_images/sub4/item_img4.jpg) no-repeat top 80px left 30px; height: 300px;}
+    .sale_item_content ul:first-child, .sale_item_content div{width: 900px; margin-left: 500px;}
+    .sale_item_box>ul>li:not(:last-of-type){border-bottom: 1px solid #bababa;}
+    .sale_item_content{display: flex;}
+    .strike{color: #000; text-decoration: line-through;}
+
+    /* 요트투어 */
+    .yacht{display: flex; justify-content: space-between; width: 900px; margin-left: 500px;}
+    .yacht div p{text-align: center; margin-bottom: 20px;}
+    .yacht div{margin-bottom: 20px;}
+    .sale_item_controls ul{margin-bottom: 65px;}
+    
+    /* 수량버튼 */
+    .sale_item_controls{margin-right: 30px; margin-top: 5px;}
+    .sale_item_controls li{display: flex; width: 100px; justify-content: space-between; margin-bottom: 2px;}
+    .yacht>ul:last-of-type{margin-top: 50px;}
+    .yacht>ul:last-of-type li{margin-bottom: 2px;}
+    .sale_item_controls button:hover{opacity: 0.5;}
+
+    /* 4_1_3. 개인정보 처리방침 */
+    .personal_policy{border: 1px solid #bababa; padding: 30px 30px 30px 90px; margin-bottom: 30px;}
+    .agree_policy{width: 310px; display: flex; justify-content: space-between; margin: 0 auto; }
+
+
+    /* 체크박스 */
+    .agree_policy input{ display: none; }
+
+    /* +인접 선택자 : 선택자로 지정된 대상 태그의 다음(next)태그 */
+    input + label{
+        cursor: pointer;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border:3px solid #707070;
+        position: relative;
+        background: url(../sub_images/sub4/checked.gif) no-repeat center;
+    }
+
+    /* 
+
+        (0) label 태그 (부가 태그, 폼태그 사용시 반드시 적용될 필요는 없습니다.)
+        폼태그에 설명을 추가할 경우
+
+
+
+        [해석] 
+        after(뒤에) 선택자로 지정된 대상태그의 뒤에 무언가를 삽입할때 사용되는 가상의 추가 콘텐츠(content)
+        
+        (1)
+        input:checked
+        인풋 태그중 클릭시 체크옵션이 활성활 될경우 
+
+        (2)
+        + label::after
+        인풋다음(+) 태그인 라벨 태그에 무언가를 삽입하고(content:'✔';) 보여주겠다.
+
+
+    */
+
+
+    input:checked + label::after{
+        content:'✔';
+        color:red;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top:-5px;
+    }
+
+    /* 4_1_4. 기타 안내사항 */
+    .etc_notice h3{display: none;}
+    .etc_notice p{margin-bottom: 10px;}
+    .etc_notice ul{margin-bottom: 40px;}
+    .etc_notice li li{line-height: 30px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub5: 고객센터 */
+    /* 검색창 스타일 */
+    #search_input{width: 710px; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; padding-left: 30px;  box-sizing: border-box; font-weight: normal;}
+    #search_input::placeholder{color: #929292;}
+    /* sub5_1: 공지사항 */
+    /* 게시글 목록 */
+    .board_table{text-align: center;}
+    .board_table th, .board_table td{border-right: 0;}
+    .board_table table{margin-bottom: 60px;}
+    /* 게시글 페이지 넘김 */
+    .board_page>*{display: flex;}
+
+    /* 게시글 페이지 넘김 버튼 */
+    .board_page_controls{ position: absolute; left: 50%; margin-left: -170px; margin-top: -2px;}
+    .board_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+    .board_page_controls1{position: absolute; display: flex;}
+    .board_page_controls2{position: absolute; display: flex; left: 300px;}
+
+    /* 게시글 페이지 순서 숫자 */
+    .board_page ul{width: 200px; margin: 0 auto; justify-content: space-between;}
+    .board_page li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+    .board_page li:first-child button{color: #d82d33; font-weight: bold;} 
+
+    /* sub5_2: 자주묻는질문 */
+    /* 질문목록 */
+    .folding_list{margin-bottom: 60px; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;}
+    .folding_list dt, .folding_list dd{padding: 30px 0 30px 0;}
+    .folding_list dt{ font-weight: bold; background: url(../sub_images/sub5/below_open_btn.png) no-repeat center right 30px;}
+    .folding_list dt:not(:first-child){border-top: 1px solid #bababa;}
+    .folding_list dd{color: #454545; background: #F6F6F6; display: none;}
+    .folding_list dd p{margin: 30px 60px;}
+    .faq_list button{font-size: 16px; font-family: 'NanumSquare', sans-serif;}
+    .question{ margin: 60px;color: #6E6E6E; font-weight: 300; font-size: 24px; margin-right: 15px;}
+    .answer{margin: 60px; font-weight: 300; font-size: 24px; margin-right: 15px;}
+    .faq_list dt:hover button{color: #d82d33;}
+
+    /* 질문목록 페이지 넘김 */
+    .faq_list_page>*{display: flex;}
+    /* 질문목록 페이지 넘김 버튼 */
+    .faq_list_page_controls{ position: absolute; left: 50%; margin-left: -62px; margin-top: -2px;}
+    .faq_list_page_controls p:first-child{ position: absolute;  }
+    .faq_list_page_controls p:last-child{ position: absolute; left: 100px;}
+    .faq_list_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+    
+    /* 질문목록 페이지 순서 숫자 */
+    .faq_list ul{width: 33px; margin: 0 auto; justify-content: space-between; }
+    .faq_list li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+    .faq_list li:first-child button{color: #d82d33; font-weight: bold;} 
+
+    /* sub5_3: 자료실 */
+    .appl_forms{color: #454545;}
+    .appl_forms ul{display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 18px; font-weight: bold; }
+    .appl_forms li{ width:690px; height:60px; line-height:60px; border: 1px solid #bababa; box-sizing: border-box; margin-bottom: 30px;}
+    .appl_forms li{display: flex; justify-content: space-between;}
+    .appl_forms li>p:first-child{text-indent: 10px;}
+    .appl_forms li>p:last-child a{display: block; width: 265px; background: #d82d33 url(../sub_images/sub5/download_btn.png) no-repeat center right 80px; color: #fff; font-weight: bold; text-align: center;}
+    .appl_forms>p{text-align: right;}
+    .appl_forms li>p:last-child a:hover{background:#000 url(../sub_images/sub5/download_btn.png) no-repeat center right 80px;}
+
+}
+
+/* ★★★★★ 저해상도 노트북 & 데스크탑: 스크린 화면은 최소 1280px 이상 최대 1399px 이하 ★★★★★ 
+    콘텐츠의 최대폭 1200px
+*/
+@media screen and (min-width:1280px) and (max-width:1399px){
+        /* thead 위 스타일 */
+    .thead_up th{border-bottom: 2px solid #bababa; text-align: center; border-right: 1px solid #bababa;}
+    .thead_up td{border-right: 1px solid #bababa; border-bottom: 1px solid #bababa;}
+    .thead_up th:last-child, .thead_up td:last-child{border-right: 0;}
+
+    /* th 왼쪽 정렬 스타일 */
+    .th_left th{text-align: left;}
+    .th_left tr{border-bottom: 1px solid #bababa; }
+    .th_left td{border-left: 0; padding-left: 30px;}
+    .th_left p{ margin-left: 30px;}
+
+    /* thead 왼쪽 스타일 */
+    .thead_left td:not(:last-of-type){border-right: 1px solid #bababa;}
+    .thead_left tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+
+    /* tab_menu_wrap */
+    .tab_menu_wrap{ margin-bottom: 60px;}
+    .tab_menu_wrap ul{ display: flex; flex-wrap: wrap;}
+    .tab_menu_wrap li{ width:33.33%; height:60px; line-height:60px; text-align: center; }
+    .tab_menu_wrap button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif;}
+    .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+    /* tab_menu_nowrap */
+    .tab_menu_nowrap, .tab_menu_wrap2, .tab_menu_wrap3{ margin-bottom: 60px;}
+    .tab_menu_nowrap ul, .tab_menu_wrap2 ul, .tab_menu_wrap3 ul{display: flex;}
+    .tab_menu_nowrap li, .tab_menu_wrap2 li, .tab_menu_wrap3 li{flex: 1; height: 60px;  text-align: center; }
+    .tab_menu_nowrap button, .tab_menu_wrap2 button, .tab_menu_wrap3 button{ color: #454545; width: 100%; line-height: 60px; margin: 0 auto; border: 1px solid #BABABA; box-sizing: border-box; font-family: 'NanumSquare', sans-serif;}
+    .on button, .on button, .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+    /* 지도 스타일*/
+    .map{width: 100%; height: 440px; border: 0;}
+    .map_wrap>table{margin-top: -5px;}
+    .map_wrap td{border-right: 1px solid #bababa; text-indent: 30px; width: 419px;}
+    .map_wrap th{border-left: 1px solid #bababa; width: 200px;}
+
+    /* 검색 버튼 */
+    .btn_search{width: 60px; height: 60px; background: #d82d33;}
+    .btn_search:hover{background: #000;}
+
+    /* sub visual */
+    .sub_visual_wrap{ width:1200px; margin:0 auto;}
+    .sub_visual_wrap p{color:#fff;  text-align: center;}
+    .sub_visual_wrap p:first-child{padding: 180px 0 10px 0; font-size: 40px;}
+    .sub_visual_wrap p:last-child{font-size:18px;}
+
+    /* .lnb ul{display: flex;} */
+    .lnb{height: 70px; font-size: 18px;  border-bottom: 1px solid #d1d1d1; box-sizing: border-box; margin-bottom: 80px;}
+    .lnb>ul{margin: 0 auto;}
+    .lnb>ul{display: flex; width: 1200px; margin: 0 auto;}
+    .lnb>ul>li:last-child>*{width: 265px;}
+    .lnb ul>li{ display: flex;  box-sizing: border-box;}
+    .lnb ul>li a{ padding: 0 20px;}
+
+    .lnb ul ul{border: 1px solid #d1d1d1;}
+
+    /* .lnb ul>li:last-child{border-right: 1px solid #d1d1d1;} */
+    .lnb>ul>li>a{ line-height: 70px;}
+    .lnb img{margin-top: 20px;}
+    .lnb li li a{line-height: 70px; width: 265px; }
+
+    .lnb>ul>li:last-child{height: 70px; position: relative; width: 530px;}
+    .lnb>ul ul{position: absolute; margin-left: 265px; overflow: hidden; height: 70px;}
+
+
+    .lnb2>ul>li:last-child ul:hover{ height: 141px;}
+    .lnb3>ul>li:last-child ul:hover{ height: 211px; }
+    
+
+    .lnb>ul>li>a{ border-left: 1px solid #d1d1d1; height: 70px;}
+    .lnb ul ul li:first-child{ border-bottom: 1px solid #d1d1d1; background: url(../sub_images/lnb_open_btn.png) no-repeat top 35px right 15px; height: 69px; }
+    .lnb ul ul:hover{background: #fff; }
+
+    /* 전체서브 공통2(너비) */
+    .sub_content_wrap{width: 1200px; margin: 0 auto; font-family: 'NanumSquare', sans-serif;}
+    .sub_content_wrap>div{margin-bottom: 180px;}
+
+    /* 전체서브 공통3(서브타이틀) */
+    .sub_title{width: 1200px; margin: 0 auto; text-align: center;}
+    .sub_title p{font-size: 18px; }
+    .sub_title p:first-of-type{margin-bottom: 35px; font-weight: 600;}
+    .sub_title p:last-of-type{margin-bottom: 65px; font-weight: bold; font-family: 'NanumSquare', sans-serif; font-size: 18px;}
+
+    /* 표 */
+    table{width: 1200px; border-collapse: collapse; margin: 30px auto; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;  box-sizing: border-box;}
+    tr{height: 60px;}
+    th{font-size: 18px; font-weight: 800; color: #454545; }
+    td{border-left: 0; }
+    th, td{border-right: 0;}
+    caption{text-align: right; caption-side: bottom; margin-top: 15px; color: #454545;}
+
+    /* 검색 스타일*/
+    .search_wrap form{display: flex; justify-content: space-between;}
+    .search_wrap{background: #F6F6F6; height: 100px; margin-bottom: 60px;}
+    .search_wrap>div{width: 1170px; margin: 0 auto; padding-top: 20px; }
+    .select_box2 *{ box-sizing: border-box;}
+    .select_box2{ position: relative; width: 380px; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 30px; appearance: none; background: #fff url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; box-sizing: border-box; cursor: pointer;}
+    .label2{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+    .select_box2 ul{border: 1px solid #bababa; width: 380px; margin: -2px 0 0 -1px; display: none;}
+    .select_box2 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* 2. 개별 서브 스타일 */
+    /* sub1: 리조트소개 */
+    /* sub1_1: 개요및연혁 */
+    /* overview */
+    .overview_visual{width: 100%; height: 370px; background: url(../sub_images/sub1/overview_visual_img.jpg) no-repeat center top/cover; position: absolute; left: 0;}
+    .overview_content{margin-top: 455px;}
+
+    /* overview_table */
+
+    .overview_content th{width: 250px;}
+    .overview_content td{width: 450px;}
+
+    /* history_table */
+
+    .history tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+    .history th{width: 240px;}
+    .history td:nth-of-type(1){width: 350px; text-align: center;}
+    .history tr:nth-child(3), .history tr:nth-child(5), .history tr:nth-child(7), .history tr:nth-child(10){border: 0;}
+    .history th{vertical-align: top; padding-top: 23px;}
+
+    /* sub1_2: 지역별리조트 */
+    /* 1_2_1.지역별 리조트 위치 */
+    .location_info ul>li:nth-of-type(2) img{width: 260px;}
+    /* 1_2_2. 지역별 리조트 개요 */
+    /* 리조트 이미지 */
+    .tongyeong>div:first-child{width: 568px; height: 340px; background: url(../sub_images/sub1/tongyeong_resort_img.jpg) no-repeat; box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);}
+    .hwasun>div:first-child{width: 568px; height: 340px; background: url(../sub_images/sub1/hwasun_resort_img.jpg) no-repeat center top/100%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); position: absolute; left: 50%;}
+    .seorak>div:first-child{width: 568px; height: 340px; background: url(../sub_images/sub1/seorak_resort_img.jpg) no-repeat; box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);}
+    .jeju>div:first-child{width: 568px; height: 340px; background: url(../sub_images/sub1/jeju_resort_img.jpg) no-repeat center top/100%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); position: absolute; left: 50%;}
+
+
+    /* 텍스트 스타일 */
+    .resort_smry_heading>h3{text-align: left; margin-bottom: 15px; margin-top: -5px;}
+    .resort_summary_text{width: 570px; height: 340px;}
+    .resort_summary_text>p{margin-top: 20px; color: #454545; font-size: 18px;  }
+
+    /* 배치 */
+    .resort_summary>div{display: flex; margin-bottom: 60px;}
+    .tongyeong>div:nth-of-type(2), .seorak>div:nth-of-type(2){padding-left: 20px;}
+    .hwasun>div:nth-of-type(1), .jeju>div:nth-of-type(1){padding-right: 20px;}
+    .resort_smry_heading{display: flex; justify-content: space-between;  border-bottom: 1px solid #BABABA; padding-right: 40px; height: 50px; line-height: 50px;}
+    .resort_summary ul{color: #6E6E6E; margin-top: 20px;}
+    .resort_summary a:hover{opacity: 0.5;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub2: 글램핑/카라반 */
+    /* sub2_1: 숙박시설안내 */
+    /* 2_1_1. 아산스파포레 */
+    .spafore_img{width: 100%; height: 370px; background: url(../sub_images/sub2/spafore_visual_img.jpg) no-repeat; margin-bottom: 30px; }
+    /* 2_1_2. 숙박시설안내 */
+    .accomodation_img img{width: 1200px;}
+    .accomodation>div{margin-bottom: 60px;}
+    .accomodation_img2{display: none;}
+
+    /* 이미지 슬라이드 */
+    .accomodation_slide_img{width: 1000px; margin: 0 auto; margin-bottom: 20px; }
+    .accomodation_slide ul{display: flex; overflow: hidden;}
+
+    /* 숙박시설 슬라이드 제어 버튼1 */
+    .accomodation_slide_btn1 button{display: block;}
+    .accomodation_slide_btn1{width: 1200px; display: flex; left: 50%; margin: -320px 0 0 -600px; position: absolute; justify-content: space-between;}
+    .accomodation_slide_btn1 button:hover{opacity: 0.5;}
+
+    /* 숙박시설 슬라이드 제어 버튼2 */
+    .accomodation_slide_btn2{width: 75px; margin: 0 auto; display: flex; justify-content: space-evenly; }
+    .accomodation_slide_btn2 span{display: none; }
+    .accomodation_slide_btn2 button{height: 10px; border-radius: 5px;}
+    .accomodation_slide_btn2 button:not(:first-child){ width: 10px; border: 1px solid #d82d33;  }
+    .accomodation_slide_btn2 button:first-child{width: 30px; background: #d82d33;}
+
+    /* 숙박시설안내 표 */
+    .accomodation table{width: 1155px;}
+    .accomodation table th{width: 350px;}
+
+    /* sub2_2: 객실이용안내 */
+    /* 2_2_1.user_guide1 */
+    .user_guide1_wrap>ol{display: flex; justify-content: space-between;}
+    .user_guide1_wrap>ol>li{width: 180px; height: 260px; border: 1px solid #bababa; border-top: 2px solid #bababa; box-sizing: border-box; list-style: none;}
+    .user_guide1_wrap p{text-align: center; font-weight: 800; font-size: 18px; line-height: 58px; border-bottom: 1px solid #bababa;}
+    .user_guide1_wrap li{margin-top: 20px;}
+    .user_guide1_wrap ol ol{width: 120px; margin: 0 auto;}
+    .user_guide1_wrap ol ol>li{list-style-position: inside;}
+
+    /* 2_2_2.user_guide2 */
+    .user_guide2_wrap ul{display: flex; justify-content: space-between; text-align: center;}
+    .user_guide2_wrap li{width: 320px; height: 430px; border: 1px solid #bababa; box-sizing: border-box; }
+    .user_guide2_wrap h4{padding-top: 40px; margin-bottom: 15px;}
+    .user_guide2_wrap b{ font-weight: 800;}
+    .user_guide2_wrap p:first-of-type{margin-bottom: 170px;}
+    .user_guide2_wrap li p:nth-of-type(2){width: 80%; margin: 0 auto;}
+    .user_guide2_wrap p:last-of-type{line-height: 21px;}
+    .caption{margin: 20px 0 0 100px;}
+    /* 입퇴실 절차 아이콘 */
+    .user_guide2_wrap li:first-child{background: url(../sub_images/sub2/check_in_icon.png) no-repeat center top 120px;}
+    .user_guide2_wrap li:nth-child(2){background: url(../sub_images/sub2/check_out_icon.png) no-repeat center top 120px;}
+    .user_guide2_wrap li:last-child{background: url(../sub_images/sub2/to_do_icon.png) no-repeat center top 120px;}
+
+    /* 2_2_3.user_guide3 */
+    /* user_guide3 표 전체 공통스타일 */
+    .user_guide3_wrap{text-align: center;}
+    .user_guide3_wrap tr{border-bottom: 1px solid #bababa;}
+    .user_guide3_wrap th{border-bottom: 2px solid #bababa;}
+    .user_guide3_wrap th, .user_guide3_wrap td{border-left: 1px solid #bababa;}
+    .user_guide3_wrap th:first-child, .user_guide3_wrap td:first-child{border-left: 0;}
+    .user_guide3_wrap h4{text-align: left; margin-bottom: 0; padding-left: 20px;}
+
+    .fee2 th:nth-child(1){width: 400px;}
+    .fee2 th:nth-child(2){width: 400px;}
+    .fee3 tbody{height: 120px;}
+    .fee1 th, .fee3 th{width: 700px;}
+
+    /* 2_2_4.user_guide4 */
+    .user_guide4_wrap td ol{margin: 30px 0 30px 30px;}
+    .user_guide4_wrap th{padding-left: 20px;}
+
+    /* sub2_3: 오시는길 */
+    .traffic_info th{padding-left: 20px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub3: 제휴리조트 */
+    /* sub3_1: 국내제휴리조트안내 */
+    .location_info2 img{width:220px;}
+    .location_btn2 a{width: 220px;}
+    .reservation_inquiry table{text-align: center;}
+    .reservation_inquiry th{text-align: center; border-bottom: 2px solid #bababa;}
+    .reservation_inquiry li{list-style: none;}
+    .reservation_inquiry td{height: 100px;}
+    .reservation_inquiry th:first-child, .reservation_inquiry td:first-child{border-right: 1px solid #bababa;}
+
+    /* sub3_2: 경기 */
+    /* 개요 */
+    .adonis_info1_wrap{display: flex; justify-content: space-between;}
+    .adonis_info1_main_img ul{display: flex;}
+    .adonis_info1_main_img{width: 570px; height: 368px; overflow: hidden;}
+    .adonis_info1_content{width: 570px;}
+    .adonis_info1_text{height: 200px;  margin-bottom: 72px;}
+    .adonis_info1_text ul{border-top: 1px solid #bababa; border-bottom: 1px solid #bababa; }
+    .adonis_info1_text li{margin: 20px;}
+    
+    .adonis_info1_text li:last-child{margin-left: 540px;}
+    .adonis_info1_text li:last-child a{display: block; background: url(../sub_images/sub3/external_link.png) no-repeat; width: 25px; height: 25px;}
+
+    .adonis_info1_text span{display: none;}
+    .adonis_info1_img_list ul{display: flex; justify-content: space-between;}
+    .adonis_info1_img_list li img{width: 160px;}
+
+    /* 회원이용안내 */
+    .adonis_info2{text-align: center;}
+
+    /* 부대시설안내 */
+    .adonis_info3_wrap>ul{display: flex; justify-content: space-between; text-align: center;}
+    .adonis_info3_wrap>ul>li{border: 1px solid #bababa; border-top: 2px solid #bababa; width: 280px; height: 364px;}
+    .adonis_info3_wrap>ul>li h4{margin-top: 30px; margin-bottom: 15px;}
+    .adonis_info3_wrap>ul>li>p{font-weight: bold;}
+    .adonis_info3_wrap>ul>li:not(:last-of-type)>p:last-of-type{margin-top: 200px;}
+    .adonis_info3_wrap>ul ul{ font-weight: bold; margin-top: 200px;}
+
+    .adonis_info3_wrap>ul>li:nth-of-type(1){background: url(../sub_images/sub3/fnb_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(2){background: url(../sub_images/sub3/entertainment_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(3){background: url(../sub_images/sub3/business_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(4){background: url(../sub_images/sub3/etc_icon.png) no-repeat center center;}
+
+    /* 교통정보안내 */
+    .adonis_info4 h4{text-align: left;}
+    .adonis_info4>div:nth-of-type(2) th{padding-left: 90px;}
+    .adonis_info4>div:nth-of-type(1){margin-bottom: 60px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub4: 통합예약 */
+    /* sub4_1: 객실예약 */
+    .reservation_div>*{margin-bottom: 60px;}
+    /* 4_1_1. 예약정보 */
+    /* 객실종류 */
+    .room_list h4{text-align: left;}
+    .room_list_box{border: 1px solid #bababa; height: 90px;}
+    .room_list_box_wrap{display: flex; flex-wrap: wrap; width: 1370px; margin: 15px 0 0 30px;}
+    .room_list_box_wrap li{width: 250px; margin-bottom: 20px;}
+
+    /* 체크인, 체크아웃 날짜 선택 달력 */
+    /* 달력 넘김 버튼 */
+    .calendar{display: flex; justify-content: space-between; }
+    .calendar_wrap{border-top: 1px solid #6E6E6E; border-bottom: 1px solid #bababa;}
+    .cal_controls{display: flex; justify-content: space-between; width: 220px; margin: 20px auto; font-size: 20px; }
+    .cal_controls button:hover{opacity: 0.5;}
+
+    /* 달력 */
+    .reserve_month{border: 0; width: 580px; text-align: center;}
+
+    /* 예약정보 */
+    .reservation_info2{display: none;}
+    .reservation_info{border: 0;}
+    .reservation_info th, .reservation_info td{border: 1px solid #bababa; box-sizing: border-box;}
+    .reservation_info th{width: 150px; }
+    .reservation_info select{ height: 60px; border: 0; font-family: 'NanumSquare', sans-serif; font-size: 16px;  appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; cursor: pointer;}
+    .reservation_info input{height: 60px;font-family: 'NanumSquare', sans-serif; font-size: 16px; border: 0; background: transparent;}
+    .reservation_info input::placeholder{color: #bababa;}
+
+    .reservation_info td{text-indent: 30px;}
+    #sub_container .align_left{width: 85px;}
+
+    /* .reservation_info tr:nth-of-type(4) td:first-of-type input{width: 320px;}
+    .reservation_info tr:nth-of-type(4) td:last-of-type input{width: 780px;} */
+
+    /* select option */
+    /* .reservation_info option{font-size: 18px; height: 180px;} */
+    .select_box1 *{ box-sizing: border-box;}
+    .select_box1{ position: relative; height: 60px; width: 300px; font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 30px; appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; box-sizing: border-box; cursor: pointer;}
+    .label1{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+    .select_box1 ul{border: 1px solid #bababa; margin-left: -1px; display: none;}
+    .select_box1 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+
+    /* box1 select 마우스오버 시 */
+    .reservation_info tr:nth-child(3) td:nth-of-type(1) div:hover ul{ display: block;}
+    .reservation_info tr:nth-child(3) td:nth-of-type(2) div:hover ul{ display: block;}
+    .reservation_info tr:nth-child(3) td:nth-of-type(3) div:hover ul{ display: block;}
+
+    /* 예약 결제하기, 초기화 버튼 */
+    .reservation_button{width: 500px; display: flex; justify-content: space-between; margin: 0 auto;}
+    .reservation_button button{width: 230px; height: 60px; color: #fff;}
+    .reservation_button p:first-child button{background: #d82d33;}
+    .reservation_button p:last-child button{background: #aeaeae;}
+    .reservation_button p button:hover{background: #000;}
+
+    /* 4_1_2. 사전예약 할인상품 */
+    .sale_item_box{border: 1px solid #bababa; box-sizing: border-box; font-size: 18px;}
+    .sale_item_box h4{text-align: left; margin: 30px 0 10px 30px;}
+    .sale_item_box>ul>li:first-child{background: url(../sub_images/sub4/item_img1.jpg) no-repeat top 80px left 30px; height: 300px;}
+    .sale_item_box>ul>li:nth-child(2){background: url(../sub_images/sub4/item_img2.jpg) no-repeat top 80px left 30px; height: 310px;}
+    .sale_item_box>ul>li:nth-child(3){background: url(../sub_images/sub4/item_img3.jpg) no-repeat top 80px left 30px; height: 400px;}
+    .sale_item_box>ul>li:last-child{background: url(../sub_images/sub4/item_img4.jpg) no-repeat top 80px left 30px; height: 300px;}
+    .sale_item_content ul:first-child, .sale_item_content div{width: 900px; margin-left: 500px;}
+    .sale_item_box>ul>li:not(:last-of-type){border-bottom: 1px solid #bababa;}
+    .sale_item_content{display: flex;}
+    .strike{color: #000; text-decoration: line-through;}
+
+    /* 요트투어 */
+    .yacht{display: flex; justify-content: space-between; width: 700px; margin-left: 500px;}
+    .yacht div p{text-align: center; margin-bottom: 20px;}
+    .yacht div{margin-bottom: 20px;}
+    .sale_item_controls ul{margin-bottom: 65px;}
+    /* 수량버튼 */
+    .sale_item_controls{margin-right: 30px; margin-top: 5px;}
+    .sale_item_controls li{display: flex; width: 100px; justify-content: space-between; margin-bottom: 2px;}
+    .yacht>ul:last-of-type{margin-top: 50px;}
+    .yacht>ul:last-of-type li{margin-bottom: 2px;}
+    .sale_item_controls button:hover{opacity: 0.5;}
+
+    /* 4_1_3. 개인정보 처리방침 */
+    .personal_policy{border: 1px solid #bababa; padding: 30px 30px 30px 90px; margin-bottom: 30px;}
+    .agree_policy{width: 310px; display: flex; justify-content: space-between; margin: 0 auto; }
+
+
+    /* 체크박스 */
+    .agree_policy input{ display: none; }
+
+    /* +인접 선택자 : 선택자로 지정된 대상 태그의 다음(next)태그 */
+    input + label{
+        cursor: pointer;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border:3px solid #707070;
+        position: relative;
+        background: url(../sub_images/sub4/checked.gif) no-repeat center;
+    }
+
+    input:checked + label::after{
+        content:'✔';
+        color:red;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top:-5px;
+    }
+
+    /* 4_1_4. 기타 안내사항 */
+    .etc_notice h3{display: none;}
+    .etc_notice p{margin-bottom: 10px;}
+    .etc_notice ul{margin-bottom: 40px;}
+    .etc_notice li li{line-height: 30px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub5: 고객센터 */
+    /* 검색창 스타일 */
+    #search_input{width: 710px; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; padding-left: 30px;  box-sizing: border-box; font-weight: normal;}
+    #search_input::placeholder{color: #929292;}
+    /* sub5_1: 공지사항 */
+    /* 게시글 목록 */
+    .board_table{text-align: center;}
+    .board_table th, .board_table td{border-right: 0;}
+    .board_table table{margin-bottom: 60px;}
+    /* 게시글 페이지 넘김 */
+    .board_page>*{display: flex;}
+
+    /* 게시글 페이지 넘김 버튼 */
+    .board_page_controls{ position: absolute; left: 50%; margin-left: -170px; margin-top: -2px;}
+    .board_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+    .board_page_controls1{position: absolute; display: flex;}
+    .board_page_controls2{position: absolute; display: flex; left: 300px;}
+
+    /* 게시글 페이지 순서 숫자 */
+    .board_page ul{width: 200px; margin: 0 auto; justify-content: space-between;}
+    .board_page li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+    .board_page li:first-child button{color: #d82d33; font-weight: bold;} 
+
+    /* sub5_2: 자주묻는질문 */
+    /* 질문목록 */
+    .folding_list{margin-bottom: 60px; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;}
+    .folding_list dt, .folding_list dd{padding: 30px 0 30px 0;}
+    .folding_list dt{ font-weight: bold; background: url(../sub_images/sub5/below_open_btn.png) no-repeat center right 30px;}
+    .folding_list dt:not(:first-child){border-top: 1px solid #bababa;}
+    .folding_list dd{color: #454545; background: #F6F6F6; display: none;}
+    .folding_list dd p{margin: 30px 60px;}
+    .faq_list button{font-size: 16px; font-family: 'NanumSquare', sans-serif;}
+    .question{ margin: 60px;color: #6E6E6E; font-weight: 300; font-size: 24px; margin-right: 15px;}
+    .answer{margin: 60px; font-weight: 300; font-size: 24px; margin-right: 15px;}
+    .faq_list dt:hover button{color: #d82d33;}
+
+    /* 질문목록 페이지 넘김 */
+    .faq_list_page>*{display: flex;}
+    /* 질문목록 페이지 넘김 버튼 */
+    .faq_list_page_controls{ position: absolute; left: 50%; margin-left: -62px; margin-top: -2px;}
+    .faq_list_page_controls p:first-child{ position: absolute;  }
+    .faq_list_page_controls p:last-child{ position: absolute; left: 100px;}
+    .faq_list_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+    /* 질문목록 페이지 순서 숫자 */
+    .faq_list ul{width: 33px; margin: 0 auto; justify-content: space-between; }
+    .faq_list li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+    .faq_list li:first-child button{color: #d82d33; font-weight: bold;} 
+
+    /* sub5_3: 자료실 */
+    .appl_forms{color: #454545;}
+    .appl_forms ul{display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 18px; font-weight: bold; }
+    .appl_forms li{ width:590px; height:60px; line-height:60px; border: 1px solid #bababa; box-sizing: border-box; margin-bottom: 30px;}
+    .appl_forms li{display: flex; justify-content: space-between;}
+    .appl_forms li>p:first-child{text-indent: 10px;}
+    .appl_forms li>p:last-child a{display: block; width: 160px; background: #d82d33 url(../sub_images/sub5/download_btn.png) no-repeat center right 25px; color: #fff; font-weight: bold; text-align: center;}
+    .appl_forms>p{text-align: right;}
+    .appl_forms li>p:last-child a:hover{background:#000 url(../sub_images/sub5/download_btn.png) no-repeat center right 25px;}
+}
+
+
+/* ★★★★★ 태블릿 & 저해상도 노트북&데스크탑: 스크린 화면은 최소 801px 이상 최대 1279px 이하 ★★★★★ 
+    콘텐츠의 최대폭 100%, 100vw, 800px
+*/
+@media screen and (min-width:801px) and (max-width:1279px){
+    /* thead 위 스타일 */
+    .thead_up th{border-bottom: 2px solid #bababa; text-align: center; border-right: 1px solid #bababa;}
+    .thead_up td{border-right: 1px solid #bababa; border-bottom: 1px solid #bababa;}
+    .thead_up th:last-child, .thead_up td:last-child{border-right: 0;}
+
+    /* th 왼쪽 정렬 스타일 */
+    .th_left th{text-align: left;}
+    .th_left tr{border-bottom: 1px solid #bababa; }
+    .th_left td{border-left: 0; padding-left: 30px;}
+    .th_left p{ margin-left: 30px;}
+
+    /* thead 왼쪽 스타일 */
+    .thead_left td:not(:last-of-type){border-right: 1px solid #bababa;}
+    .thead_left tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+
+    /* tab_menu_wrap */
+    .tab_menu_wrap{ width: 95%; margin: 0 auto 60px; }
+    .tab_menu_wrap ul{ display: flex; flex-wrap: wrap;}
+    .tab_menu_wrap li{ width:33.33%; height:60px; line-height:60px; text-align: center; }
+    .tab_menu_wrap button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif;}
+    .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+    /* tab_menu_nowrap */
+    .tab_menu_nowrap, .tab_menu_wrap2, .tab_menu_wrap3{ margin-bottom: 60px;}
+    .tab_menu_nowrap ul, .tab_menu_wrap2 ul, .tab_menu_wrap3 ul{display: flex;}
+    .tab_menu_nowrap li, .tab_menu_wrap2 li, .tab_menu_wrap3 li{flex: 1; height: 60px;  text-align: center; }
+    .tab_menu_nowrap button, .tab_menu_wrap2 button, .tab_menu_wrap3 button{ color: #454545; width: 100%; line-height: 60px; margin: 0 auto; border: 1px solid #BABABA; box-sizing: border-box; font-family: 'NanumSquare', sans-serif;}
+    .on button, .on button, .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+    /* 지도 스타일*/
+    .map{width: 100%; height: 440px; border: 0;}
+    .map_wrap>table{margin-top: -5px; width: 100%;}
+    .map_wrap tr{border-bottom: 1px solid #bababa;}
+    .map_wrap td{ font-weight: bold;}
+    .map_wrap th{border-right: 1px solid #bababa; width: 30%;}
+
+    .map_wrap table tr>*{display: block;float: left; height: 60px; line-height: 60px;}
+    .map_wrap th:first-of-type, .map_wrap td:first-of-type{border-bottom: 1px solid #bababa;}
+    .map_wrap th{width: 30%; text-align: center;}
+    .map_wrap td{width: 70%; text-indent: 50px;}
+
+    /* 검색 버튼 */
+    .btn_search{width: 60px; height: 60px; background: #d82d33;}
+    .btn_search:hover{background: #000;}
+
+    /* sub visual */
+    .sub_visual_wrap{ width:100%; margin:0 auto;}
+    .sub_visual_wrap p{color:#fff;  text-align: center;}
+    .sub_visual_wrap p:first-child{padding: 150px 0 10px 0; font-size: 40px;}
+    .sub_visual_wrap p:last-child{font-size:18px;}
+
+    /* .lnb ul{display: flex;} */
+    .lnb{height: 70px; font-size: 18px;  border-bottom: 1px solid #d1d1d1; box-sizing: border-box; margin-bottom: 80px;}
+    .lnb>ul{margin: 0 auto;}
+    .lnb>ul{display: flex; width: 100%; margin: 0 auto;}
+    .lnb>ul>li:last-child>*{width: 265px;}
+    .lnb ul>li{ display: flex;  box-sizing: border-box;}
+    .lnb ul>li a{ padding: 0 20px;}
+
+    .lnb ul ul{border: 1px solid #d1d1d1;}
+
+    .lnb>ul>li>a{ line-height: 70px;}
+    .lnb img{margin-top: 20px;}
+    .lnb li li a{line-height: 70px; width: 265px; }
+
+    .lnb>ul>li:last-child{height: 70px; position: relative; width: 530px;}
+    .lnb>ul ul{position: absolute; margin-left: 265px; overflow: hidden; height: 70px;}
+
+
+    .lnb2>ul>li:last-child ul:hover{ height: 141px;}
+    .lnb3>ul>li:last-child ul:hover{ height: 211px; }
+    
+
+    .lnb>ul>li>a{ border-left: 1px solid #d1d1d1; height: 70px;}
+    .lnb ul ul li:first-child{ border-bottom: 1px solid #d1d1d1; background: url(../sub_images/lnb_open_btn.png) no-repeat top 35px right 15px; height: 69px; }
+    .lnb ul ul:hover{background: #fff; }
+
+    /* 전체서브 공통2(너비) */
+    .sub_content_wrap{width: 100%; margin: 0 auto; font-family: 'NanumSquare', sans-serif;}
+    .sub_content_wrap>div{margin-bottom: 180px;}
+
+    /* 전체서브 공통3(서브타이틀) */
+    .sub_title{width: 100%; margin: 0 auto; text-align: center;}
+    .sub_title p{font-size: 18px; }
+    .sub_title p:first-of-type{margin-bottom: 35px; font-weight: 600;}
+    .sub_title p:last-of-type{width: 80%; margin: 0 auto 65px; font-weight: bold; font-family: 'NanumSquare', sans-serif; font-size: 18px;}
+
+    /* 표 */
+    table{width: 95%; border-collapse: collapse; margin: 30px auto; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;  box-sizing: border-box;}
+    tr{height: 60px;}
+    th{font-size: 18px; font-weight: 800; color: #454545; }
+    td{border-left: 0; }
+    th, td{border-right: 0;}
+    caption{text-align: right; caption-side: bottom; margin-top: 15px; color: #454545;}
+
+    /* 검색 스타일*/
+    .search_wrap form{display: flex; justify-content: space-between;}
+    .search_wrap{width: 95%; margin: 0 auto; background: #F6F6F6; height: 100px; margin-bottom: 60px;}
+    .search_wrap>div{width: 95%; margin: 0 auto; padding-top: 20px; }
+    /* 검색 select 스타일 */
+    .select_box2 *{ box-sizing: border-box;}
+    .select_box2{ position: relative; width: 20%; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 30px; appearance: none; background: #fff url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; box-sizing: border-box; cursor: pointer;}
+    .label2{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+    .select_box2 ul{border: 1px solid #bababa; width: 100%; margin: -2px 0 0 -1px; display: none;}
+    .select_box2 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* 2. 개별 서브 스타일 */
+    /* sub1: 리조트소개 */
+    /* sub1_1: 개요및연혁 */
+    /* overview */
+    .overview_visual{width: 100%; height: 220px; background: url(../sub_images/sub1/overview_visual_img.jpg) no-repeat center top/cover; margin-bottom: 30px;}
+    .overview_content{width: 100%; margin: 0 auto;}
+    .overview_content p{width: 95%; margin: 0 auto;}
+
+    /* overview_table */
+
+    .overview_content th{width: 20%;}
+    .overview_content td{width: 30%;}
+
+    /* history_table */
+
+    .history tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+    .history th{width: 10%;}
+    .history td:nth-of-type(1){width: 20%; text-align: center;}
+    .history tr:nth-child(3), .history tr:nth-child(5), .history tr:nth-child(7), .history tr:nth-child(10){border: 0;}
+    .history th{vertical-align: top; padding-top: 23px;}
+
+    /* sub1_2: 지역별리조트 */
+    /* 1_2_1.지역별 리조트 위치 */
+    .location_info{flex-wrap: wrap; width: 100%;}
+    .location_info>li{width: 50%;}
+    .location_info li{ margin: 0 auto;}
+
+    /* 1_2_2. 지역별 리조트 개요 */
+    /* 리조트 이미지 */
+    .tongyeong>div:first-child{width: 688px; height: 401px; background: url(../sub_images/sub1/tongyeong_resort_img.jpg) no-repeat;}
+    .hwasun>div:first-child{width: 688px; height: 401px; background: url(../sub_images/sub1/hwasun_resort_img.jpg) no-repeat;}
+    .seorak>div:first-child{width: 688px; height: 401px; background: url(../sub_images/sub1/seorak_resort_img.jpg) no-repeat;}
+    .jeju>div:first-child{width: 688px; height: 401px; background: url(../sub_images/sub1/jeju_resort_img.jpg) no-repeat;}
+    .resort_smry_heading{margin-top: 30px;}
+
+    /* 텍스트 스타일 */
+    .resort_smry_heading>h3{text-align: left; margin-bottom: 15px; margin-top: 0;}
+    .resort_summary_text{width: 690px; height: 410px; }
+    .resort_summary_text>p{margin-top: 60px; color: #454545; font-size: 18px; line-height: 28px; }
+
+    /* 배치 */
+    .resort_summary>div{display: flex; flex-wrap: wrap; margin-bottom: 60px; }
+    .resort_summary>div>div{margin: 0 auto;}
+    
+    .resort_smry_heading{display: flex; justify-content: space-between;  border-bottom: 1px solid #BABABA; padding-right: 40px; height: 60px; line-height: 60px;}
+    .resort_summary ul{color: #6E6E6E; margin-top: 60px;}
+    .resort_summary a:hover{opacity: 0.5;}
+        /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub2: 글램핑/카라반 */
+    /* sub2_1: 숙박시설안내 */
+    /* 2_1_1. 아산스파포레 */
+    .spafore_img{width: 100%; height: 340px; background: url(../sub_images/sub2/spafore_visual_img.jpg) no-repeat center top/cover; margin-bottom: 30px; }
+    .spafore>p{width: 95%; margin: 0 auto;}
+    /* 2_1_2. 숙박시설안내 */
+    .accomodation_img img{width: 100%;}
+    .accomodation>div{margin-bottom: 60px;}
+    .accomodation_img2{display: none;}
+
+    /* 이미지 슬라이드 */
+    .accomodation_slide_img{width: 900px; margin: 0 auto 20px auto; overflow: hidden; }
+    .accomodation_slide ul{ display: flex; width:2700px; }
+    .accomodation_slide li{ flex:1; }
+
+    .glampfore, .coachman{display: none;}
+
+    /* 숙박시설 슬라이드 제어 버튼1 */
+    .accomodation_slide_btn1 button{display: block;}
+    .accomodation_slide_btn1{width: 95%; display: flex; margin: -300px 0 0 30px; position: absolute; justify-content: space-between;}
+    .accomodation_slide_btn1 button:hover{opacity: 0.5;}
+
+    /* 숙박시설 슬라이드 제어 버튼2 */
+    .accomodation_slide_btn2{width: 75px; margin: 0 auto; display: flex; justify-content: space-evenly; }
+    .accomodation_slide_btn2 span{display: none; }
+    .accomodation_slide_btn2 button{height: 10px; border-radius: 5px;}
+    .accomodation_slide_btn2 button:not(:first-child){ width: 10px; border: 1px solid #d82d33;  }
+    .accomodation_slide_btn2 button:first-child{width: 30px; background: #d82d33;}
+
+    /* 숙박시설안내 표 */
+    .accomodation table{width: 95%;}
+    .accomodation table th{width: 30%;}
+
+    /* sub2_2: 객실이용안내 */
+    /* 2_2_1.user_guide1 */
+    .user_guide1_wrap>ol{display: flex; justify-content: space-around; flex-wrap: wrap;}
+    .user_guide1_wrap>ol>li{width: 29%; height: 260px; border: 1px solid #bababa; border-top: 2px solid #bababa; box-sizing: border-box; list-style: none;}
+    .user_guide1_wrap p{text-align: center; font-weight: 800; font-size: 18px; line-height: 58px; border-bottom: 1px solid #bababa;}
+    .user_guide1_wrap li{margin-top: 20px;}
+    .user_guide1_wrap ol ol{width: 120px; margin: 0 auto;}
+    .user_guide1_wrap ol ol>li{list-style-position: inside;}
+
+    /* 2_2_2.user_guide2 */
+    .user_guide2_wrap ul{width: 95%; margin:0 auto;}
+    .user_guide2_wrap li{height: 230px; border: 1px solid #bababa; box-sizing: border-box; margin-bottom: 70px; padding-left: 300px;}
+    .user_guide2_wrap h4{padding-top: 20px; margin-bottom: 10px; text-align: left;}
+    .user_guide2_wrap li p:first-of-type{margin-bottom: 25px;}
+    .user_guide2_wrap b{ font-weight: 800;}
+    /* .user_guide2_wrap p:first-of-type{margin-bottom: 170px;} */
+    .user_guide2_wrap p{line-height: 25px;}
+    .caption{position: absolute; right: 30px; top: 2000px; }
+    /* 입퇴실 절차 아이콘 */
+    .user_guide2_wrap li:first-child{background: url(../sub_images/sub2/check_in_icon.png) no-repeat left 50px center;}
+    .user_guide2_wrap li:nth-child(2){background: url(../sub_images/sub2/check_out_icon.png) no-repeat left 50px center;}
+    .user_guide2_wrap li:last-child{background: url(../sub_images/sub2/to_do_icon.png) no-repeat left 50px center;}
+
+    /* 2_2_3.user_guide3 */
+    /* user_guide3 표 전체 공통스타일 */
+    .user_guide3_wrap{text-align: center;}
+    .user_guide3_wrap tr{border-bottom: 1px solid #bababa;}
+    .user_guide3_wrap th{border-bottom: 2px solid #bababa;}
+    .user_guide3_wrap th, .user_guide3_wrap td{border-left: 1px solid #bababa;}
+    .user_guide3_wrap th:first-child, .user_guide3_wrap td:first-child{border-left: 0;}
+    .user_guide3_wrap h4{text-align: left; margin-bottom: 0; padding-left: 20px;}
+
+    .fee2 th:nth-child(1){width: 25%;}
+    .fee2 th:nth-child(2){width: 25%;}
+    .fee3 tbody{height: 120px;}
+    .fee1 th, .fee3 th{width: 50%;}
+
+    /* 2_2_4.user_guide4 */
+    .user_guide4_wrap td ol{margin: 30px 0 30px 30px; width: 95%;}
+    .user_guide4_wrap th{padding-left: 20px;}
+    .user_guide4_wrap li{line-height: 25px;}
+
+    /* sub2_3: 오시는길 */
+    .traffic_info th{padding-left: 20px; text-align: center;}
+
+    /* 교통정보 */
+    .traffic_info td{line-height: 26px; padding: 15px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub3: 제휴리조트 */
+    /* sub3_1: 국내제휴리조트안내 */
+    .location_info2{display: flex; flex-wrap: wrap;}
+    .location_info2>li{width: 50%;}
+    .location_info2 img{width:347px;}
+    .location_btn2 a{width: 240px;}
+    .reservation_inquiry table{text-align: center;}
+    .reservation_inquiry th{text-align: center; border-bottom: 2px solid #bababa;}
+    .reservation_inquiry li{list-style: none;}
+    .reservation_inquiry td{height: 100px;}
+    .reservation_inquiry th:first-child, .reservation_inquiry td:first-child{border-right: 1px solid #bababa;}
+
+    /* sub3_2: 경기 */
+    /* 개요 */
+    .adonis_info1_main_img li{ width:100%; }
+    .adonis_info1_main_img li:not(:first-child) img{ display: none;}
+    .adonis_info1_main_img{ width: 100%; margin-bottom:50px;  }
+
+    .adonis_info1_main_img img{ width: 90%; margin:0 5%; }
+    .adonis_info1_content{width: 90%;  display: flex; margin: 0 auto;}
+    .adonis_info1_text ul{border-top: 1px solid #bababa; border-bottom: 1px solid #bababa; margin-right: 50px;}
+    .adonis_info1_text li{margin: 20px;}
+
+    .adonis_info1_text li:last-child a{display: block; background: url(../sub_images/sub3/external_link.png) no-repeat right center/30px 30px; height: 30px;}
+    .adonis_info1_text span{display: none;}
+    .adonis_info1_img_list li img{width: 120px;}
+    .adonis_info1_img_list li{margin-bottom: 5px;}
+    
+    /* 회원이용안내 */
+    .adonis_info2{text-align: center;}
+
+    /* 부대시설안내 */
+    .adonis_info3_wrap>ul{display: flex; flex-wrap: wrap; justify-content: center; text-align: center;}
+    .adonis_info3_wrap>ul>li{border: 1px solid #bababa; border-top: 2px solid #bababa; width: 42%; height: 368px; margin: 2%;}
+    .adonis_info3_wrap>ul>li h4{margin-top: 30px; margin-bottom: 15px;}
+    .adonis_info3_wrap>ul>li>p{font-weight: bold;}
+    .adonis_info3_wrap>ul>li:not(:last-of-type)>p:last-of-type{margin-top: 200px;}
+    .adonis_info3_wrap>ul ul{ font-weight: bold; margin-top: 200px;}
+
+    .adonis_info3_wrap>ul>li:nth-of-type(1){background: url(../sub_images/sub3/fnb_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(2){background: url(../sub_images/sub3/entertainment_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(3){background: url(../sub_images/sub3/business_icon.png) no-repeat center center;}
+    .adonis_info3_wrap>ul>li:nth-of-type(4){background: url(../sub_images/sub3/etc_icon.png) no-repeat center center;}
+
+    /* 교통정보안내 */
+    .adonis_info4 h4{text-align: left; text-indent: 40px;}
+    .adonis_info4>div:nth-of-type(2) th{padding-left: 90px;}
+    .adonis_info4>div:nth-of-type(1){margin-bottom: 60px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub4: 통합예약 */
+    .reservation_div{width: 90%; margin: 0 auto;}
+    /* sub4_1: 객실예약 */
+    .reservation_div>*{margin-bottom: 60px;}
+    /* 4_1_1. 예약정보 */
+    /* 객실종류 */
+
+    .room_list_box{border: 1px solid #bababa; height: 170px;}
+    .room_list_box_wrap{display: flex; flex-wrap: wrap; margin: 15px 0 0 30px;}
+    .room_list_box_wrap li{width: 33%; margin-bottom: 20px;}
+
+    /* 체크인, 체크아웃 날짜 선택 달력 */
+    /* 달력 넘김 버튼 */
+
+    .calendar_wrap{border-top: 1px solid #6E6E6E; border-bottom: 1px solid #bababa; margin-bottom: 30px;}
+    .cal_controls{display: flex; justify-content: space-between; width: 220px; margin: 20px auto; font-size: 20px; }
+    .cal_controls button:hover{opacity: 0.5;}
+
+    /* 달력 */
+    .reserve_month{border: 0; width: 480px; text-align: center;}
+
+    /* 예약정보 */
+    .reservation_info2{display: none;}
+    .reservation_info{border: 0; width: 100%;}
+    .reservation_info th, .reservation_info td{border: 1px solid #bababa; box-sizing: border-box;}
+    .reservation_info th{width: 85px;}
+    .reservation_info select{ height: 60px; border: 0; font-family: 'NanumSquare', sans-serif; font-size: 16px;  appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; cursor: pointer;}
+    .reservation_info input{height: 60px;font-family: 'NanumSquare', sans-serif; font-size: 16px; border: 0; background: transparent;}
+    .reservation_info input::placeholder{color: #bababa;}
+
+    .reservation_info td{text-indent: 30px;}
+    #sub_container .align_left{width: 85px;}
+
+    /* .reservation_info tr:nth-of-type(4) td:first-of-type input{width: 320px;}
+    .reservation_info tr:nth-of-type(4) td:last-of-type input{width: 780px;} */
+
+    /* select option */
+    /* .reservation_info option{font-size: 18px; height: 180px;} */
+    .select_box1 *{ box-sizing: border-box;}
+    .select_box1{ position: relative; height: 60px;  font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 20px; appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 15px; box-sizing: border-box; cursor: pointer;}
+    .label1{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+    .select_box1 ul{border: 1px solid #bababa; margin-left: -1px; display: none;}
+    .select_box1 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+
+    /* box1 select 마우스오버 시 */
+    .reservation_info tr:nth-child(3) td:nth-of-type(1) div:hover ul{ display: block;}
+    .reservation_info tr:nth-child(3) td:nth-of-type(2) div:hover ul{ display: block;}
+    .reservation_info tr:nth-child(3) td:nth-of-type(3) div:hover ul{ display: block;}
+
+    /* 예약 결제하기, 초기화 버튼 */
+    .reservation_button{width: 500px; display: flex; justify-content: space-between; margin: 0 auto;}
+    .reservation_button button{width: 230px; height: 60px; color: #fff;}
+    .reservation_button p:first-child button{background: #d82d33;}
+    .reservation_button p:last-child button{background: #aeaeae;}
+    .reservation_button p button:hover{background: #000;}
+
+    /* 4_1_2. 사전예약 할인상품 */
+    .sale_item_box{border: 1px solid #bababa; box-sizing: border-box; font-size: 18px; width: 90%; margin: 0 auto;}
+    .sale_item_box h4{margin: 20px 0 10px 30px;}
+    .sale_item_content{margin-bottom: 30px;}
+    .sale_item_content ul:first-child, .sale_item_content div{width: 900px; margin-left: 30px;}
+    .sale_item_box>ul>li:not(:last-of-type){border-bottom: 1px solid #bababa;}
+    .sale_item_content{display: flex;}
+    .strike{color: #000; text-decoration: line-through;}
+
+    /* 요트투어 */
+    .yacht{display: flex; justify-content: space-between; margin-left: 30px;}
+    .yacht div p{text-align: center; margin-bottom: 20px;}
+    .yacht div{margin-bottom: 20px;}
+    .sale_item_controls ul{margin-bottom: 65px;}
+
+    /* 수량버튼 */
+    .sale_item_controls{margin-right: 30px; margin-top: 5px;}
+    .sale_item_controls li{display: flex; width: 100px; justify-content: space-between; margin-bottom: 2px;}
+    .yacht>ul:last-of-type{margin-top: 50px;}
+    .yacht>ul:last-of-type li{margin-bottom: 2px;}
+    .sale_item_controls button:hover{opacity: 0.5;}
+
+    /* 4_1_3. 개인정보 처리방침 */
+    .personal_policy{border: 1px solid #bababa; padding: 30px; margin-bottom: 30px; width: 80%; margin: 0 auto 30px;}
+    .agree_policy{width: 310px; display: flex; justify-content: space-between; margin: 0 auto; }
+
+
+    /* 체크박스 */
+    .agree_policy input{ display: none; }
+
+    /* +인접 선택자 : 선택자로 지정된 대상 태그의 다음(next)태그 */
+    input + label{
+        cursor: pointer;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border:3px solid #707070;
+        position: relative;
+        background: url(../sub_images/sub4/checked.gif) no-repeat center;
+    }
+
+    input:checked + label::after{
+        content:'✔';
+        color:red;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top:-5px;
+    }
+
+    /* 4_1_4. 기타 안내사항 */
+    .etc_notice h3{display: none;}
+    .etc_notice p{margin-bottom: 10px;}
+    .etc_notice ul{width: 90%; margin: 0 auto 40px;}
+    .etc_notice li li{line-height: 30px;}
+
+    /* --------------------------------------------------------------------------------------------------------------- */
+    /* sub5: 고객센터 */
+    /* 검색창 스타일 */
+    #search_input{width: 100%; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; padding-left: 30px;  box-sizing: border-box; font-weight: normal;}
+    #search_input::placeholder{color: #929292;}
+    .search_wrap form>div:nth-of-type(2){width: 70%;}
+    /* sub5_1: 공지사항 */
+    /* 게시글 목록 */
+    .board_table{text-align: center;}
+    .board_table th, .board_table td{border-right: 0;}
+    .board_table table{margin-bottom: 60px;}
+    /* 게시글 페이지 넘김 */
+    .board_page>*{display: flex;}
+
+    /* 게시글 페이지 넘김 버튼 */
+    .board_page_controls{ position: absolute; left: 50%; margin-left: -170px; margin-top: -2px;}
+    .board_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+    .board_page_controls1{position: absolute; display: flex;}
+    .board_page_controls2{position: absolute; display: flex; left: 300px;}
+
+    /* 게시글 페이지 순서 숫자 */
+    .board_page ul{width: 200px; margin: 0 auto; justify-content: space-between;}
+    .board_page li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+    .board_page li:first-child button{color: #d82d33; font-weight: bold;} 
+
+    /* sub5_2: 자주묻는질문 */
+    /* 질문목록 */
+    .folding_list{margin-bottom: 60px; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;}
+    .folding_list dt, .folding_list dd{padding: 30px 0 30px 0;}
+    .folding_list dt{ font-weight: bold; background: url(../sub_images/sub5/below_open_btn.png) no-repeat center right 30px;}
+    .folding_list dt:not(:first-child){border-top: 1px solid #bababa;}
+    .folding_list dd{color: #454545; background: #F6F6F6; display: none;}
+    .folding_list dd p{margin: 30px 60px;}
+    .faq_list button{font-size: 16px; font-family: 'NanumSquare', sans-serif;}
+    .question{ margin: 60px;color: #6E6E6E; font-weight: 300; font-size: 24px; margin-right: 15px;}
+    .answer{margin: 60px; font-weight: 300; font-size: 24px; margin-right: 15px;}
+    .faq_list dt:hover button{color: #d82d33;}
+
+    /* 질문목록 페이지 넘김 */
+    .faq_list_page>*{display: flex;}
+    /* 질문목록 페이지 넘김 버튼 */
+    .faq_list_page_controls{ position: absolute; left: 50%; margin-left: -62px; margin-top: -2px;}
+    .faq_list_page_controls p:first-child{ position: absolute;  }
+    .faq_list_page_controls p:last-child{ position: absolute; left: 100px;}
+    .faq_list_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+
+    .faq_list_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+    /* 질문목록 페이지 순서 숫자 */
+    .faq_list ul{width: 33px; margin: 0 auto; justify-content: space-between; }
+    .faq_list li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+    .faq_list li:first-child button{color: #d82d33; font-weight: bold;} 
+
+    /* sub5_3: 자료실 */
+    .appl_forms{color: #454545;}
+    .appl_forms ul{display: flex; flex-wrap: wrap; justify-content: center; font-size: 18px; font-weight: bold; }
+    .appl_forms li{ width:85%; height:60px; line-height:60px; border: 1px solid #bababa; box-sizing: border-box; margin-bottom: 30px;}
+    .appl_forms li{display: flex; justify-content: space-between;}
+    .appl_forms li>p:first-child{text-indent: 10px;}
+    .appl_forms li>p:last-child a{display: block; width: 200px; background: #d82d33 url(../sub_images/sub5/download_btn.png) no-repeat center right 40px; color: #fff; font-weight: bold; text-align: center;}
+    .appl_forms>p{width: 91%; text-align: right;}
+    .appl_forms li>p:last-child a:hover{background:#000 url(../sub_images/sub5/download_btn.png) no-repeat center right 40px;}
+}
+
+
+/* ★★★★★ 태블릿: 스크린 화면은 최소 491px 이상 최대 800px 이하★★★★★ */
+@media screen and (min-width:491px) and (max-width:800px){
+        
+        /* thead 위 스타일 */
+        .thead_up th{border-bottom: 2px solid #bababa; text-align: center; border-right: 1px solid #bababa;}
+        .thead_up td{border-right: 1px solid #bababa; border-bottom: 1px solid #bababa;}
+        .thead_up th:last-child, .thead_up td:last-child{border-right: 0;}
+    
+        /* th 왼쪽 정렬 스타일 */
+        .th_left tr>*{display: block; text-align: center; height: 60px; line-height: 60px; border-bottom: 1px solid #bababa;}
+        .th_left td{border-left: 0; padding-left: 30px;}
+        .th_left p{ margin-left: 30px;}
+        
+    
+        /* thead 왼쪽 스타일 */
+        .thead_left td:not(:last-of-type){border-right: 1px solid #bababa;}
+        .thead_left tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+    
+        /* tab_menu_wrap */
+        .tab_menu_wrap{ width: 95%; margin: 0 auto 60px; }
+        .tab_menu_wrap ul{ display: flex; flex-wrap: wrap;}
+        .tab_menu_wrap li{ width:33.33%; height:60px; line-height:60px; text-align: center; }
+        .tab_menu_wrap button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif;}
+        .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+    
+        /* tab_menu_nowrap */
+        .tab_menu_nowrap{ width: 95%; margin: 0 auto 60px;}
+        .tab_menu_nowrap ul{display: flex;}
+        .tab_menu_nowrap li{flex: 1; height: 60px;  text-align: center; }
+        .tab_menu_nowrap button{ color: #454545; width: 100%; line-height: 60px; margin: 0 auto; border: 1px solid #BABABA; box-sizing: border-box; font-family: 'NanumSquare', sans-serif;}
+        .tab_menu_nowrap li:first-child button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+    
+        /* tab_menu_wrap2 */
+        .tab_menu_wrap2{ width: 95%; margin: 0 auto 60px; }
+        .tab_menu_wrap2 ul{ display: flex; flex-wrap: wrap;}
+        .tab_menu_wrap2 li{ width:50%; height:60px; line-height:60px; text-align: center; }
+        .tab_menu_wrap2 button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif;}
+        .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+
+        /* tab_menu_wrap3 */
+        .tab_menu_wrap3{ width: 95%; margin: 0 auto 60px; }
+        .tab_menu_wrap3 ul{ display: flex; flex-wrap: wrap;}
+        .tab_menu_wrap3 li{ width:33.33%; height:60px; line-height:60px; text-align: center; }
+        .tab_menu_wrap3 button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif;}
+        .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+
+        /* 지도 스타일*/
+        .map{width: 100%; height: 440px; border: 0;}
+        .map_wrap>table{margin-top: -5px; width: 100%;}
+        .map_wrap tr{border-bottom: 1px solid #bababa;}
+        .map_wrap td{ font-weight: bold;}
+        .map_wrap th{border-right: 1px solid #bababa; width: 30%;}
+
+        .map_wrap table tr>*{display: block;float: left; height: 60px; line-height: 60px;}
+        .map_wrap th:first-of-type, .map_wrap td:first-of-type{border-bottom: 1px solid #bababa;}
+        .map_wrap th{width: 30%; text-align: center;}
+        .map_wrap td{width: 70%; text-indent: 20px;}
+    
+        /* 검색 버튼 */
+        .btn_search{width: 100%; height: 60px; background: #d82d33;}
+        .btn_search:hover{background: #000;}
+    
+        /* sub visual */
+        .sub_visual_wrap{ width:100%; margin:0 auto;}
+        .sub_visual_wrap p{color:#fff;  text-align: center;}
+        .sub_visual_wrap p:first-child{padding: 150px 0 10px 0; font-size: 40px;}
+        .sub_visual_wrap p:last-child{font-size:18px; width: 80%; margin: 0 auto;}
+    
+        /* .lnb ul{display: flex;} */
+        .lnb>ul>li:first-child{display: none;}
+        .lnb{height: 70px; font-size: 18px;  border-bottom: 1px solid #d1d1d1; box-sizing: border-box; margin-bottom: 80px;}
+        .lnb>ul{margin: 0 auto;}
+        .lnb>ul{display: flex; width: 100%; margin: 0 auto;}
+        .lnb>ul>li:last-child>*{width: 50%;}
+        .lnb ul>li{ display: flex;  box-sizing: border-box;}
+        .lnb ul>li a{ padding: 0 20px;}
+
+        .lnb ul ul{border: 1px solid #d1d1d1;}
+
+        /* .lnb ul>li:last-child{border-right: 1px solid #d1d1d1;} */
+        .lnb>ul>li>a{ line-height: 70px;}
+        .lnb img{margin-top: 20px;}
+        .lnb li li a{line-height: 70px; width: 265px; }
+
+        .lnb>ul>li:last-child{height: 70px; position: relative; width: 100%;}
+        .lnb>ul ul{position: absolute; margin-left: 50%; overflow: hidden; height: 70px;}
+
+
+        .lnb2>ul>li:last-child ul:hover{ height: 141px;}
+        .lnb3>ul>li:last-child ul:hover{ height: 211px; }
+        
+
+        .lnb>ul>li>a{ border-left: 1px solid #d1d1d1; height: 70px;}
+        .lnb ul ul li:first-child{ border-bottom: 1px solid #d1d1d1; background: url(../sub_images/lnb_open_btn.png) no-repeat top 35px right 15px; height: 69px; }
+        .lnb ul ul:hover{background: #fff; }
+    
+        /* 전체서브 공통2(너비) */
+        .sub_content_wrap{width: 100%; margin: 0 auto; font-family: 'NanumSquare', sans-serif;}
+        .sub_content_wrap>div{margin-bottom: 180px;}
+    
+        /* 전체서브 공통3(서브타이틀) */
+        .sub_title{width: 100%; margin: 0 auto; text-align: center;}
+        .sub_title p{font-size: 18px; }
+        .sub_title p:first-of-type{margin-bottom: 35px; font-weight: 600;}
+        .sub_title p:last-of-type{width: 80%; margin: 0 auto 65px; font-weight: bold; font-family: 'NanumSquare', sans-serif; font-size: 18px;}
+    
+        /* 표 */
+        table{width: 95%; border-collapse: collapse; margin: 30px auto; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;  box-sizing: border-box;}
+        tr{height: 60px;}
+        th{font-size: 18px; font-weight: 800; color: #454545; }
+        td{border-left: 0; }
+        th, td{border-right: 0;}
+        caption{text-align: right; caption-side: bottom; margin-top: 15px; color: #454545;}
+    
+        /* 검색 스타일*/
+
+        .search_wrap{width: 95%; margin: 0 auto; background: #F6F6F6; height: 260px; margin-bottom: 60px;}
+        .search_wrap>div{width: 95%; margin: 0 auto; padding-top: 20px; }
+        /* 검색 select 스타일 */
+        .select_box2 *{ box-sizing: border-box;}
+        .select_box2{ position: relative; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 30px; appearance: none; background: #fff url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; box-sizing: border-box; cursor: pointer;}
+        .label2{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+        .select_box2 ul{border: 1px solid #bababa; width: 100%; margin: -2px 0 0 -1px; display: none;}
+        .select_box2 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+        .btn_search img{display: none;}
+    
+    
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* 2. 개별 서브 스타일 */
+        /* sub1: 리조트소개 */
+        /* sub1_1: 개요및연혁 */
+        /* overview */
+        .overview_visual{width: 100%; height: 130px; background: url(../sub_images/sub1/overview_visual_img.jpg) no-repeat center top/cover; margin-bottom: 30px;}
+        .overview_content{width: 100%; margin: 0 auto;}
+        .overview_content p{width: 95%; margin: 0 auto;}
+    
+        /* overview_table */
+    
+        .overview_content th{width: 20%;}
+        .overview_content td{width: 30%; padding-top: 10px; padding-bottom: 10px;}
+    
+        /* history_table */
+    
+        .history tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+        .history th{width: 10%;}
+        .history td:nth-of-type(1){width: 20%; text-align: center;}
+        .history tr:nth-child(3), .history tr:nth-child(5), .history tr:nth-child(7), .history tr:nth-child(10){border: 0;}
+        .history th{vertical-align: top; padding-top: 23px;}
+    
+        /* sub1_2: 지역별리조트 */
+        /* 1_2_1.지역별 리조트 위치 */
+        .location_info{flex-wrap: wrap; width: 100%;}
+        .location_info>li{width: 100%;}
+        .location_info li{ margin: 0 auto;}
+    
+        /* 1_2_2. 지역별 리조트 개요 */
+        /* 리조트 이미지 */
+        .tongyeong>div:first-child{width: 100%; height: 330px; background: url(../sub_images/sub1/tongyeong_resort_img.jpg) no-repeat center center/cover;}
+        .hwasun>div:first-child{width: 100%; height: 330px; background: url(../sub_images/sub1/hwasun_resort_img.jpg) no-repeat center center/cover;}
+        .seorak>div:first-child{width: 100%; height: 330px; background: url(../sub_images/sub1/seorak_resort_img.jpg) no-repeat center center/cover;}
+        .jeju>div:first-child{width: 100%; height: 330px; background: url(../sub_images/sub1/jeju_resort_img.jpg) no-repeat center center/cover;}
+        .resort_smry_heading{margin-top: 30px;}
+    
+        /* 텍스트 스타일 */
+        .resort_smry_heading>h3{text-align: left; margin-bottom: 15px; margin-top: 0;}
+        .resort_summary_text{width: 90%; height: 470px; }
+        .resort_summary_text>p{margin-top: 60px; color: #454545; font-size: 18px; line-height: 28px; }
+    
+        /* 배치 */
+        .resort_summary>div{display: flex; flex-wrap: wrap; margin-bottom: 60px; }
+        .resort_summary>div>div{margin: 0 auto;}
+        
+        .resort_smry_heading{display: flex; justify-content: space-between;  border-bottom: 1px solid #BABABA; padding-right: 40px; height: 60px; line-height: 60px;}
+        .resort_summary ul{color: #6E6E6E; margin-top: 60px;}
+        .resort_summary a:hover{opacity: 0.5;}
+            /* --------------------------------------------------------------------------------------------------------------- */
+        /* sub2: 글램핑/카라반 */
+        /* sub2_1: 숙박시설안내 */
+        /* 2_1_1. 아산스파포레 */
+        .spafore_img{width: 100%; height: 340px; background: url(../sub_images/sub2/spafore_visual_img.jpg) no-repeat center top/cover; margin-bottom: 30px; }
+        .spafore>p{width: 95%; margin: 0 auto;}
+        /* 2_1_2. 숙박시설안내 */
+        .accomodation_img{display: none;}
+        .accomodation_img2 img{width: 100%;}
+        .accomodation>div{margin-bottom: 60px;}
+    
+        /* 이미지 슬라이드 */
+        .accomodation_slide_img img{width: 100%;}
+        .accomodation_slide_img{width: 500px; margin: 0 auto 20px auto; overflow: hidden; }
+        .accomodation_slide ul{ display: flex; width:1500px; }
+        .accomodation_slide li{ flex:1; }
+    
+        .glampfore, .coachman{display: none;}
+    
+        /* 숙박시설 슬라이드 제어 버튼1 */
+        .accomodation_slide_btn1 button{display: block;}
+        .accomodation_slide_btn1{width: 95%; display: flex; margin: -150px 0 0 15px; position: absolute; justify-content: space-between;}
+        .accomodation_slide_btn1 button:hover{opacity: 0.5;}
+    
+        /* 숙박시설 슬라이드 제어 버튼2 */
+        .accomodation_slide_btn2{width: 75px; margin: 0 auto; display: flex; justify-content: space-evenly; }
+        .accomodation_slide_btn2 span{display: none; }
+        .accomodation_slide_btn2 button{height: 10px; border-radius: 5px;}
+        .accomodation_slide_btn2 button:not(:first-child){ width: 10px; border: 1px solid #d82d33;  }
+        .accomodation_slide_btn2 button:first-child{width: 30px; background: #d82d33;}
+    
+        /* 숙박시설안내 표 */
+        .accomodation table{width: 95%;}
+        .accomodation table th{width: 20%;}
+    
+        /* sub2_2: 객실이용안내 */
+        /* 2_2_1.user_guide1 */
+        .user_guide1_wrap>ol{display: flex; justify-content: center; flex-wrap: wrap; margin: 0 2%;}
+        .user_guide1_wrap>ol>li{width: 44%; height: 260px; border: 1px solid #bababa; border-top: 2px solid #bababa; box-sizing: border-box; list-style: none;}
+        .user_guide1_wrap p{text-align: center; font-weight: 800; font-size: 18px; line-height: 58px; border-bottom: 1px solid #bababa;}
+        .user_guide1_wrap li{margin-top: -1px;}
+        .user_guide1_wrap ol ol{width: 120px; margin: 30px auto;}
+        .user_guide1_wrap ol ol>li{list-style-position: inside; line-height: 30px;}
+    
+        /* 2_2_2.user_guide2 */
+        .user_guide2_wrap ul{width: 95%; margin:0 auto;}
+        .user_guide2_wrap li{height: 230px; border: 1px solid #bababa; box-sizing: border-box; margin-bottom: 70px; padding-left: 150px;}
+        .user_guide2_wrap h4{padding-top: 20px; margin-bottom: 10px; text-align: left;}
+        .user_guide2_wrap li p:first-of-type{margin-bottom: 25px;}
+        .user_guide2_wrap b{ font-weight: 800;}
+        /* .user_guide2_wrap p:first-of-type{margin-bottom: 170px;} */
+        .user_guide2_wrap p{line-height: 25px;}
+        .caption{position: absolute; right: 30px; margin-top: -660px; }
+        /* 입퇴실 절차 아이콘 */
+        .user_guide2_wrap li:first-child{background: url(../sub_images/sub2/check_in_icon.png) no-repeat left 30px center/90px;}
+        .user_guide2_wrap li:nth-child(2){background: url(../sub_images/sub2/check_out_icon.png) no-repeat left 30px center/90px;}
+        .user_guide2_wrap li:last-child{background: url(../sub_images/sub2/to_do_icon.png) no-repeat left 30px center/90px;}
+    
+        .user_guide2_wrap li:first-child br{display: none;}
+        /* 2_2_3.user_guide3 */
+        /* user_guide3 표 전체 공통스타일 */
+        .user_guide3_wrap{text-align: center;}
+        .user_guide3_wrap tr{border-bottom: 1px solid #bababa;}
+        .user_guide3_wrap th{border-bottom: 2px solid #bababa;}
+        .user_guide3_wrap th, .user_guide3_wrap td{border-left: 1px solid #bababa;}
+        .user_guide3_wrap th:first-child, .user_guide3_wrap td:first-child{border-left: 0;}
+        .user_guide3_wrap h4{text-align: left; margin-bottom: 0; padding-left: 20px;}
+    
+        .fee2 th:nth-child(1){width: 25%;}
+        .fee2 th:nth-child(2){width: 25%;}
+        .fee3 tbody{height: 120px;}
+        .fee1 th, .fee3 th{width: 50%;}
+    
+        /* 2_2_4.user_guide4 */
+        .user_guide4_wrap td ol{margin: 30px 0 30px 30px; width: 85%;}
+        .user_guide4_wrap th{padding-left: 20px;}
+        .user_guide4_wrap li{line-height: 25px;}
+        .user_guide4_wrap tr:nth-of-type(2) td{height: 200px;}
+        .user_guide4_wrap tr:nth-of-type(4) td{height: 560px;}
+        .user_guide4_wrap tr:nth-of-type(6) td{height: 130px; line-height: 30px; padding-top: 30px;}
+        .user_guide4_wrap td{padding-left: 0;}
+        .user_guide4_wrap tr:last-of-type p{margin-left: 0; width: 95%; margin: 0 auto;}
+    
+        /* sub2_3: 오시는길 */
+        .traffic_info th{padding-left: 20px; text-align: center;}
+    
+        /* 교통정보 */
+        .traffic_info td{line-height: 26px; padding: 15px; height: 180px; margin-top: 20px;}
+    
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* sub3: 제휴리조트 */
+        /* sub3_1: 국내제휴리조트안내 */
+        .location_info2{display: flex; flex-wrap: wrap;}
+        .location_info2>li{width: 100%;}
+        .location_info2 img{width:347px;}
+        .location_btn2 a{width: 240px;}
+
+        .reservation_inquiry table{text-align: center;  }
+        .reservation_inquiry table tr>*{ display: block;}
+
+        .reservation_inquiry table th{  height: 60px; line-height: 60px; border-bottom: 1px solid #aeaeae; 
+        }
+        .reservation_inquiry table th:first-child{ margin-bottom:110px; }
+        .reservation_inquiry table th:last-child{  border-top: 1px solid #aeaeae; } 
+
+        .reservation_inquiry table td:first-child{ margin:-140px 0 90px 0; }
+
+        .reservation_inquiry th{text-align: center; }
+        .reservation_inquiry li{list-style: none;}
+        .reservation_inquiry td{height: 80px;}
+
+
+    
+        /* sub3_2: 경기 */
+        /* 개요 */
+        .adonis_info1_main_img li{ width:100%; }
+        .adonis_info1_main_img li:not(:first-child) img{ display: none;}
+        .adonis_info1_main_img{ width: 100%; margin-bottom:50px;  }
+    
+        .adonis_info1_main_img img{ width: 90%; margin:0 5%; }
+        .adonis_info1_content{width: 90%; margin: 0 auto;}
+        .adonis_info1_text ul{border-top: 1px solid #bababa; border-bottom: 1px solid #bababa; }
+        .adonis_info1_text li{margin: 20px;}
+    
+        .adonis_info1_text li:last-child a{display: block; background: url(../sub_images/sub3/external_link.png) no-repeat right center/30px 30px; height: 30px;}
+        .adonis_info1_text span{display: none;}
+        .adonis_info1_img_list li img{width: 147px;}
+        .adonis_info1_img_list ul{display: flex; margin-top: 30px; width: 100%; justify-content: space-between;}
+        
+        /* 회원이용안내 */
+        .adonis_info2{text-align: center;}
+    
+        /* 부대시설안내 */
+        .adonis_info3_wrap>ul{display: flex; flex-wrap: wrap; justify-content: center; text-align: center;  margin: 0 2%;}
+        .adonis_info3_wrap>ul>li{border: 1px solid #bababa; border-top: 2px solid #bababa; width: 46%; height: 210px; margin-bottom: -1px;}
+        .adonis_info3_wrap>ul>li h4{margin-top: 15px; margin-bottom: 5px;}
+        .adonis_info3_wrap>ul>li>p{font-weight: bold;}
+        .adonis_info3_wrap>ul>li:not(:last-of-type)>p:last-of-type{margin-top: 100px;}
+        .adonis_info3_wrap>ul ul{ font-weight: bold; margin-top: 90px;}
+    
+        .adonis_info3_wrap>ul>li:nth-of-type(1){background: url(../sub_images/sub3/fnb_icon.png) no-repeat center center/70px;}
+        .adonis_info3_wrap>ul>li:nth-of-type(2){background: url(../sub_images/sub3/entertainment_icon.png) no-repeat center center/70px;}
+        .adonis_info3_wrap>ul>li:nth-of-type(3){background: url(../sub_images/sub3/business_icon.png) no-repeat center center/70px;}
+        .adonis_info3_wrap>ul>li:nth-of-type(4){background: url(../sub_images/sub3/etc_icon.png) no-repeat center center/70px;}
+    
+        /* 교통정보안내 */
+
+        .adonis_info4>div:nth-of-type(2) th{padding-left: 20px;}
+        .adonis_info4>div:nth-of-type(1){margin-bottom: 60px;}
+    
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* sub4: 통합예약 */
+        .reservation_div{width: 90%; margin: 0 auto;}
+        /* sub4_1: 객실예약 */
+        .reservation_div>*{margin-bottom: 60px;}
+        /* 4_1_1. 예약정보 */
+        /* 객실종류 */
+
+        .room_list_box{border: 1px solid #bababa; height: 200px;}
+        .room_list_box_wrap{display: flex; flex-wrap: wrap; margin: 15px 0 0 15px;}
+        .room_list_box_wrap li{width: 33%; margin-bottom: 20px;}
+
+        /* 체크인, 체크아웃 날짜 선택 달력 */
+        /* 달력 넘김 버튼 */
+
+        .calendar_wrap{border-top: 1px solid #6E6E6E; border-bottom: 1px solid #bababa; margin-bottom: 30px;}
+        .cal_controls{display: flex; justify-content: space-between; width: 220px; margin: 20px auto; font-size: 20px; }
+        .cal_controls button:hover{opacity: 0.5;}
+
+        /* 달력 */
+        .reserve_month{border: 0; width: 480px; text-align: center;}
+
+        /* 예약정보 */
+        .reservation_info{display: none;}
+        .reservation_info2{width: 100%;}
+        .reservation_info2 th, .reservation_info2 td{border: 1px solid #bababa; box-sizing: border-box;}
+        .reservation_info2 th{width: 85px;}
+        .reservation_info2 select{ height: 60px; border: 0; font-family: 'NanumSquare', sans-serif; font-size: 16px;  appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; cursor: pointer;}
+        .reservation_info2 input{height: 60px;font-family: 'NanumSquare', sans-serif; font-size: 16px; border: 0; background: transparent;}
+        .reservation_info2 input::placeholder{color: #bababa;}
+
+        .reservation_info2 td{text-align: center;}
+        .reservation_info2 tr:nth-of-type(4) td, .reservation_info2 tr:nth-of-type(5) td, .reservation_info2 tr:nth-of-type(6) td{ text-align: left;}
+
+        /* select option */
+        /* .reservation_info option{font-size: 18px; height: 180px;} */
+        .select_box1 *{ box-sizing: border-box;}
+        .select_box1{ position: relative; height: 60px;  font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 20px; appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 15px; box-sizing: border-box; cursor: pointer;}
+        .label1{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+        .select_box1 ul{border: 1px solid #bababa; margin-left: -1px; display: none;}
+        .select_box1 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+
+        /* box1 select 마우스오버 시 */
+        .reservation_info tr:nth-child(3) td:nth-of-type(1) div:hover ul{ display: block;}
+        .reservation_info tr:nth-child(3) td:nth-of-type(2) div:hover ul{ display: block;}
+        .reservation_info tr:nth-child(3) td:nth-of-type(3) div:hover ul{ display: block;}
+
+        /* 예약 결제하기, 초기화 버튼 */
+        .reservation_button{width: 430px; display: flex; justify-content: space-between; margin: 0 auto;}
+        .reservation_button button{width: 200px; height: 60px; color: #fff;}
+        .reservation_button p:first-child button{background: #d82d33;}
+        .reservation_button p:last-child button{background: #aeaeae;}
+        .reservation_button p button:hover{background: #000;}
+
+        /* 4_1_2. 사전예약 할인상품 */
+        .sale_item_box{border: 1px solid #bababa; box-sizing: border-box; font-size: 15px; width: 90%; margin: 0 auto;}
+        .sale_item_box h4{margin: 20px 0 10px 0;}
+        .sale_item_content{margin-bottom: 30px;  text-align: center;}
+        .sale_item_content>ul>li{margin-bottom: 42px;}
+        .sale_item_content ul:first-child, .sale_item_content div{width: 100%; margin: 0 auto;}
+        .sale_item_box>ul>li:not(:last-of-type){border-bottom: 1px solid #bababa;}
+        .strike{color: #000; text-decoration: line-through;}
+
+        /* 요트투어 */
+        .yacht{display: flex; justify-content: center; width: 90%; margin: 0 auto; text-align: center;}
+        .yacht div p{text-align: center; margin-bottom: 20px;}
+        .yacht div{margin-bottom: 20px;}
+        .sale_item_controls ul{margin-bottom: 65px;}
+
+        /* 수량버튼 */
+        .sale_item_controls{position: absolute; margin-top: -160px; width: 90%; text-align: center;}
+        .sale_item_controls li{display: flex; width: 100%; justify-content: center; margin-bottom: 2px;}
+        .sale_item_controls li p{margin: 0 5px;}
+
+        .yacht>ul:last-of-type{margin-top: 65px;  position: absolute; }
+        .yacht>ul:last-of-type li{margin-bottom: 20px;}
+        .sale_item_controls button:hover{opacity: 0.5;}
+        .yacht div li{margin-bottom: 30px; font-size: 13px;}
+        .yacht ul:nth-of-type(2)>li:nth-of-type(1){margin-bottom: -15px;}
+        .yacht ul:nth-of-type(2)>li:nth-of-type(2){margin-bottom: -15px;}
+
+
+        /* 과일선물세트 */
+        .sale_item_box>ul>li:last-of-type>div>ul:last-of-type{margin-top: -30px;}
+
+        /* 4_1_3. 개인정보 처리방침 */
+        .personal_policy{border: 1px solid #bababa; padding: 30px; margin-bottom: 30px; width: 80%; margin: 0 auto 30px;}
+        .agree_policy{width: 310px; display: flex; justify-content: space-between; margin: 0 auto; }
+
+
+        /* 체크박스 */
+        .agree_policy input{ display: none; }
+
+        /* +인접 선택자 : 선택자로 지정된 대상 태그의 다음(next)태그 */
+        input + label{
+            cursor: pointer;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border:3px solid #707070;
+            position: relative;
+            background: url(../sub_images/sub4/checked.gif) no-repeat center;
+        }
+
+        input:checked + label::after{
+            content:'✔';
+            color:red;
+            font-size: 20px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top:-5px;
+        }
+
+        /* 4_1_4. 기타 안내사항 */
+        .etc_notice h3{display: none;}
+        .etc_notice p{margin-bottom: 10px;}
+        .etc_notice ul{width: 90%; margin: 0 auto 40px;}
+        .etc_notice li li{line-height: 30px;}
+
+    
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* sub5: 고객센터 */
+        /* 검색창 스타일 */
+        #search_input{width: 100%; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; padding-left: 30px;  box-sizing: border-box; font-weight: normal; margin-top: 20px; margin-bottom: 20px;}
+        #search_input::placeholder{color: #929292;}
+        .search_wrap form>div:nth-of-type(2){width: 100%;}
+        .search_wrap form>div:last-child  button::after {
+            content: "검색하기";
+            color:#fff;
+        }
+
+        /* sub5_1: 공지사항 */
+        /* 게시글 목록 */
+        .board_table{text-align: center;}
+        .board_table th, .board_table td{border-right: 0;}
+        .board_table table{margin-bottom: 60px;}
+
+        .board_table th:first-child, .board_table th:last-child, .board_table td:first-child, .board_table td:last-child{display: none;}
+
+        .board_table td:nth-child(2){width: 25%;}
+        .board_table td:nth-child(3){width: 50%;}
+        .board_table td:nth-child(4){width: 25%;}
+
+        /* 게시글 페이지 넘김 */
+        .board_page>*{display: flex;}
+    
+        /* 게시글 페이지 넘김 버튼 */
+        .board_page_controls{ position: absolute; left: 50%; margin-left: -170px; margin-top: -2px;}
+        .board_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+        .board_page_controls1{position: absolute; display: flex;}
+        .board_page_controls2{position: absolute; display: flex; left: 300px;}
+    
+        /* 게시글 페이지 순서 숫자 */
+        .board_page ul{width: 200px; margin: 0 auto; justify-content: space-between;}
+        .board_page li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+        .board_page li:first-child button{color: #d82d33; font-weight: bold;} 
+    
+        /* sub5_2: 자주묻는질문 */
+        /* 질문목록 */
+        .folding_list{margin-bottom: 60px; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;}
+        .folding_list dt, .folding_list dd{padding: 30px 0 30px 0;}
+        .folding_list dt{ font-weight: bold; background: url(../sub_images/sub5/below_open_btn.png) no-repeat center right 30px;}
+        .folding_list dt:not(:first-child){border-top: 1px solid #bababa;}
+        .folding_list dd{color: #454545; background: #F6F6F6; display: none;}
+        .folding_list dd p{margin: 30px 60px;}
+        .faq_list button{font-size: 16px; font-family: 'NanumSquare', sans-serif;  text-align: left; width: 60%;}
+        .question{ margin: 60px;color: #6E6E6E; font-weight: 300; font-size: 24px; margin-right: 15px; }
+        .answer{margin: 60px; font-weight: 300; font-size: 24px; margin-right: 15px;}
+        .faq_list dt:hover button{color: #d82d33;}
+    
+        /* 질문목록 페이지 넘김 */
+        .faq_list_page>*{display: flex;}
+        /* 질문목록 페이지 넘김 버튼 */
+        .faq_list_page_controls{ position: absolute; left: 50%; margin-left: -62px; margin-top: -2px;}
+        .faq_list_page_controls p:first-child{ position: absolute;  }
+        .faq_list_page_controls p:last-child{ position: absolute; left: 100px;}
+        .faq_list_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+    
+        .faq_list_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;text-align: center;}
+        /* 질문목록 페이지 순서 숫자 */
+        .faq_list ul{width: 33px; margin: 0 auto; justify-content: space-between; }
+        .faq_list li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+        .faq_list li:first-child button{color: #d82d33; font-weight: bold;} 
+    
+        /* sub5_3: 자료실 */
+        .appl_forms{color: #454545;}
+        .appl_forms ul{display: flex; flex-wrap: wrap; justify-content: center; font-size: 15px; font-weight: bold; }
+        .appl_forms li{ width:85%; height:60px; line-height:60px; border: 1px solid #bababa; box-sizing: border-box; margin-bottom: 30px;}
+        .appl_forms li{display: flex; justify-content: space-between;}
+        
+        .appl_forms li>p:first-child{text-indent: 10px;}
+        .appl_forms li span{display: none;}
+        /* .appl_forms li>p:last-child{ background: #d82d33 url(../sub_images/sub5/download_btn.png) no-repeat center right 23px;} */
+        .appl_forms li>p:last-child a{
+            display: block; width: 60px; height:60px; color: #fff; font-weight: bold; text-align: center;  
+            background: #d82d33 url(../sub_images/sub5/download_btn.png) no-repeat center right 23px; }
+
+        .appl_forms>p{width: 91%; text-align: right;}
+        
+        .appl_forms li>p:last-child a:hover{background:#000 url(../sub_images/sub5/download_btn.png) no-repeat center right 23px;}
+       
+}
+
+
+/* ★★★★★ 모바일: 스크린 화면은 최대 490px 이하 ★★★★★ */
+@media screen and (max-width:490px){
+        #sub_container th{font-size: 16px;}
+        #sub_container td{font-size: 15px;}
+        /* thead 위 스타일 */
+        .thead_up th{border-bottom: 2px solid #bababa; text-align: center; border-right: 1px solid #bababa;}
+        .thead_up td{border-right: 1px solid #bababa; border-bottom: 1px solid #bababa;}
+        .thead_up th:last-child, .thead_up td:last-child{border-right: 0;}
+    
+        /* th 왼쪽 정렬 스타일 */
+        .th_left tr>*{display: block; text-align: center; height: 60px; line-height: 60px; border-bottom: 1px solid #bababa;}
+        .th_left td{border-left: 0; height: 160px; padding-top: 30px; line-height: 30px;}
+        .th_left p{ margin-left: 30px;}
+        
+    
+        /* thead 왼쪽 스타일 */
+        .thead_left td:not(:last-of-type){border-right: 1px solid #bababa;}
+        .thead_left tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+    
+        /* tab_menu_wrap */
+        .tab_menu_wrap{ width: 95%; margin: 0 auto 60px; }
+        .tab_menu_wrap ul{ display: flex; flex-wrap: wrap;}
+        .tab_menu_wrap li{ width:33.33%; height:60px; line-height:60px; text-align: center; }
+        .tab_menu_wrap button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif; font-size: 16px;}
+        .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+    
+        /* tab_menu_nowrap */
+        .tab_menu_nowrap{ width: 95%; margin: 0 auto 60px;}
+        .tab_menu_nowrap ul{display: flex;}
+        .tab_menu_nowrap li{flex: 1; height: 60px;  text-align: center; }
+        .tab_menu_nowrap button{ color: #454545; width: 100%; line-height: 60px; margin: 0 auto; border: 1px solid #BABABA; box-sizing: border-box; font-family: 'NanumSquare', sans-serif; font-size: 16px;}
+        .tab_menu_nowrap li:first-child button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+    
+        /* tab_menu_wrap2 */
+        .tab_menu_wrap2{ width: 100%; margin: 0 auto 60px; }
+        .tab_menu_wrap2 ul{ display: flex; flex-wrap: wrap;}
+        .tab_menu_wrap2 li{ width:50%; height:60px; line-height:60px; text-align: center; }
+        .tab_menu_wrap2 button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif; font-size: 16px;}
+        .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+
+        /* tab_menu_wrap3 */
+        .tab_menu_wrap3{ width: 95%; margin: 0 auto 60px;}
+        .tab_menu_wrap3 ul{ display: flex; flex-wrap: wrap;}
+        .tab_menu_wrap3 li{ width:33.33%; height:60px; line-height:60px; text-align: center; }
+        .tab_menu_wrap3 button{color: #454545; width: 100%; height: 60px; line-height: 60px; border: 1px solid #BABABA; box-sizing:border-box; font-family: 'NanumSquare', sans-serif; font-size: 16px;}
+        .on button{ border: 1px solid #d82d33; background: #d82d33; color: #fff;}
+
+
+        /* 지도 스타일*/
+        .map{width: 100%; height: 440px; border: 0;}
+        .map_wrap>table{margin-top: -5px; width: 100%;}
+        .map_wrap tr{border-bottom: 1px solid #bababa; }
+        .map_wrap td{ font-weight: bold;}
+        .map_wrap th{border-right: 1px solid #bababa; width: 30%;}
+
+        .map_wrap table tr>*{display: block;float: left; height: 60px; line-height: 60px;}
+        .map_wrap th:first-of-type, .map_wrap td:first-of-type{border-bottom: 1px solid #bababa;}
+        .map_wrap th{width: 20%; text-align: center;  font-size: 14px;}
+        .map_wrap td{width: 80%; text-indent: 10px;  font-size: 14px;}
+    
+        /* 검색 버튼 */
+        .btn_search{width: 100%; height: 60px; background: #d82d33;}
+        .btn_search:hover{background: #000;}
+    
+        /* sub visual */
+        .sub_visual_wrap{ width:100%; margin:0 auto;}
+        .sub_visual_wrap p{color:#fff;  text-align: center;}
+        .sub_visual_wrap p:first-child{padding: 150px 0 10px 0; font-size: 40px;}
+        .sub_visual_wrap p:last-child{font-size:18px; width: 80%; margin: 0 auto;}
+    
+        /* .lnb ul{display: flex;} */
+        .lnb>ul>li:first-child{display: none;}
+        .lnb{height: 70px; font-size: 18px;  border-bottom: 1px solid #d1d1d1; box-sizing: border-box; margin-bottom: 80px;}
+        .lnb>ul{margin: 0 auto;}
+        .lnb>ul{display: flex; width: 100%; margin: 0 auto;}
+        .lnb>ul>li:last-child>*{width: 50%;}
+        .lnb ul>li{ display: flex;  box-sizing: border-box;}
+        .lnb ul>li a{ padding: 0 20px;}
+
+        .lnb ul ul{border: 1px solid #d1d1d1;}
+
+        /* .lnb ul>li:last-child{border-right: 1px solid #d1d1d1;} */
+        .lnb>ul>li>a{ line-height: 70px;}
+        .lnb img{margin-top: 20px;}
+        .lnb li li a{line-height: 70px; width: 265px; }
+
+        .lnb>ul>li:last-child{height: 70px; position: relative; width: 100%;}
+        .lnb>ul ul{position: absolute; margin-left: 50%; overflow: hidden; height: 70px;}
+
+
+        .lnb2>ul>li:last-child ul:hover{ height: 141px;}
+        .lnb3>ul>li:last-child ul:hover{ height: 211px; }
+        
+
+        .lnb>ul>li>a{ border-left: 1px solid #d1d1d1; height: 70px;}
+        .lnb ul ul li:first-child{ border-bottom: 1px solid #d1d1d1; background: url(../sub_images/lnb_open_btn.png) no-repeat top 35px right 15px; height: 69px; }
+        .lnb ul ul:hover{background: #fff; }
+    
+        /* 전체서브 공통2(너비) */
+        .sub_content_wrap{width: 100%; margin: 0 auto; font-family: 'NanumSquare', sans-serif;}
+        .sub_content_wrap>div{margin-bottom: 180px;}
+    
+        /* 전체서브 공통3(서브타이틀) */
+        .sub_title{width: 100%; margin: 0 auto; text-align: center;}
+        .sub_title p{font-size: 18px; }
+        .sub_title p:first-of-type{margin-bottom: 35px; font-weight: 600;}
+        .sub_title p:last-of-type{width: 80%; margin: 0 auto 65px; font-weight: bold; font-family: 'NanumSquare', sans-serif; font-size: 18px;}
+    
+        /* 표 */
+        table{width: 95%; border-collapse: collapse; margin: 30px auto; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;  box-sizing: border-box;}
+        tr{height: 60px;}
+        th{font-size: 18px; font-weight: 800; color: #454545; }
+        td{border-left: 0; }
+        th, td{border-right: 0;}
+        caption{text-align: right; caption-side: bottom; margin-top: 15px; color: #454545; font-size: 14px;}
+    
+        /* 검색 스타일*/
+        .search_wrap{width: 95%; margin: 0 auto; background: #F6F6F6; height: 260px; margin-bottom: 60px;}
+        .search_wrap>div{width: 95%; margin: 0 auto; padding-top: 20px; }
+        /* 검색 select 스타일 */
+        .select_box2 *{ box-sizing: border-box;}
+        .select_box2{ position: relative; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 30px; appearance: none; background: #fff url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; box-sizing: border-box; cursor: pointer;}
+        .label2{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+        .select_box2 ul{border: 1px solid #bababa; width: 100%; margin: -2px 0 0 -1px; display: none;}
+        .select_box2 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+        .btn_search img{display: none;}
+    
+    
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* 2. 개별 서브 스타일 */
+        /* sub1: 리조트소개 */
+        /* sub1_1: 개요및연혁 */
+        /* overview */
+        .overview_visual{width: 100%; height: 130px; background: url(../sub_images/sub1/overview_visual_img.jpg) no-repeat center top/cover; margin-bottom: 30px;}
+        .overview_content{width: 100%; margin: 0 auto;}
+        .overview_content p{width: 95%; margin: 0 auto;}
+    
+        /* overview_table */
+    
+        .overview_content th{width: 20%; text-align: left;}
+        .overview_content td{width: 30%; padding-top: 10px; padding-bottom: 10px;}
+    
+        /* history_table */
+    
+        .history tr:not(:last-of-type){border-bottom: 1px solid #bababa;}
+        .history th{width: 10%;}
+        .history td:nth-of-type(1){width: 20%; text-align: center;}
+        .history tr:nth-child(3), .history tr:nth-child(5), .history tr:nth-child(7), .history tr:nth-child(10){border: 0;}
+        .history th{vertical-align: top; padding-top: 23px;}
+    
+        /* sub1_2: 지역별리조트 */
+        /* 1_2_1.지역별 리조트 위치 */
+        .location_info{flex-wrap: wrap; width: 100%;}
+        .location_info>li{width: 100%;}
+        .location_info li{ margin: 0 auto;}
+    
+        /* 1_2_2. 지역별 리조트 개요 */
+        /* 리조트 이미지 */
+        .tongyeong>div:first-child{width: 100%; height: 330px; background: url(../sub_images/sub1/tongyeong_resort_img.jpg) no-repeat center center/cover;}
+        .hwasun>div:first-child{width: 100%; height: 330px; background: url(../sub_images/sub1/hwasun_resort_img.jpg) no-repeat center center/cover;}
+        .seorak>div:first-child{width: 100%; height: 330px; background: url(../sub_images/sub1/seorak_resort_img.jpg) no-repeat center center/cover;}
+        .jeju>div:first-child{width: 100%; height: 330px; background: url(../sub_images/sub1/jeju_resort_img.jpg) no-repeat center center/cover;}
+        .resort_smry_heading{margin-top: 30px;}
+    
+        /* 텍스트 스타일 */
+        .resort_smry_heading>h3{text-align: left; margin-bottom: 15px; margin-top: 0;}
+        .resort_summary_text{width: 90%; height: 570px; }
+        .resort_summary_text>p{margin-top: 60px; color: #454545; font-size: 18px; line-height: 28px; }
+    
+        /* 배치 */
+        .resort_summary>div{display: flex; flex-wrap: wrap; margin-bottom: 60px; }
+        .resort_summary>div>div{margin: 0 auto;}
+        
+        .resort_smry_heading{display: flex; justify-content: space-between;  border-bottom: 1px solid #BABABA; padding-right: 40px; height: 60px; line-height: 60px;}
+        .resort_summary ul{color: #6E6E6E; margin-top: 60px;}
+        .resort_summary a:hover{opacity: 0.5;}
+            /* --------------------------------------------------------------------------------------------------------------- */
+        /* sub2: 글램핑/카라반 */
+        /* sub2_1: 숙박시설안내 */
+        /* 2_1_1. 아산스파포레 */
+        .spafore_img{width: 100%; height: 340px; background: url(../sub_images/sub2/spafore_visual_img.jpg) no-repeat center top/cover; margin-bottom: 30px; }
+        .spafore>p{width: 95%; margin: 0 auto;}
+        /* 2_1_2. 숙박시설안내 */
+        .accomodation_img{display: none;}
+        .accomodation_img2 img{width: 100%;}
+        .accomodation>div{margin-bottom: 60px;}
+    
+        /* 이미지 슬라이드 */
+        .accomodation_slide_img img{width: 100%;}
+        .accomodation_slide_img{width: 400px; margin: 0 auto 20px auto; overflow: hidden; }
+        .accomodation_slide ul{ display: flex; width:1500px; }
+        .accomodation_slide li{ flex:1; }
+    
+        .glampfore, .coachman{display: none;}
+    
+        /* 숙박시설 슬라이드 제어 버튼1 */
+        .accomodation_slide_btn1 button{display: block;}
+        .accomodation_slide_btn1{width: 95%; display: flex; margin: -150px 0 0 15px; position: absolute; justify-content: space-between;}
+        .accomodation_slide_btn1 button:hover{opacity: 0.5;}
+    
+        /* 숙박시설 슬라이드 제어 버튼2 */
+        .accomodation_slide_btn2{width: 75px; margin: 0 auto; display: flex; justify-content: space-evenly; }
+        .accomodation_slide_btn2 span{display: none; }
+        .accomodation_slide_btn2 button{height: 10px; border-radius: 5px;}
+        .accomodation_slide_btn2 button:not(:first-child){ width: 10px; border: 1px solid #d82d33;  }
+        .accomodation_slide_btn2 button:first-child{width: 30px; background: #d82d33;}
+    
+        /* 숙박시설안내 표 */
+        .accomodation table{width: 95%;}
+        .accomodation table th{width: 20%;}
+    
+        /* sub2_2: 객실이용안내 */
+        /* 2_2_1.user_guide1 */
+        .user_guide1_wrap>ol{display: flex; justify-content: center; flex-wrap: wrap; margin: 0 2%;}
+        .user_guide1_wrap>ol>li{width: 44%; height: 260px; border: 1px solid #bababa; border-top: 2px solid #bababa; box-sizing: border-box; list-style: none;}
+        .user_guide1_wrap p{text-align: center; font-weight: 800; font-size: 18px; line-height: 58px; border-bottom: 1px solid #bababa;}
+        .user_guide1_wrap li{margin-top: -1px;}
+        .user_guide1_wrap ol ol{width: 120px; margin: 30px auto;}
+        .user_guide1_wrap ol ol>li{list-style-position: inside; line-height: 30px;}
+    
+        /* 2_2_2.user_guide2 */
+        .user_guide2_wrap ul{width: 95%; margin:0 auto;}
+        .user_guide2_wrap li{height: 250px; border: 1px solid #bababa; box-sizing: border-box; margin-bottom: 70px; padding-left: 150px;}
+        .user_guide2_wrap h4{padding-top: 20px; margin-bottom: 10px; text-align: left;}
+        .user_guide2_wrap li p:first-of-type{margin-bottom: 25px;}
+        .user_guide2_wrap b{ font-weight: 800;}
+        /* .user_guide2_wrap p:first-of-type{margin-bottom: 170px;} */
+        .user_guide2_wrap p{line-height: 25px;}
+        .caption{position: absolute; right: 15px; margin-top: -700px; font-size: 14px;}
+
+        /* 입퇴실 절차 아이콘 */
+        .user_guide2_wrap li:first-child{background: url(../sub_images/sub2/check_in_icon.png) no-repeat left 30px center/90px;}
+        .user_guide2_wrap li:nth-child(2){background: url(../sub_images/sub2/check_out_icon.png) no-repeat left 30px center/90px;}
+        .user_guide2_wrap li:last-child{background: url(../sub_images/sub2/to_do_icon.png) no-repeat left 30px center/90px;}
+    
+        .user_guide2_wrap li:first-child br{display: none;}
+        /* 2_2_3.user_guide3 */
+        /* user_guide3 표 전체 공통스타일 */
+        .user_guide3_wrap{text-align: center;}
+        .user_guide3_wrap tr{border-bottom: 1px solid #bababa;}
+        .user_guide3_wrap th{border-bottom: 2px solid #bababa;}
+        .user_guide3_wrap th, .user_guide3_wrap td{border-left: 1px solid #bababa;}
+        .user_guide3_wrap th:first-child, .user_guide3_wrap td:first-child{border-left: 0;}
+        .user_guide3_wrap h4{text-align: left; margin-bottom: 0; padding-left: 20px;}
+    
+        .fee2 th:nth-child(1){width: 25%;}
+        .fee2 th:nth-child(2){width: 25%;}
+        .fee3 tbody{height: 120px;}
+        .fee1 th, .fee3 th{width: 50%;}
+    
+        /* 2_2_4.user_guide4 */
+        .user_guide4_wrap td ol{margin: 10px auto; width: 95%;}
+        .user_guide4_wrap th{padding-left: 20px;}
+        .user_guide4_wrap li{line-height: 25px;}
+        .user_guide4_wrap tr:nth-of-type(2) td{height: 300px;}
+        .user_guide4_wrap tr:nth-of-type(4) td{height: 660px;}
+        .user_guide4_wrap tr:nth-of-type(6) td{height: 130px; line-height: 30px; padding-top: 30px;}
+        .user_guide4_wrap td{padding-left: 0;}
+        .user_guide4_wrap tr:last-of-type p{margin-left: 0; width: 95%; margin: 0 auto;}
+
+        /* sub2_3: 오시는길 */
+        .traffic_info th{padding-left: 20px; text-align: center;}
+    
+        /* 교통정보 */
+        .traffic_info td{line-height: 26px; padding: 15px; height: 200px;}
+        .traffic_info>div li:nth-of-type(2) button{font-size: 14px;}
+    
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* sub3: 제휴리조트 */
+        /* sub3_1: 국내제휴리조트안내 */
+        .location_info2{display: flex; flex-wrap: wrap;}
+        .location_info2>li{width: 100%;}
+        .location_info2 img{width:347px;}
+        .location_btn2 a{width: 230px; font-size: 16px;}
+
+        .reservation_inquiry table{text-align: center;  }
+        .reservation_inquiry table tr>*{ display: block;}
+
+        .reservation_inquiry table th{  height: 60px; line-height: 60px; border-bottom: 1px solid #aeaeae; 
+        }
+        .reservation_inquiry table th:first-child{ margin-bottom:110px; }
+        .reservation_inquiry table th:last-child{  border-top: 1px solid #aeaeae; } 
+
+        .reservation_inquiry table td:first-child{ margin:-140px 0 90px 0; }
+
+        .reservation_inquiry th{text-align: center; }
+        .reservation_inquiry li{list-style: none;}
+        .reservation_inquiry td{height: 80px;}
+
+
+    
+        /* sub3_2: 경기 */
+        /* 개요 */
+        .adonis_info1_main_img li{ width:100%; }
+        .adonis_info1_main_img li:not(:first-child) img{ display: none;}
+        .adonis_info1_main_img{ width: 100%; margin-bottom:50px;  }
+    
+        .adonis_info1_main_img img{ width: 90%; margin:0 5%; }
+        .adonis_info1_content{width: 90%; margin: 0 auto;}
+        .adonis_info1_text ul{border-top: 1px solid #bababa; border-bottom: 1px solid #bababa; }
+        .adonis_info1_text li{margin: 20px;}
+    
+        .adonis_info1_text li:last-child a{display: block; background: url(../sub_images/sub3/external_link.png) no-repeat right center/30px 30px; height: 30px;}
+        .adonis_info1_text span{display: none;}
+        .adonis_info1_img_list li img{width: 90%;}
+        .adonis_info1_img_list ul{display: flex; margin-top: 30px; width: 100%; justify-content: space-between;}
+        
+        /* 회원이용안내 */
+        .adonis_info2{text-align: center;}
+    
+        /* 부대시설안내 */
+        .adonis_info3_wrap>ul{display: flex; flex-wrap: wrap; justify-content: center; text-align: center;  margin: 0 2%;}
+        .adonis_info3_wrap>ul>li{border: 1px solid #bababa; border-top: 2px solid #bababa; width: 46%; height: 210px; margin-bottom: -1px;}
+        .adonis_info3_wrap>ul>li h4{margin-top: 15px; margin-bottom: 5px;}
+        .adonis_info3_wrap>ul>li>p{font-weight: bold;}
+        .adonis_info3_wrap>ul>li:not(:last-of-type)>p:last-of-type{margin-top: 100px;}
+        .adonis_info3_wrap>ul ul{ font-weight: bold; margin-top: 90px;}
+    
+        .adonis_info3_wrap>ul>li:nth-of-type(1){background: url(../sub_images/sub3/fnb_icon.png) no-repeat center center/70px;}
+        .adonis_info3_wrap>ul>li:nth-of-type(2){background: url(../sub_images/sub3/entertainment_icon.png) no-repeat center center/70px;}
+        .adonis_info3_wrap>ul>li:nth-of-type(3){background: url(../sub_images/sub3/business_icon.png) no-repeat center center/70px;}
+        .adonis_info3_wrap>ul>li:nth-of-type(4){background: url(../sub_images/sub3/etc_icon.png) no-repeat center center/70px;}
+    
+        /* 교통정보안내 */
+        .adonis_info4>div:nth-of-type(2) th{padding-left: 20px;}
+        .adonis_info4>div:nth-of-type(1){margin-bottom: 60px;}
+        .adonis_info4 td{height: 90px;}
+        .adonis_info4>div:last-of-type td{height: 120px;}
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* sub4: 통합예약 */
+        .reservation_div{width: 90%; margin: 0 auto;}
+        /* sub4_1: 객실예약 */
+        .reservation_div>*{margin-bottom: 60px;}
+        /* 4_1_1. 예약정보 */
+        /* 객실종류 */
+        .room_list_box{border: 1px solid #bababa; height: 250px;}
+        .room_list_box_wrap{display: flex; flex-wrap: wrap; margin: 15px 0 0 10px;}
+        .room_list_box_wrap li{width: 50%; margin-bottom: 20px; font-size: 15px;}
+
+        /* 체크인, 체크아웃 날짜 선택 달력 */
+        /* 달력 넘김 버튼 */
+
+        .calendar_wrap{border-top: 1px solid #6E6E6E; border-bottom: 1px solid #bababa; margin-bottom: 30px;}
+        .cal_controls{display: flex; justify-content: space-between; width: 220px; margin: 20px auto; font-size: 20px; }
+        .cal_controls button:hover{opacity: 0.5;}
+
+        /* 달력 */
+        .reserve_month{border: 0; text-align: center;}
+
+        /* 예약정보 */
+        .reservation_info{display: none;}
+        .reservation_info2{width: 100%;}
+        .reservation_info2 th, .reservation_info2 td{border: 1px solid #bababa; box-sizing: border-box;}
+        .reservation_info2 th{width: 85px;}
+        .reservation_info2 select{ height: 60px; border: 0; font-family: 'NanumSquare', sans-serif; font-size: 16px;  appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 20px; cursor: pointer;}
+        .reservation_info2 input{height: 60px;font-family: 'NanumSquare', sans-serif; font-size: 16px; border: 0; background: transparent;}
+        .reservation_info2 input::placeholder{color: #bababa;}
+
+        .reservation_info2 td{text-align: center;}
+        .reservation_info2 tr:nth-of-type(4) td, .reservation_info2 tr:nth-of-type(5) td, .reservation_info2 tr:nth-of-type(6) td{ text-align: left;}
+
+        /* select option */
+        /* .reservation_info option{font-size: 18px; height: 180px;} */
+        .select_box1 *{ box-sizing: border-box;}
+        .select_box1{ position: relative; height: 60px;  font-family: 'NanumSquare', sans-serif; font-size: 16px; text-indent: 20px; appearance: none; background: url(../sub_images/lnb_open_btn.png) no-repeat center right 15px; box-sizing: border-box; cursor: pointer;}
+        .label1{ background: none; font-family: 'NanumSquare', sans-serif; font-size: 16px; color: #454545; height:60px; }
+        .select_box1 ul{border: 1px solid #bababa; margin-left: -1px; display: none;}
+        .select_box1 li{height: 60px;  background: #fff; font-family: 'NanumSquare', sans-serif; font-size: 16px; line-height: 60px; }
+
+        /* box1 select 마우스오버 시 */
+        .reservation_info tr:nth-child(3) td:nth-of-type(1) div:hover ul{ display: block;}
+        .reservation_info tr:nth-child(3) td:nth-of-type(2) div:hover ul{ display: block;}
+        .reservation_info tr:nth-child(3) td:nth-of-type(3) div:hover ul{ display: block;}
+
+        /* 예약 결제하기, 초기화 버튼 */
+        .reservation_button{width: 330px; display: flex; justify-content: space-between; margin: 0 auto;}
+        .reservation_button button{width: 150px; height: 60px; color: #fff; font-size: 16px;}
+        .reservation_button p:first-child button{background: #d82d33;}
+        .reservation_button p:last-child button{background: #aeaeae;}
+        .reservation_button p button:hover{background: #000;}
+
+        /* 4_1_2. 사전예약 할인상품 */
+        .sale_item_box{border: 1px solid #bababa; box-sizing: border-box; font-size: 13px; width: 99%; margin: 0 auto;}
+        .sale_item_box h4{margin: 20px 0 10px 0;}
+        .sale_item_content{margin-bottom: 30px; text-align: center;}
+        .sale_item_content>ul>li{margin-bottom: 40px;}
+        .sale_item_content ul:first-child, .sale_item_content div{width: 100%; margin: 0 auto;}
+        .sale_item_box>ul>li:not(:last-of-type){border-bottom: 1px solid #bababa;}
+        .strike{color: #000; text-decoration: line-through;}
+
+        /* 요트투어 */
+        .yacht{display: flex; justify-content: center; width: 90%; margin: 0 auto; text-align: center;}
+        .yacht div p{text-align: center; margin-bottom: 20px;  }
+        .yacht div{margin-bottom: 20px;}
+        .sale_item_controls ul{margin-bottom: 65px;}
+        .yacht div li{margin-bottom: 30px; font-size: 11px;}
+        
+        /* 수량버튼 */
+        .sale_item_controls{position: absolute; margin-top: -150px; width: 100%; text-align: center;}
+        .sale_item_controls li{display: flex; width: 100%; justify-content: center; margin-bottom: 2px;}
+        .sale_item_controls li p{margin: 0 5px;}
+        
+        .yacht>ul:last-of-type{margin-top: 65px;  position: absolute; }
+        .yacht>ul:last-of-type li{margin-bottom: 20px; }
+        .sale_item_controls button:hover{opacity: 0.5;}
+        
+        .yacht ul:nth-of-type(2)>li:nth-of-type(1){margin-bottom: -25px;}
+        .yacht ul:nth-of-type(2)>li:nth-of-type(2){margin-bottom: -25px;}
+
+        /* 과일선물세트 */
+        .sale_item_box>ul>li:last-of-type>div>ul:last-of-type{margin-top: -30px;}
+
+
+        /* 4_1_3. 개인정보 처리방침 */
+        .personal_policy{border: 1px solid #bababa; padding: 30px; margin-bottom: 30px; width: 80%; margin: 0 auto 30px; font-size: 15px;}
+        .agree_policy{width: 310px; display: flex; justify-content: space-between; margin: 0 auto; }
+
+
+        /* 체크박스 */
+        .agree_policy input{ display: none; }
+
+        /* +인접 선택자 : 선택자로 지정된 대상 태그의 다음(next)태그 */
+        input + label{
+            cursor: pointer;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border:3px solid #707070;
+            position: relative;
+            background: url(../sub_images/sub4/checked.gif) no-repeat center;
+        }
+
+        input:checked + label::after{
+            content:'✔';
+            color:red;
+            font-size: 20px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top:-5px;
+        }
+
+        /* 4_1_4. 기타 안내사항 */
+        .etc_notice h3{display: none;}
+        .etc_notice p{margin-bottom: 10px;}
+        .etc_notice ul{width: 90%; margin: 0 auto 40px;}
+        .etc_notice li li{line-height: 30px;}
+
+    
+        /* --------------------------------------------------------------------------------------------------------------- */
+        /* sub5: 고객센터 */
+        /* 검색창 스타일 */
+        #search_input{width: 100%; height: 60px; border: 1px solid #BABABA; font-family: 'NanumSquare', sans-serif; font-size: 16px; padding-left: 30px;  box-sizing: border-box; font-weight: normal; margin-top: 20px; margin-bottom: 20px;}
+        #search_input::placeholder{color: #929292;}
+        .search_wrap form>div:nth-of-type(2){width: 100%;}
+        .search_wrap form>div:last-child  button::after {
+            content: "검색하기";
+            color:#fff;
+            font-size: 16px;
+        }
+
+        /* sub5_1: 공지사항 */
+        /* 게시글 목록 */
+        .board_table{text-align: center;}
+        .board_table th, .board_table td{border-right: 0;}
+        .board_table table{margin-bottom: 60px;}
+
+        .board_table th:first-child, .board_table th:last-child, .board_table td:first-child, .board_table td:last-child{display: none;}
+
+        .board_table td:nth-child(2){width: 30%; font-size: 14px;}
+        .board_table td:nth-child(3){width: 40%;}
+        .board_table td:nth-child(4){font-size: 14px;}
+        
+       
+
+        /* 게시글 페이지 넘김 */
+        .board_page>*{display: flex;}
+    
+        /* 게시글 페이지 넘김 버튼 */
+        .board_page_controls{ position: absolute; left: 50%; margin-left: -170px; margin-top: -2px;}
+        .board_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+        .board_page_controls1{position: absolute; display: flex;}
+        .board_page_controls2{position: absolute; display: flex; left: 300px;}
+    
+        /* 게시글 페이지 순서 숫자 */
+        .board_page ul{width: 200px; margin: 0 auto; justify-content: space-between;}
+        .board_page li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+        .board_page li:first-child button{color: #d82d33; font-weight: bold;} 
+    
+        /* sub5_2: 자주묻는질문 */
+        /* 질문목록 */
+        .folding_list{margin-bottom: 60px; border-top: 2px solid #bababa; border-bottom: 2px solid #bababa;}
+        .folding_list dt, .folding_list dd{padding: 30px 0 30px 0;}
+        .folding_list dt{ font-weight: bold; background: url(../sub_images/sub5/below_open_btn.png) no-repeat center right 30px;}
+        .folding_list dt:not(:first-child){border-top: 1px solid #bababa;}
+        .folding_list dd{color: #454545; background: #F6F6F6; display: none;}
+        .folding_list dd p{margin: 30px 60px;}
+        .faq_list button{font-size: 16px; font-family: 'NanumSquare', sans-serif;  text-align: left; width: 60%;}
+        .question{ margin: 60px 0 0 30px; color: #6E6E6E; font-weight: 300; font-size: 24px; margin-right: 15px; }
+        .answer{margin: 60px; font-weight: 300; font-size: 24px; margin-right: 15px;}
+        .faq_list dt:hover button{color: #d82d33;}
+    
+        /* 질문목록 페이지 넘김 */
+        .faq_list_page>*{display: flex;}
+        /* 질문목록 페이지 넘김 버튼 */
+        .faq_list_page_controls{ position: absolute; left: 50%; margin-left: -62px; margin-top: -2px;}
+        .faq_list_page_controls p:first-child{ position: absolute;  }
+        .faq_list_page_controls p:last-child{ position: absolute; left: 100px;}
+        .faq_list_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa;}
+    
+        .faq_list_page_controls button{width: 25px; height: 25px; border: 1px solid #bababa; text-align: center;}
+        /* 질문목록 페이지 순서 숫자 */
+        .faq_list ul{width: 33px; margin: 0 auto; justify-content: space-between; }
+        .faq_list li button{color: #6E6E6E; font-family: 'NanumSquare', sans-serif; font-size: 16px; font-weight: normal;}
+        .faq_list li:first-child button{color: #d82d33; font-weight: bold;} 
+    
+        /* sub5_3: 자료실 */
+        .appl_forms{color: #454545;}
+        .appl_forms ul{display: flex; flex-wrap: wrap; justify-content: center; font-size: 14px; font-weight: bold; }
+        .appl_forms li{ width:85%; height:60px; line-height:60px; border: 1px solid #bababa; box-sizing: border-box; margin-bottom: 30px;}
+        .appl_forms li{display: flex; justify-content: space-between;}
+        
+        .appl_forms li>p:first-child{text-indent: 10px;}
+        .appl_forms li span{display: none;}
+
+        .appl_forms li>p:last-child a{
+            display: block; width: 60px; height:60px; color: #fff; font-weight: bold; text-align: center;  
+            background: #d82d33 url(../sub_images/sub5/download_btn.png) no-repeat center right 23px; }
+
+        .appl_forms>p{width: 91%; text-align: right;}
+        
+        .appl_forms li>p:last-child a:hover{background:#000 url(../sub_images/sub5/download_btn.png) no-repeat center right 23px;}
+
+        .appl_forms li:last-of-type{font-size: 11px;}
+}
